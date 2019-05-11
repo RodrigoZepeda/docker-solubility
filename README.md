@@ -4,12 +4,12 @@ Docker for reproducing our solubility model.
 ## Install Docker
 To run model please [install docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
-## Install from Docker
+### Install from Docker
 ```
 docker pull rodrigozepeda/docker-solubility-v1
 ```
 
-## Install from Github
+### Install from Github
 
 To install from Github either clone or manually download project 
 ```
@@ -24,4 +24,10 @@ cd docker-solubility-v1
 Then run Docker build command
 ```
 docker build -t docker-solubility-v1 .
+```
+## Run
+
+To run interactive session:
+```
+docker run -it rodrigozepeda/docker-solubility-v1 /bin/bash
 ```
