@@ -6,7 +6,7 @@ To run model please [install docker](https://docs.docker.com/install/linux/docke
 
 ## Install from Docker
 ```
-docker pull zepe123/docker-solubility-v1
+docker pull rodrigozepeda/docker-solubility-v1
 ```
 
 ## Install from Github
