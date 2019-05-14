@@ -1,5 +1,20 @@
+#Dockerfile for building image with deepchem (cpu) installed
+#https://towardsdatascience.com/docker-for-data-science-9c0ce73e8263
+
 #Download conda
 FROM continuumio/miniconda3
+
+#Set version
+LABEL version="0.1"
+LABEL maintainer="Rodrigo Zepeda <rzepeda17@gmail.com>"
+
+# Set environment variables
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+
+#Set working directory
+COPY input_files /usr/src/input_files
+COPY models /usr/src/models
 
 #Update conda
 RUN conda update conda
@@ -13,5 +28,8 @@ RUN yes "yes" | conda create -n env python=3.6.6
 RUN echo "source activate env" > ~/.bashrc
 ENV PATH /opt/conda/envs/env/bin:$PATH
 
-#To work in this environment we need to source it this time
+#Specify environment installation and install deepchem (and dependencies)
 RUN yes "yes" | conda install -n env -c deepchem -c rdkit -c conda-forge -c omnia deepchem=2.1.0
+
+#Clean conda after installation
+RUN yes "yes" | conda clean --all
