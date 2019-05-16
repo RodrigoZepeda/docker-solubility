@@ -1,5 +1,6 @@
-#Dockerfile for building image with deepchem (cpu) installed
-#https://towardsdatascience.com/docker-for-data-science-9c0ce73e8263
+# Dockerfile for building image with deepchem (cpu) installed
+# https://towardsdatascience.com/docker-for-data-science-9c0ce73e8263
+# To build from scratch: docker build --no-cache -t docker-solubility-v1 .
 
 #Download conda
 FROM continuumio/miniconda3
@@ -15,6 +16,7 @@ ENV LANGUAGE en_US:en
 #Set working directory
 COPY input_files /usr/src/input_files
 COPY models /usr/src/models
+COPY scripts /usr/src/scripts
 
 #Update conda
 RUN conda update conda
@@ -33,3 +35,6 @@ RUN yes "yes" | conda install -n env -c deepchem -c rdkit -c conda-forge -c omni
 
 #Clean conda after installation
 RUN yes "yes" | conda clean --all
+
+#Run Python scripts
+CMD ["python","/usr/src/scripts/PredictionModelv01.py" ]
