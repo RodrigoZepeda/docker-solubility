@@ -29,7 +29,7 @@ docker build -t docker-solubility-v1 .
 
 To run interactive session:
 ```
-docker run -it -v <PATH TO FILE YOU WANT TO WORK ON>:/data --name container1 docker-solubility-v1 /bin/bash
+docker run -it -v <PATH TO FILE YOU WANT TO WORK ON>:/data docker-solubility-v1
 ```
 
 where ``<PATH TO FILE YOU WANT TO WORK ON>`` is substituted by path to the csv file conaining the Smiles you want to predict. See **MANUAL**  
