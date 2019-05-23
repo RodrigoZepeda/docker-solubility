@@ -3,7 +3,7 @@
 # To build from scratch: docker build --no-cache -t docker-solubility-v1 .
 
 #Download conda
-FROM continuumio/miniconda3
+FROM rodrigozepeda/docker-deepchem:v1
 
 # Labels.
 #https://medium.com/@chamilad/lets-make-your-docker-image-better-than-90-of-existing-ones-8b1e5de950d
@@ -19,28 +19,10 @@ LABEL org.label-schema.docker.cmd="docker run -it -v <PATH TO FILE YOU WANT TO W
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
-#Update conda
-RUN conda update conda
-RUN conda update --all
-
-#Create environment in 3.6.6 (same as my ubuntu)
-RUN yes "yes" | conda create -n env python=3.6.6
-
-#Set docker to open in environment each time
-#see https://medium.com/@chadlagore/conda-environments-with-docker-82cdc9d25754
-RUN echo "source activate env" > ~/.bashrc
-ENV PATH /opt/conda/envs/env/bin:$PATH
-
-#Specify environment installation and install deepchem (and dependencies)
-RUN yes "yes" | conda install -n env -c deepchem -c rdkit -c conda-forge -c omnia deepchem=2.1.0
-
-#Clean conda after installation
-RUN yes "yes" | conda clean --all
-
 #Set files
 COPY input_files /usr/src/input_files
 COPY models /usr/src/models
 COPY scripts /usr/src/scripts
 
 #Run Python scripts
-CMD ["python","/usr/src/scripts/PredictionModelv01.py" ]
+CMD ["python","/usr/src/scripts/GraphConvolutionModel.py" ]
