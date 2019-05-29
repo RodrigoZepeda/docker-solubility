@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Runs prediction model for graph convolution
 Rodrigo Zepeda rzepeda17@gmail.com
@@ -35,7 +36,7 @@ except:
 
 #Read dataset to predict
 try:
-    newsmiles = pd.read_csv('/data/To_predict.csv')
+    newsmiles = pd.read_csv('/data/To_predict.csv') #TODO: Allow to read any file on data
 except:
     sys.exit('Unable to read "To_predict.csv" from "/data" directory')
 

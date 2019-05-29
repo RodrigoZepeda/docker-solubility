@@ -29,7 +29,13 @@ docker build -t docker-solubility-v1 .
 
 To run interactive session:
 ```
-docker run -it -v <PATH TO FILE YOU WANT TO WORK ON>:/data docker-solubility-v1
+docker run -it -v /PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility-v1
 ```
 
-where ``<PATH TO FILE YOU WANT TO WORK ON>`` is substituted by path to the csv file conaining the Smiles you want to predict. See **MANUAL**  
+where ``/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/`` is substituted by path to the csv file conaining the Smiles you want to predict.
+As an example, assuming the files to predict are included in ``~/Dropbox/Quimica/Docker/docker-solubility-v2/predict_files`` you can:
+```
+sudo docker run -it --rm -v ~/Dropbox/Quimica/Docker/docker-solubility-v2/predict_files:/data docker-solubility-v1
+```
+
+See **MANUAL**  
