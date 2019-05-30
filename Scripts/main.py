@@ -16,15 +16,17 @@ print('Running docker')
 if len(models) < 1:
     sys.exit('ERROR: No options for models passed to main.py \n' +
     'Please specify at least one of the following:' +
-    "\n > GraphConvolution" +
-    "\n > Model2" +
+    "\n > GraphConv" +
+    "\n > Weave" +
     "\n > Model3" +
     "\nAnd run as:\n"
     "docker run -it --rm -v ~<PATHTODIRECTORY>:/data docker-solubility-v1 Model1 Model2")
 else:
-    if "GraphConvolution" in models:
-        print("GC")
-    if "Model2" in models:
-        print("Model2")
+    if "GraphConv" in models:
+        exec(open("GraphConvolutionModel.py").read()); #TODO: Make a cleaner approach with functions
+    if "Weave" in models:
+        exec(open("WeaveModel.py").read());
     if "Model3" in models:
-        print("Model3")
+        exec(open("Model3.py").read());
+
+print('Process finished')

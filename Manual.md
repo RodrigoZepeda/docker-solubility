@@ -37,7 +37,7 @@ where ``/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/`` is substituted by path to the csv f
 
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` you can:
 ```
-sudo docker run -it --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1
+sudo docker run -it --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConvolution
 ```
 
 ### Options

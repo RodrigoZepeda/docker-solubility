@@ -19,15 +19,13 @@ LABEL org.label-schema.docker.cmd="docker run -it -v <PATH TO FILE YOU WANT TO W
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
-#Variables to pass to env
-ENV fname ""
-ENV models "Model2"
-
 #Set files
 COPY Input_Files /usr/src/input_files
 COPY Models /usr/src/models
 COPY Scripts /usr/src/scripts
 
+WORKDIR /usr/src/scripts
+
 #Run Python scripts
-ENTRYPOINT [ "python",  "/usr/src/scripts/main.py" ]
+ENTRYPOINT [ "python",  "main.py" ]
 CMD []
