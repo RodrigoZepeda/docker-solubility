@@ -38,4 +38,4 @@ As an example, assuming the files to predict are included in ``~/Dropbox/Quimica
 sudo docker run -it --rm -v ~/Dropbox/Quimica/Docker/docker-solubility-v2/predict_files:/data docker-solubility-v1
 ```
 
-See **MANUAL**  
+See [MANUAL](https://github.com/RodrigoZepeda/docker-solubility-v1/blob/master/Manual.md)  
