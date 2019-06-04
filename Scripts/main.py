@@ -28,8 +28,10 @@ else:
         exec(open("GraphConvolutionModel.py").read()); #TODO: Make a cleaner approach with functions
     if "Weave" in models  or "all" in models:
         exec(open("WeaveModel.py").read());
+        '''
     if "DAG" in models or "all" in models:
         exec(open("DAGModel.py").read());
+        '''
     if "MPNN" in models or "all" in models:
         exec(open("MPNNModel.py").read());
 
