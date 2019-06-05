@@ -19,7 +19,7 @@ data_dir = "/data/"
 models = sys.argv
 del models[0] #First argument of list is always the script name
 flag_predicted = True   #Flag for running models
-print('Running docker')
+print('Running models')
 
 #Predict between different models
 if len(models) == 0 or "GraphConv" in models:
