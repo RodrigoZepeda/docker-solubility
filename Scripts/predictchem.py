@@ -62,18 +62,26 @@ def predict_from_mols(featurizer, transformers, mols, model, molnames):
 
     return mydf
 
-def write_to_csv(fname, mydir, mydf):
+def write_to_csv(fname, parentdir, mydf, newdir):
+
+    dirpath = parentdir + newdir
+    #Create new directory
+    #https://stackoverflow.com/questions/273192/how-can-i-safely-create-a-nested-directory
+    if not os.path.exists(dirpath):
+        os.makedirs(dirpath)
 
     #Write dataset
     try:
-        mydf.to_csv(mydir + fname, index=False)
-        print('Model saved as "' + fname + '" on "' + mydir + '" directory')
+        mydf.to_csv(dirpath + "/" + fname, index=False)
+        print('Model saved as "' + fname + '" on "' + dirpath +  '" directory')
     except:
-        sys.exit('Unable to save "' + fname + '" on "' + mydir + '" directory')
+        sys.exit('Unable to save "' + fname + '" on "'+ dirpath +  '" directory')
 
     return 0
 
-def predict_csv_from_model(featurizer, transformers, modelname, model_file, dataset_file, fname, smiles_column = 'Smiles', mydir = '/data/'):
+def predict_csv_from_model(featurizer, transformers, modelname, model_file,
+    dataset_file, fname, smiles_column = 'Smiles', parentdir = '/data/',
+    newdir = "predictions"):
 
     #Load model
     model = load_model(modelname, model_file)
@@ -85,6 +93,6 @@ def predict_csv_from_model(featurizer, transformers, modelname, model_file, data
     predict_df = predict_from_mols(featurizer, transformers, mols, model, newsmiles)
 
     #Write to csv
-    write_to_csv(fname, mydir, predict_df)
+    write_to_csv(fname, parentdir, predict_df, newdir)
 
     return 0

@@ -1,0 +1,6 @@
+Smile,Predicted Solubility
+COC(C)(C)CCCC(C)CC=CC(C)=CC(=O)OC(C)C,0.10403151
+CCOC(=O)CC,1.4522239
+CSc1nc(NC(C)C)nc(NC(C)C)n1,0.33537078
+CC(C#C)N(C)C(=O)Nc1ccc(Cl)cc1,0.35533544
+Cc1cc2ccccc2cc1C,0.008874008

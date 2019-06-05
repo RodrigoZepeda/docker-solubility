@@ -13,7 +13,7 @@ import sys
 #Docker's working directories
 model_dir = "/usr/src/models/"
 data_dir = "/data/"
-
+newdir = "model " + time.ctime()
 
 #Models to run are inputed through docker file
 models = sys.argv
@@ -30,8 +30,9 @@ if len(models) == 0 or "GraphConv" in models:
         modelname = GraphConvModel,
         model_file = model_dir + "graph_convolution",
         dataset_file = '/data/To_predict.csv',
-        fname = 'PredictedGraphConvolution ' + time.ctime() + '.csv',
-        mydir = data_dir)
+        fname = 'PredictedGraphConvolution.csv',
+        parentdir = data_dir,
+        newdir = newdir)
     flag_predicted = False;
 
 if len(models) == 0 or "Weave" in models:
@@ -42,8 +43,9 @@ if len(models) == 0 or "Weave" in models:
         modelname = WeaveModel,
         model_file = model_dir + "weave_model",
         dataset_file = data_dir + 'To_predict.csv',
-        fname = 'PredictedWeave ' + time.ctime() + '.csv',
-        mydir = data_dir)
+        fname = 'PredictedWeave.csv',
+        parentdir = data_dir,
+        newdir = newdir)
     flag_predicted = False;
 
 if len(models) == 0 or "DAG" in models:
@@ -59,8 +61,9 @@ if len(models) == 0 or "MPNN" in models:
         modelname = MPNNModel,
         model_file = model_dir + "mpnn_model",
         dataset_file = data_dir + 'To_predict.csv',
-        fname = 'PredictedMPNN ' + time.ctime() + '.csv',
-        mydir = data_dir)
+        fname = 'PredictedMPNN.csv',
+        parentdir = data_dir,
+        newdir = newdir)
     flag_predicted = False;
 
 if flag_predicted:
