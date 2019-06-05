@@ -36,7 +36,7 @@ docker run -it -v /PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility-v1 
 where:
 
 * ``/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/`` is substituted by path to the csv file conaining the Smiles you want to predict (see [To_predict.csv on Github](https://github.com/RodrigoZepeda/docker-solubility-v1/blob/master/predict_files/To_predict.csv) for an example).
-* ``all`` can be substituted by one of the following models:
+* ``all`` can be substituted by one of the following specific models:
   + ``GraphConv``
   + ``Weave``
   + ``MPNN``
@@ -45,5 +45,12 @@ where:
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` and you want the Graph Convolution model you can:
 
 ```
-sudo docker run -it --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConv
+sudo docker run --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConv
+```
+
+##Debugging
+
+To run bash command:
+```
+docker run --rm --entrypoint bash -it -v ~/Dropbox/Quimica/Docker/docker-solubility-v2/predict_files:/data docker-solubility-v1
 ```

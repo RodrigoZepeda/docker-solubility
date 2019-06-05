@@ -43,7 +43,7 @@ where:
 
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` and you want the Graph Convolution model you can:
 ```
-sudo docker run -it --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConv
+sudo docker run --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConv
 ```
 
 See [manual for further instructions](https://github.com/RodrigoZepeda/docker-solubility-v1/blob/master/Manual.md)  

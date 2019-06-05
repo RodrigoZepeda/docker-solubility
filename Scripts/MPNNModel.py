@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Runs prediction model for graph convolution
+Runs prediction model for deepchem
 Rodrigo Zepeda rzepeda17@gmail.com
 
 '''
@@ -25,6 +25,7 @@ print('Predicting with MPNN Model...')
 
 #Featurize molecules
 featurizer = dc.feat.WeaveFeaturizer()
+#TODO Add transformer
 
 #Read molecule model from folder
 try:

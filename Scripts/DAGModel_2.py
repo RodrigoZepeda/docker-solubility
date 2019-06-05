@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Runs prediction model for weave model
+Runs prediction model for graph convolution
 Rodrigo Zepeda rzepeda17@gmail.com
 
 '''
@@ -16,24 +16,23 @@ sys.stderr = None            # suppress deprecation warning
 import deepchem as dc
 sys.stderr = sys.__stderr__  # restore stderr
 
-from deepchem.models import WeaveModel
+from deepchem.models import DAGModel
 from deepchem.utils.save import load_from_disk
 from rdkit import Chem
 
 #Tell user which model we are running
-print('Predicting with Weave Model...')
+print('Predicting with DAG Model...')
 
 #Featurize molecules
-featurizer = dc.feat.WeaveFeaturizer()
-#TODO Add transformer
+featurizer = dc.feat.ConvMolFeaturizer()
 
 #Read molecule model from folder
 try:
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore",category=UserWarning)
-        model = WeaveModel.load_from_dir("/usr/src/models/weave_model")
+        model = DAGModel.load_from_dir("/usr/src/models/dag_model")
 except:
-    sys.exit('Unable to find graph convolution model at "/usr/src/models/weave_model"')
+    sys.exit('Unable to find dag model at "/usr/src/models/dag_model"')
 
 #Read dataset to predict
 try:
@@ -49,6 +48,8 @@ except:
 #Featurize data
 x = featurizer.featurize(mols)
 
+transformer = dc.trans.DAGTransformer(max_atoms=55)
+x = transformer.transform(x)
 #Predict molecules
 predicted_solubility = model.predict_on_batch(x)
 
@@ -57,7 +58,7 @@ mydf = pd.concat([newsmiles, pd.DataFrame(predicted_solubility)], axis = 1)
 mydf.columns = ["Smile","Predicted Solubility"]
 
 #Get file name
-fname = 'PredictedWeave ' + time.ctime() + '.csv'
+fname = 'PredictedDAG ' + time.ctime() + '.csv'
 
 #Write dataset
 try:

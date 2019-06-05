@@ -47,7 +47,7 @@ except:
 
 #Featurize data
 x = featurizer.featurize(mols)
-
+#TODO Add transformer
 #Predict molecules
 predicted_solubility = model.predict_on_batch(x)
 
