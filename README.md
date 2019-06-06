@@ -35,7 +35,7 @@ docker run -it -v /PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility-v1 
 where:
 
 * ``/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/`` is substituted by path to the csv file conaining the Smiles you want to predict (see [To_predict.csv on Github](https://github.com/RodrigoZepeda/docker-solubility-v1/blob/master/predict_files/To_predict.csv) for an example).
-* ``all`` can be substituted by one of the following models:
+* Included models can be specified as: 
   + ``GraphConv``
   + ``Weave``
   + ``MPNN``
