@@ -20,7 +20,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
 #Set files
-COPY Input_Files /usr/src/input_files
+#COPY Input_Files /usr/src/input_files
 COPY Models /usr/src/models
 COPY Scripts /usr/src/scripts
 
