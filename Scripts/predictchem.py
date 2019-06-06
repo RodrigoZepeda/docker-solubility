@@ -29,14 +29,14 @@ def load_model(modelname, model_file, modeltype = "tensorflow"):
                 warnings.filterwarnings("ignore",category=UserWarning)
                 model = modelname.load_from_dir(model_file)
             return model
-        elif modeltype == "sklearn":
+        elif modeltype == "sklearn" or modeltype == "xgboost":
             modelname.reload()
             return modelname
         else:
             sys.exit("Invalid model type")
     except:
         sys.exit('Unable to find' + modelname + ' at ' + model_file)
-        
+
 def load_data(dataset_file, smiles_column = "Smiles"):
     #Read dataset to predict
     try:

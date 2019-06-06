@@ -42,6 +42,7 @@ where:
   + ``DAG``
   + ``RandomForest``
   + ``KRR``
+  + ``XGBoost``
 
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` and you want the Graph Convolution model you can:
 ```

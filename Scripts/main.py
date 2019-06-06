@@ -8,11 +8,16 @@ http://moreisdifferent.com/2017/9/21/DIY-Drug-Discovery-using-molecular-fingerpr
 import time
 import predictchem
 import deepchem
+import sys
+sys.stderr = None            # suppress stderr
+import xgboost
+sys.stderr = sys.__stderr__  # restore stderr
 from deepchem.models import GraphConvModel
 from deepchem.models import WeaveModel
 from deepchem.models import MPNNModel
 from deepchem.models.sklearn_models import RandomForestRegressor, SklearnModel
-import sys
+from deepchem.models.xgboost_models import XGBoostModel
+
 
 #Docker's working directories
 model_dir = "/usr/src/models/"
@@ -96,6 +101,20 @@ if len(models) == 0 or "KRR" in models:
         parentdir = data_dir,
         newdir = newdir,
         modeltype = "sklearn")
+    flag_predicted = False;
+
+if len(models) == 0 or "XGBoost" in models:
+    print("-Evaluating XGBoost Regression")
+    predictchem.predict_csv_from_model(
+        featurizer = deepchem.feat.CircularFingerprint(size=1024),
+        transformers = 2,
+        modelname = XGBoostModel(model_dir = model_dir + "xgb_model"),
+        model_file = "", #No need for model_file
+        dataset_file = data_dir + 'To_predict.csv',
+        fname = 'PredictedXGBoost.csv',
+        parentdir = data_dir,
+        newdir = newdir,
+        modeltype = "xgboost")
     flag_predicted = False;
 
 if flag_predicted:
