@@ -84,6 +84,20 @@ if len(models) == 0 or "RandomForest" in models:
         modeltype = "sklearn")
     flag_predicted = False;
 
+if len(models) == 0 or "KRR" in models:
+    print("-Evaluating Kernel Ridge Regression")
+    predictchem.predict_csv_from_model(
+        featurizer = deepchem.feat.CircularFingerprint(size=1024),
+        transformers = 2,
+        modelname = SklearnModel(model_dir = model_dir + "krr_model"),
+        model_file = "", #No need for model_file
+        dataset_file = data_dir + 'To_predict.csv',
+        fname = 'PredictedKRR.csv',
+        parentdir = data_dir,
+        newdir = newdir,
+        modeltype = "sklearn")
+    flag_predicted = False;
+
 if flag_predicted:
     sys.exit('ERROR: No adecquate options for models passed to main.py \n' +
     'Please leave empty to run all models:\n' +
