@@ -18,20 +18,25 @@ sys.stderr = None            # suppress deprecation warning
 import deepchem as dc
 sys.stderr = sys.__stderr__  # restore stderr
 
-from deepchem.models import GraphConvModel
 from deepchem.utils.save import load_from_disk
 from rdkit import Chem
 
-def load_model(modelname, model_file):
+def load_model(modelname, model_file, modeltype = "tensorflow"):
     #Read model file
     try:
-        with warnings.catch_warnings():
-            warnings.filterwarnings("ignore",category=UserWarning)
-            model = modelname.load_from_dir(model_file)
+        if modeltype == "tensorflow":
+            with warnings.catch_warnings():
+                warnings.filterwarnings("ignore",category=UserWarning)
+                model = modelname.load_from_dir(model_file)
+            return model
+        elif modeltype == "sklearn":
+            modelname.reload()
+            return modelname
+        else:
+            sys.exit("Invalid model type")
     except:
         sys.exit('Unable to find' + modelname + ' at ' + model_file)
-    return model
-
+        
 def load_data(dataset_file, smiles_column = "Smiles"):
     #Read dataset to predict
     try:
@@ -73,7 +78,8 @@ def write_to_csv(fname, parentdir, mydf, newdir):
     #Write dataset
     try:
         mydf.to_csv(dirpath + "/" + fname, index=False)
-        print('Model saved as "' + fname + '" on "' + dirpath +  '" directory')
+        print('     Model saved as "' + fname + '" on\n         "' +
+            dirpath +  '" directory')
     except:
         sys.exit('Unable to save "' + fname + '" on "'+ dirpath +  '" directory')
 
@@ -81,10 +87,10 @@ def write_to_csv(fname, parentdir, mydf, newdir):
 
 def predict_csv_from_model(featurizer, transformers, modelname, model_file,
     dataset_file, fname, smiles_column = 'Smiles', parentdir = '/data/',
-    newdir = "predictions"):
+    newdir = "predictions", modeltype = "tensorflow"):
 
     #Load model
-    model = load_model(modelname, model_file)
+    model = load_model(modelname, model_file, modeltype)
 
     #Load data
     newsmiles, mols = load_data(dataset_file, smiles_column)
