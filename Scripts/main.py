@@ -144,8 +144,11 @@ if flag_predicted:
     "\n > Weave" +
     "\n > DAG" +
     "\n > MPNN" +
-    "\n > RandomForest"
-    "\nand run as:\n"
+    "\n > RandomForest" +
+    "\n > XGBoost" +
+    "\n > KRR" +
+    "\n > TextCNN"
+    "\nand run as:\n" +
     "'docker run --rm -v ~<PATHTODIRECTORY>:/data docker-solubility-v1 MODELNAME'")
 
 print('Process finished')
