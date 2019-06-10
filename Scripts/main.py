@@ -15,6 +15,7 @@ sys.stderr = sys.__stderr__  # restore stderr
 from deepchem.models import GraphConvModel
 from deepchem.models import WeaveModel
 from deepchem.models import MPNNModel
+from deepchem.models import TextCNNModel
 from deepchem.models.sklearn_models import RandomForestRegressor, SklearnModel
 from deepchem.models.xgboost_models import XGBoostModel
 
@@ -32,7 +33,7 @@ print('Running models')
 
 #Predict between different models
 if len(models) == 0 or "GraphConv" in models:
-    print("-Evaluating Graph Convolution Model")
+    print("-Evaluating Graph Convolution Model", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.ConvMolFeaturizer(),
         transformers = 2,
@@ -45,7 +46,7 @@ if len(models) == 0 or "GraphConv" in models:
     flag_predicted = False;
 
 if len(models) == 0 or "Weave" in models:
-    print("-Evaluating Weave Neural Network Model")
+    print("-Evaluating Weave Neural Network Model", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.WeaveFeaturizer(),
         transformers = 2,
@@ -57,13 +58,30 @@ if len(models) == 0 or "Weave" in models:
         newdir = newdir)
     flag_predicted = False;
 
+if len(models) == 0 or "TextCNN" in models:
+    print("-Evaluating Text Convolutional Neural Network Model", flush = True)
+    print("     Unable to predict TextCNN", flush = True)
+    """
+    predictchem.predict_csv_from_model(
+        featurizer = deepchem.feat.RawFeaturizer(),
+        transformers = 2,
+        modelname = TextCNNModel,
+        model_file = model_dir + "textcnn_model",
+        dataset_file = data_dir + 'To_predict.csv',
+        fname = 'PredictedTextCNN.csv',
+        parentdir = data_dir,
+        newdir = newdir)
+    flag_predicted = False;
+    """
+
 if len(models) == 0 or "DAG" in models:
-    print("-Evaluating DAG Model")
+    print("-Evaluating DAG Model", flush = True)
+    print("     Unable to predict DAG", flush = True)
     #exec(open("DAGModel.py").read());
     #flag_predicted = False;
 
 if len(models) == 0 or "MPNN" in models:
-    print("-Evaluating Message Passing Neural Network Model")
+    print("-Evaluating Message Passing Neural Network Model", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.WeaveFeaturizer(),
         transformers = 2,
@@ -76,7 +94,7 @@ if len(models) == 0 or "MPNN" in models:
     flag_predicted = False;
 
 if len(models) == 0 or "RandomForest" in models:
-    print("-Evaluating Random Forest Model")
+    print("-Evaluating Random Forest Model", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.CircularFingerprint(size=1024),
         transformers = 2,
@@ -90,7 +108,7 @@ if len(models) == 0 or "RandomForest" in models:
     flag_predicted = False;
 
 if len(models) == 0 or "KRR" in models:
-    print("-Evaluating Kernel Ridge Regression")
+    print("-Evaluating Kernel Ridge Regression", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.CircularFingerprint(size=1024),
         transformers = 2,
@@ -104,7 +122,7 @@ if len(models) == 0 or "KRR" in models:
     flag_predicted = False;
 
 if len(models) == 0 or "XGBoost" in models:
-    print("-Evaluating XGBoost Regression")
+    print("-Evaluating XGBoost Regression", flush = True)
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.CircularFingerprint(size=1024),
         transformers = 2,

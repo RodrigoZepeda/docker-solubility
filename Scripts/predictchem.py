@@ -79,7 +79,7 @@ def write_to_csv(fname, parentdir, mydf, newdir):
     try:
         mydf.to_csv(dirpath + "/" + fname, index=False)
         print('     Model saved as "' + fname + '" on\n         "' +
-            dirpath +  '" directory')
+            dirpath +  '" directory', flush = True)
     except:
         sys.exit('Unable to save "' + fname + '" on "'+ dirpath +  '" directory')
 
