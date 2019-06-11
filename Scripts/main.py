@@ -16,6 +16,7 @@ from deepchem.models import GraphConvModel
 from deepchem.models import WeaveModel
 from deepchem.models import MPNNModel
 from deepchem.models import TextCNNModel
+from deepchem.models import DAGModel
 from deepchem.models.sklearn_models import RandomForestRegressor, SklearnModel
 from deepchem.models.xgboost_models import XGBoostModel
 
@@ -76,9 +77,23 @@ if len(models) == 0 or "TextCNN" in models:
 
 if len(models) == 0 or "DAG" in models:
     print("-Evaluating DAG Model", flush = True)
-    print("     Unable to predict DAG", flush = True)
-    #exec(open("DAGModel.py").read());
-    #flag_predicted = False;
+
+    #Load maxatoms to utilize hack
+    import pickle
+    with open(model_dir + "dag_model/maxatoms.pickle", "rb") as f:
+        max_atoms = pickle.load(f)
+
+    predictchem.predict_csv_from_model(
+        featurizer = deepchem.feat.ConvMolFeaturizer(),
+        transformers =  deepchem.trans.DAGTransformer(max_atoms=max_atoms),
+        modelname = DAGModel, #TODO change the 55
+        model_file = model_dir + "dag_model",
+        dataset_file = data_dir + 'To_predict.csv',
+        fname = 'PredictedDAG.csv',
+        parentdir = data_dir,
+        newdir = newdir,
+        isdag = True)
+    flag_predicted = False;
 
 if len(models) == 0 or "MPNN" in models:
     print("-Evaluating Message Passing Neural Network Model", flush = True)

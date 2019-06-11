@@ -52,14 +52,20 @@ def load_data(dataset_file, smiles_column = "Smiles"):
 
     return newsmiles, mols
 
-def predict_from_mols(featurizer, transformers, mols, model, molnames):
+def predict_from_mols(featurizer, transformers, mols, model, molnames, isdag = False):
 
     #Featurize data
     ftdata = featurizer.featurize(mols)
 
     #Predict data
     #TODO add transfoemrs
-    predicted_solubility = model.predict_on_batch(ftdata)
+    if isdag:
+        #HACK for predicting the DAG model
+        ftdata = dc.data.datasets.NumpyDataset(ftdata)
+        ftdata = transformers.transform(ftdata)
+        predicted_solubility = model.predict(ftdata)
+    else:
+        predicted_solubility = model.predict_on_batch(ftdata)
 
     #Convert to dataframe
     mydf = pd.concat([molnames, pd.DataFrame(predicted_solubility)], axis = 1)
@@ -87,7 +93,7 @@ def write_to_csv(fname, parentdir, mydf, newdir):
 
 def predict_csv_from_model(featurizer, transformers, modelname, model_file,
     dataset_file, fname, smiles_column = 'Smiles', parentdir = '/data/',
-    newdir = "predictions", modeltype = "tensorflow"):
+    newdir = "predictions", modeltype = "tensorflow", isdag = False):
 
     #Load model
     model = load_model(modelname, model_file, modeltype)
@@ -96,7 +102,7 @@ def predict_csv_from_model(featurizer, transformers, modelname, model_file,
     newsmiles, mols = load_data(dataset_file, smiles_column)
 
     #Predict dataset
-    predict_df = predict_from_mols(featurizer, transformers, mols, model, newsmiles)
+    predict_df = predict_from_mols(featurizer, transformers, mols, model, newsmiles, isdag)
 
     #Write to csv
     write_to_csv(fname, parentdir, predict_df, newdir)

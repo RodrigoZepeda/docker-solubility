@@ -18,7 +18,7 @@ where:
   + ``GraphConv``
   + ``Weave``
   + ``MPNN``
-  + ``DAG`` **(NOT WORKING)**
+  + ``DAG`` 
   + ``RandomForest``
   + ``KRR``
   + ``XGBoost``
