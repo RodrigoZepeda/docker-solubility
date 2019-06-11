@@ -11,7 +11,7 @@ import pandas as pd
 import sys
 import warnings
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' #Hide tensorflow warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' #Hide tensorflow warnings
 
 #Importing deepchem throws a numpy warning
 sys.stderr = None            # suppress deprecation warning
@@ -26,7 +26,7 @@ def load_model(modelname, model_file, modeltype = "tensorflow"):
     try:
         if modeltype == "tensorflow":
             with warnings.catch_warnings():
-                warnings.filterwarnings("ignore",category=UserWarning)
+                warnings.filterwarnings("ignore",category=Warning)
                 model = modelname.load_from_dir(model_file)
             return model
         elif modeltype == "sklearn" or modeltype == "xgboost":
@@ -52,18 +52,45 @@ def load_data(dataset_file, smiles_column = "Smiles"):
 
     return newsmiles, mols
 
-def predict_from_mols(featurizer, transformers, mols, model, molnames, isdag = False):
+def predict_from_mols(featurizer, transformers, mols, model, molnames, dirpath, isdag = False, istextcnn = False):
 
     #Featurize data
     ftdata = featurizer.featurize(mols)
 
     #Predict data
-    #TODO add transfoemrs
+    #FIXME fiz hacks
     if isdag:
         #HACK for predicting the DAG model
         ftdata = dc.data.datasets.NumpyDataset(ftdata)
         ftdata = transformers.transform(ftdata)
         predicted_solubility = model.predict(ftdata)
+
+    elif istextcnn:
+
+        #HACK for predicting the  textcnn model
+        import numpy as np
+
+        newsmiles = [Chem.MolToSmiles(s) for s in mols]
+        mydata = pd.DataFrame({'smiles': newsmiles, 'tasks': np.ones((1,len(newsmiles))).flatten()  })
+        mydata.to_csv(dirpath + "temp.csv",index=False)
+        loader = dc.data.CSVLoader(
+              tasks=["tasks"],
+              smiles_field="smiles",
+              featurizer=featurizer)
+        dataset = loader.featurize(dirpath + "temp.csv")
+
+        # Initialize transformers
+        transformers = [
+              dc.trans.NormalizationTransformer(
+                  transform_y=True, dataset=dataset)
+        ]
+
+        for transformer in transformers:
+           dataset = transformer.transform(dataset)
+
+        predicted_solubility = model.predict(dataset)
+        #os.remove("temp.csv")
+
     else:
         predicted_solubility = model.predict_on_batch(ftdata)
 
@@ -93,7 +120,7 @@ def write_to_csv(fname, parentdir, mydf, newdir):
 
 def predict_csv_from_model(featurizer, transformers, modelname, model_file,
     dataset_file, fname, smiles_column = 'Smiles', parentdir = '/data/',
-    newdir = "predictions", modeltype = "tensorflow", isdag = False):
+    newdir = "predictions", modeltype = "tensorflow", isdag = False, istextcnn = False):
 
     #Load model
     model = load_model(modelname, model_file, modeltype)
@@ -102,7 +129,7 @@ def predict_csv_from_model(featurizer, transformers, modelname, model_file,
     newsmiles, mols = load_data(dataset_file, smiles_column)
 
     #Predict dataset
-    predict_df = predict_from_mols(featurizer, transformers, mols, model, newsmiles, isdag)
+    predict_df = predict_from_mols(featurizer, transformers, mols, model, newsmiles, dataset_file, isdag, istextcnn)
 
     #Write to csv
     write_to_csv(fname, parentdir, predict_df, newdir)

@@ -61,8 +61,7 @@ if len(models) == 0 or "Weave" in models:
 
 if len(models) == 0 or "TextCNN" in models:
     print("-Evaluating Text Convolutional Neural Network Model", flush = True)
-    print("     Unable to predict TextCNN", flush = True)
-    """
+
     predictchem.predict_csv_from_model(
         featurizer = deepchem.feat.RawFeaturizer(),
         transformers = 2,
@@ -71,9 +70,10 @@ if len(models) == 0 or "TextCNN" in models:
         dataset_file = data_dir + 'To_predict.csv',
         fname = 'PredictedTextCNN.csv',
         parentdir = data_dir,
-        newdir = newdir)
+        newdir = newdir,
+        istextcnn = True)
     flag_predicted = False;
-    """
+
 
 if len(models) == 0 or "DAG" in models:
     print("-Evaluating DAG Model", flush = True)

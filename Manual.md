@@ -18,11 +18,11 @@ where:
   + ``GraphConv``
   + ``Weave``
   + ``MPNN``
-  + ``DAG`` 
+  + ``DAG``
   + ``RandomForest``
   + ``KRR``
   + ``XGBoost``
-  + ``TextCNN`` **(NOT WORKING)**
+  + ``TextCNN`` **WORKS BUT THROWS ERROR**
 
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` and you want the Graph Convolution model you can:
 
