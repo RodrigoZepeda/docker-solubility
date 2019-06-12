@@ -21,8 +21,8 @@ ENV LANGUAGE en_US:en
 
 #Set files
 #COPY Input_Files /usr/src/input_files
-COPY Models /usr/src/models
-COPY Scripts /usr/src/scripts
+COPY models /usr/src/models
+COPY scripts /usr/src/scripts
 
 WORKDIR /usr/src/scripts
 

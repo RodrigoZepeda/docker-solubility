@@ -1,7 +1,5 @@
 #Ignore specific folders
 predict_files/
-Input_Files/
-Other/
 
 #Save model to predict
 !predict_files/To_predict.csv
