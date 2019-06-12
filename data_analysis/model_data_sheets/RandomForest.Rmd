@@ -4,8 +4,16 @@ output: github_document
 ---
 
 ```{r setup, include=FALSE, message=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/random_forest/")
+knitr::opts_chunk$set(echo = FALSE)
+
+library("stringr")
+model_name <- "Random Forest"
+dir_name   <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/"
+short_name <- gsub(" ","",model_name)
+model_dir  <- gsub(" ", "_", tolower(model_name))
+model_path <- paste0(dir_name,model_dir)
+  
+knitr::opts_knit$set(root.dir = model_path)
 
 library("ggplot2")
 library("reshape2")
@@ -29,18 +37,18 @@ Hola bola here should be the parameters
 
 ## Model metrics
 ```{r, echo = FALSE}
-rforest <- read.csv("RandomForestAnalysis.csv")
+rforest <- read.csv(paste0(short_name,"Analysis.csv"))
 rforest <- melt(rforest, id.vars=c("metric", "nestimators"))
 maeplot <- ggplot(subset(rforest, metric == "mse")) +
             geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
             theme_bw() + ylim(c(0,1)) +
-            ggtitle("Mean Absolute Error (MAE)\nfor fitted random forest model") + 
+            ggtitle("Mean Absolute Error (MAE)\nfor fitted model") + 
             xlab("log2 number of estimators") + 
             ylab("MAE")
 r2plot <- ggplot(subset(rforest, metric == "r2")) +
             geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
             theme_bw() + ylim(c(0,1)) +
-            ggtitle("R²\nfor fitted model random forest model") + 
+            ggtitle("R²\nfor fitted model") + 
             xlab("log2 number of estimators") +
             ylab("R²")
 
@@ -52,13 +60,24 @@ grid.arrange(arrangeGrob(
              mylegend, nrow=2, heights=c(6, 2))
 ```
 
+```{r, echo = FALSE}
+mycsv <- paste0("predict_validation_32",".csv")
+myfile <- read.csv("predict_train_32.csv")
+ggplot(myfile) + 
+  geom_density(aes(x=exp(prediction), y = ..density..)) + 
+  theme_bw()  
+```
+
 ## Example
 You can run the model via the following command:
 
+```{r results='markup', echo = FALSE, comment=NA}
+dcommand <- paste0("docker run --rm -v ~/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility ", short_name)
+cat(noquote(dcommand))
 ```
-docker run --rm -v ~/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility RandomForest
-```
+
 
 ## See also
 - [User's manual](https://github.com/RodrigoZepeda/docker-solubility/blob/master/Manual.md)
+- [README](https://github.com/RodrigoZepeda/docker-solubility/blob/master/README.md)
 
