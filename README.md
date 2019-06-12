@@ -1,12 +1,12 @@
-# docker-solubility-v1
-Docker for reproducing our solubility model.
+# docker-solubility
+Docker for reproducing machine learning solubility models.
 
 ## Install Docker
 To run model please [install docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
 ### Install from Docker
 ```
-docker run --rm -v /PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data rodrigozepeda/docker-solubility-v1
+docker run --rm -v /PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data rodrigozepeda/docker-solubility
 ```
 where:
 
@@ -23,7 +23,7 @@ where:
 
 As an example, assuming the files to predict are included in ``~/Dropbox/predict_files`` and you want the Graph Convolution model you can:
 ```
-sudo docker run --rm -v ~/Dropbox/predict_files:/data docker-solubility-v1 GraphConv
+sudo docker run --rm -v ~/Dropbox/predict_files:/data docker-solubility GraphConv
 ```
 
 See [manual for further instructions](https://github.com/RodrigoZepeda/docker-solubility-v1/blob/master/Manual.md)  

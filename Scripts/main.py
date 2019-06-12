@@ -4,7 +4,6 @@ Selects which model files to run
 https://github.com/deepchem/deepchem/blob/master/deepchem/models/multitask.py
 http://moreisdifferent.com/2017/9/21/DIY-Drug-Discovery-using-molecular-fingerprints-and-machine-learning-for-solubility-prediction/
 '''
-#TODO transform and undo transforms
 import time
 import predictchem
 import deepchem
