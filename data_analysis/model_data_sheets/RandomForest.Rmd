@@ -1,0 +1,64 @@
+---
+title: "Random Forest"
+output: github_document
+---
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/random_forest/")
+
+library("ggplot2")
+library("reshape2")
+library("grid")
+library("gridExtra")
+
+#extract legend
+#https://github.com/hadley/ggplot2/wiki/Share-a-legend-between-two-ggplot2-graphs
+g_legend<-function(a.gplot){
+  tmp <- ggplot_gtable(ggplot_build(a.gplot))
+  leg <- which(sapply(tmp$grobs, function(x) x$name) == "guide-box")
+  legend <- tmp$grobs[[leg]]
+  return(legend)}
+```
+
+## Model Description
+Here goes the model explanation
+
+### Model parameters and code
+Hola bola here should be the parameters
+
+## Model metrics
+```{r, echo = FALSE}
+rforest <- read.csv("RandomForestAnalysis.csv")
+rforest <- melt(rforest, id.vars=c("metric", "nestimators"))
+maeplot <- ggplot(subset(rforest, metric == "mse")) +
+            geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
+            theme_bw() + ylim(c(0,1)) +
+            ggtitle("Mean Absolute Error (MAE)\nfor fitted random forest model") + 
+            xlab("log2 number of estimators") + 
+            ylab("MAE")
+r2plot <- ggplot(subset(rforest, metric == "r2")) +
+            geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
+            theme_bw() + ylim(c(0,1)) +
+            ggtitle("R²\nfor fitted model random forest model") + 
+            xlab("log2 number of estimators") +
+            ylab("R²")
+
+mylegend<-g_legend(maeplot)
+
+grid.arrange(arrangeGrob(
+                    maeplot + theme(legend.position="none"),
+                    r2plot + theme(legend.position="none"), nrow=1),
+             mylegend, nrow=2, heights=c(6, 2))
+```
+
+## Example
+You can run the model via the following command:
+
+```
+docker run --rm -v ~/PATH/TO_FILE/YOU_WANT_TO_WORK_ON/:/data docker-solubility RandomForest
+```
+
+## See also
+- [User's manual](https://github.com/RodrigoZepeda/docker-solubility/blob/master/Manual.md)
+
