@@ -1,5 +1,6 @@
 #Ignore specific folders
 predict_files/
+data_analysis/built_models/notifyending.py #Has my telegram account
 
 #Save model to predict
 !predict_files/To_predict.csv

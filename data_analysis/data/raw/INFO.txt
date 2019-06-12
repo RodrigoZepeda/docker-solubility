@@ -1,0 +1,37 @@
+
+------------------------------------
+DATOS DE DELANEY
+------------------------------------
+-delaney-processed.csv downloaded from
+https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/molnet_publish/ESOL.zip
+el miércoles 17 de abril de 2019
+
+Instrucciones de Linux para descarga
+....................................
+wget https://s3-us-west-1.amazonaws.com/deepchem.io/datasets/molnet_publish/ESOL.zip
+unzip ESOL.zip
+
+------------------------------------
+DATOS DE MARIANO
+------------------------------------
+-Datos_Mariano_1.xls enviada por correo por Mariano lun., 8 abr. 18:46
+
+-----------------------------------
+DATOS DE KARL
+-----------------------------------
+-huuskonen_karl.xlsx enviada por correo por Karl mier. 24 de abril de 2019, 11:36
+
+-----------------------------------
+DATOS DE ST ANDREWS
+-----------------------------------
+
+- dls_100.xlsx downloaded from https://risweb.st-andrews.ac.uk/portal/en/datasets/dls100-solubility-dataset(3a3a5abc-8458-4924-8e6c-b804347605e8).html
+June 12 2019
+
+-----------------------------------
+DATOS DE HUUSKONEN
+-----------------------------------
+
+Supposedly dataset improving Karl's
+-Huuskonen/ downloaded from http://cheminformatics.org/datasets/huuskonen/index.html
+June 12 2019
