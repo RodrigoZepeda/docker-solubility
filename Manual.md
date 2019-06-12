@@ -19,7 +19,7 @@ where:
   + ``Weave``
   + ``MPNN``
   + ``DAG``
-  + ``RandomForest``
+  + ``RandomForest`` [Random forest model](https://github.com/RodrigoZepeda/docker-solubility/blob/master/data_analysis/model_data_sheets/RandomForest.md).
   + ``KRR``
   + ``XGBoost``
   + ``TextCNN`` **WORKS BUT THROWS ERROR**
