@@ -5,7 +5,7 @@ output: github_document
 
 ```{r setup, include=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
+library("knitr")
 library("stringr")
 model_name <- "Random Forest"
 dir_name   <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/"
@@ -32,20 +32,20 @@ g_legend<-function(a.gplot){
 ## Model Description
 Here goes the model explanation
 
-### Model parameters and code
-Hola bola here should be the parameters
-
 ## Model metrics
+
+Several models were fitted to asses convergence. R² was used as the model's metric. 
+
 ```{r, echo = FALSE}
-rforest <- read.csv(paste0(short_name,"Analysis.csv"))
-rforest <- melt(rforest, id.vars=c("metric", "nestimators"))
-maeplot <- ggplot(subset(rforest, metric == "mse")) +
+mymodel <- read.csv(paste0(short_name,"Analysis.csv"))
+mymodel <- melt(mymodel, id.vars=c("metric", "nestimators"))
+maeplot <- ggplot(subset(mymodel, metric == "mse")) +
             geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
             theme_bw() + ylim(c(0,1)) +
             ggtitle("Mean Absolute Error (MAE)\nfor fitted model") + 
             xlab("log2 number of estimators") + 
             ylab("MAE")
-r2plot <- ggplot(subset(rforest, metric == "r2")) +
+r2plot <- ggplot(subset(mymodel, metric == "r2")) +
             geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
             theme_bw() + ylim(c(0,1)) +
             ggtitle("R²\nfor fitted model") + 
@@ -60,12 +60,30 @@ grid.arrange(arrangeGrob(
              mylegend, nrow=2, heights=c(6, 2))
 ```
 
+The following table compares the errors in both the training and the validation sets for the model with 2^`r round(log(max(mymodel$nestimators),2))` estimators.
+
 ```{r, echo = FALSE}
-mycsv <- paste0("predict_validation_32",".csv")
-myfile <- read.csv("predict_train_32.csv")
-ggplot(myfile) + 
-  geom_density(aes(x=exp(prediction), y = ..density..)) + 
-  theme_bw()  
+#Get prediction data
+vval_pred_file  <- paste0("predict_validation_",round(max(mymodel$nestimators)),".csv")
+tval_pred_file  <- paste0("predict_train_",round(max(mymodel$nestimators)),".csv")
+vval_pred  <- read.csv(vval_pred_file)
+tval_pred  <- read.csv(tval_pred_file)
+
+#Get original data
+vval_original <- read.csv("valid_original.csv")
+tval_original <- read.csv("train_original.csv")
+
+#Errors
+validation_errors <- vval_original$prediction - vval_pred$prediction
+train_errors      <- tval_original$prediction - tval_pred$prediction
+summary_valid <- summary(validation_errors)
+summary_train <- summary(train_errors)
+summary_valid_abs <- summary(abs(validation_errors))
+summary_train_abs <- summary(abs(train_errors))
+summary_df    <- as.data.frame(cbind(summary_train, summary_train_abs, summary_valid, summary_valid_abs))
+colnames(summary_df) <- c("Train errors", "Absolute Train errors", "Validation errors", "Absolute Validation errors")
+
+kable(summary_df)
 ```
 
 ## Example

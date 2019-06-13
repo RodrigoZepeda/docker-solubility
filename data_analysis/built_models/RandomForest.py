@@ -97,6 +97,10 @@ train_results = []
 test_results  = []
 metrics = []
 
+ #Append trains cores and results
+pd.DataFrame(train_dataset.y, columns=['prediction']).to_csv(modeldir + "train_original.csv")
+pd.DataFrame(valid_dataset.y, columns=['prediction']).to_csv(modeldir + "valid_original.csv")
+
 for estimator in n_estimators:
 
         print('n_estimators = {0}'.format(estimator))
