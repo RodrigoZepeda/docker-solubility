@@ -7,20 +7,19 @@ FROM rodrigozepeda/docker-deepchem:v1.01
 
 # Labels.
 #https://medium.com/@chamilad/lets-make-your-docker-image-better-than-90-of-existing-ones-8b1e5de950d
-LABEL org.label-schema.schema-version="1.0"
-#LABEL org.label-schema.build-date=$BUILD_DATE
-LABEL org.label-schema.name="rodrigozepeda/docker-solubility"
-LABEL org.label-schema.description="Machine Learning models for predicting molecular solubility."
-LABEL org.label-schema.url="https://github.com/RodrigoZepeda/docker-solubility"
-LABEL org.label-schema.version="0.1"
-LABEL org.label-schema.docker.cmd="docker run -it -v <PATH TO FILE YOU WANT TO WORK ON>:/data docker-solubility"
+LABEL org.label-schema.schema-version="1.0" \
+      org.label-schema.name="rodrigozepeda/docker-solubility"  \
+      org.label-schema.description="Machine Learning models for predicting molecular solubility." \
+      org.label-schema.url="https://github.com/RodrigoZepeda/docker-solubility" \
+      org.label-schema.version="0.1" \
+      org.label-schema.docker.cmd="docker run -it -v <PATH TO FILE YOU WANT TO WORK ON>:/data docker-solubility"
 
 # Set environment variables
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
+ENV LANG en_US.UTF-8 \
+    LANGUAGE en_US:en
 
 #Set files
-#COPY Input_Files /usr/src/input_files
+#https://stackoverflow.com/questions/30256386/how-to-copy-multiple-files-in-one-layer-using-a-dockerfile
 COPY models /usr/src/models
 COPY scripts /usr/src/scripts
 
