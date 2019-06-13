@@ -43,3 +43,9 @@ DATOS DE Hou
 
 -data_set.dat & data_set.sdf (same file) downloaded from http://modem.ucsd.edu/adme/databases/databases_logS.html
 June 12 2019
+
+-----------------------------------
+DATOS DE Wang
+-----------------------------------
+
+-wang/ downloadrd from https://pubs.acs.org/doi/10.1021/ci800406y#si1

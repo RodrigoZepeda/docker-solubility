@@ -28,10 +28,7 @@ import numpy as np
 np.random.seed(1342341)
 
 import sys
-sys.stderr = None            # suppress stderr
 import deepchem as dc
-sys.stderr = sys.__stderr__  # restore stderr
-
 from deepchem.models.sklearn_models import RandomForestRegressor, SklearnModel
 from deepchem.utils.save import load_from_disk
 
@@ -44,8 +41,9 @@ cpus = multiprocessing.cpu_count()
 """
 DATASETS
 """
-dataset_file= "delaney-processed.csv"
+dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest/"
+nestimators = 20
 
 #Create directory if not exists
 if not os.path.exists(modeldir):
@@ -59,7 +57,7 @@ featurizer = dc.feat.fingerprints.CircularFingerprint(size=1024)
 
 #Read CSV with featurizer
 loader = dc.data.CSVLoader(
-      tasks=["measured log solubility in mols per litre"],
+      tasks=["logS"],
       smiles_field="smiles",
       featurizer=featurizer)
 
@@ -88,7 +86,7 @@ MODEL BUILDING
 metric = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.median)
 
 # Do setup for optimal parameter searching
-n_estimators       = 2**np.linspace(0,20,21, endpoint=True, dtype=int)
+n_estimators       = 2**np.linspace(0,nestimators, nestimators + 1, endpoint=True, dtype=int)
 max_features       = "auto" #Empirical
 
 #Empty for dataframe
