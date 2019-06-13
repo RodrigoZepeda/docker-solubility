@@ -3,7 +3,7 @@
 # To build from scratch: docker build --no-cache -t docker-solubility-v1 .
 
 #Download conda
-FROM rodrigozepeda/docker-deepchem:v1
+FROM rodrigozepeda/docker-deepchem:v1.01
 
 # Labels.
 #https://medium.com/@chamilad/lets-make-your-docker-image-better-than-90-of-existing-ones-8b1e5de950d

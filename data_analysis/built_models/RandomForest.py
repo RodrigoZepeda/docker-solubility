@@ -36,7 +36,7 @@ from deepchem.models.sklearn_models import RandomForestRegressor, SklearnModel
 from deepchem.utils.save import load_from_disk
 
 import pandas as pd
-
+import os
 #Count number of processors of server
 import multiprocessing
 cpus = multiprocessing.cpu_count()
@@ -50,7 +50,7 @@ modeldir = "random_forest/"
 #Create directory if not exists
 if not os.path.exists(modeldir):
     os.makedirs(modeldir)
-    
+
 #Read dataset
 dataset = load_from_disk(dataset_file)
 
@@ -88,7 +88,7 @@ MODEL BUILDING
 metric = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.median)
 
 # Do setup for optimal parameter searching
-n_estimators       = 2**np.linspace(0,5,6, endpoint=True, dtype=int)
+n_estimators       = 2**np.linspace(0,20,21, endpoint=True, dtype=int)
 max_features       = "auto" #Empirical
 
 #Empty for dataframe
@@ -119,7 +119,7 @@ for estimator in n_estimators:
         #Append trains cores and results
         predict_train = pd.DataFrame(model.predict(train_dataset), columns=['prediction']).to_csv(modeldir + "predict_train_" + str(estimator) + '.csv')
         predict_valid = pd.DataFrame(model.predict(valid_dataset), columns=['prediction']).to_csv(modeldir + "predict_validation_" + str(estimator) + '.csv')
-        
+
         #Append measures
         estimators = np.concatenate((estimators, [estimator, estimator]))
         metrics    = np.concatenate((metrics, ["r2","mse"]))
@@ -133,8 +133,10 @@ df = pd.DataFrame({'nestimators': estimators,
                    'metric': metrics})
 df.to_csv(modeldir + "RandomForestAnalysis.csv", index= False)
 
-try: 
+try:
     from notifyending import *
     notify_ending("Finished fitting random forest")
 except:
     print("Random forest")
+
+quit()
