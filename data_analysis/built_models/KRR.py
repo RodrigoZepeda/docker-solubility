@@ -22,7 +22,7 @@ from __future__ import division
 from __future__ import unicode_literals
 
 import os
-os.chdir("/home/rod/Dropbox/Quimica/Analysis/ANalisis/Borradores")
+os.chdir("/home/rod/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/")
 
 import numpy as np
 np.random.seed(1342341)
@@ -43,13 +43,15 @@ from rdkit.Chem.Draw import IPythonConsole
 from IPython.display import SVG
 from rdkit.Chem import rdDepictor
 from rdkit.Chem.Draw import rdMolDraw2D
-
+import pandas as pd
 """
 DATASETS
 """
 
 #Read dataset
-dataset_file= "/home/rod/Dropbox/Quimica/Bases/Raw/delaney-processed.csv"
+dataset_file= "Complete_dataset_without_duplicates.csv"
+modeldir = "krr/"
+
 dataset = load_from_disk(dataset_file)
 
 #Establish featurizer
@@ -57,7 +59,7 @@ featurizer = dc.feat.fingerprints.CircularFingerprint(size=1024)
 
 #Read CSV with featurizer
 loader = dc.data.CSVLoader(
-      tasks=["measured log solubility in mols per litre"],
+      tasks=["logS"],
       smiles_field="smiles",
       featurizer=featurizer)
 
@@ -83,21 +85,23 @@ MODEL BUILDING
 """
 
 # Fit
-metric = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.mean)
+metric = dc.metrics.Metric(dc.metrics.pearson_r2_score, np.median)
 
 # Do setup required for tf/keras models
-nb_epoch = 10
-n_estimators = 500
-sklmodel = KernelRidge(kernel="rbf", alpha=1e-3, gamma=0.05)
-model = SklearnModel(sklmodel, "/home/rod/Dropbox/Quimica/Analysis/ANalisis/Borradores/KRR/")
+sklmodel = KernelRidge(kernel="rbf", alpha=1e-5, gamma=0.05)
+model = SklearnModel(sklmodel, modeldir)
 
 # Fit trained model
 print("Fitting model")
-model.fit(train_dataset, nb_epoch=nb_epoch)
+model.fit(train_dataset)
 model.save()
 print("Evaluating model")
-train_scores = model.evaluate(train_dataset, [metric])
-valid_scores = model.evaluate(valid_dataset, [metric])
+train_scores = model.evaluate(train_dataset, [metric,  dc.metrics.Metric(dc.metrics.mae_score)])
+ = model.evaluate(valid_dataset, [metric, dc.metrics.Metric(dc.metrics.mae_score)])
+
+#Error kernel
+predict_train = pd.DataFrame(model.predict(train_dataset), columns=['prediction']).to_csv(modeldir + "predict_train.csv")
+predict_valid = pd.DataFrame(model.predict(valid_dataset), columns=['prediction']).to_csv(modeldir + "predict_validation.csv")
 
 print("Train scores")
 print(train_scores)
@@ -105,27 +109,13 @@ print(train_scores)
 print("Validation scores")
 print(valid_scores)
 
-"""
-With featurizer = dc.feat.ConvMolFeaturizer()
-----------------------------------------
-Train scores
-{'mean-pearson_r2_score': 0.9637847589740351}
-Validation scores
-{'mean-pearson_r2_score': 0.8422518074477224}
-"""
+print("Dataframe for n_estimator selection")
+df = pd.DataFrame({'metrics': ["r2","mse"],
+                   'train_scores': train_scores,
+                   'result_scores': valid_scores})
+df.to_csv(modeldir + "KRRAnalysis.csv", index= False)
 
-"""
-PREDICTION
-"""
 
-"""
-#Check model predictions
-smiles = ['COC(C)(C)CCCC(C)CC=CC(C)=CC(=O)OC(C)C',
-          'CCOC(=O)CC',
-          'CSc1nc(NC(C)C)nc(NC(C)C)n1',
-          'CC(C#C)N(C)C(=O)Nc1ccc(Cl)cc1',
-          'Cc1cc2ccccc2cc1C']
-mols = [Chem.MolFromSmiles(s) for s in smiles]
-x = featurizer.featurize(mols)
-predicted_solubility = model.predict_on_batch(x)
-"""
+ #Append trains cores and results
+pd.DataFrame(train_dataset.y, columns=['prediction']).to_csv(modeldir + "train_original.csv")
+pd.DataFrame(valid_dataset.y, columns=['prediction']).to_csv(modeldir + "valid_original.csv")

@@ -1,5 +1,5 @@
 ---
-title: "Random Forest"
+title: "Kernel Ridge Regression"
 output: github_document
 ---
 
@@ -7,7 +7,7 @@ output: github_document
 knitr::opts_chunk$set(echo = FALSE)
 library("knitr")
 library("stringr")
-model_name <- "Random Forest"
+model_name <- "KRR"
 dir_name   <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/"
 short_name <- gsub(" ","",model_name)
 model_dir  <- gsub(" ", "_", tolower(model_name))
@@ -36,46 +36,21 @@ Here goes the model explanation
 
 Several models were fitted to asses convergence. R² was used as the model's metric. 
 
-```{r, echo = FALSE}
-mymodel1 <- read.csv(paste0(short_name,"Analysis.csv"))
-mymodel <- melt(mymodel1, id.vars=c("metric", "nestimators"))
-maeplot <- ggplot(subset(mymodel, metric == "mse")) +
-            geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
-            theme_bw() + ylim(c(0,1)) +
-            ggtitle("Mean Absolute Error (MAE)\nfor fitted model") + 
-            xlab("log2 number of estimators") + 
-            ylab("MAE")
-r2plot <- ggplot(subset(mymodel, metric == "r2")) +
-            geom_line(aes(x = round(log(nestimators,2)), y = value, color = variable)) + 
-            theme_bw() + ylim(c(0,1)) +
-            ggtitle("R²\nfor fitted model") + 
-            xlab("log2 number of estimators") +
-            ylab("R²")
-
-mylegend<-g_legend(maeplot)
-
-grid.arrange(arrangeGrob(
-                    maeplot + theme(legend.position="none"),
-                    r2plot + theme(legend.position="none"), nrow=1),
-             mylegend, nrow=2, heights=c(6, 2))
+```{r}
+analysis  <- read.csv(paste0(model_path,"/",model_name,"Analysis.csv"))
+kable(analysis)
 ```
 
-```{r, echo = FALSE}
-kable(tail(mymodel1), row.names = FALSE)
-```
-
-The following table compares the errors in both the training and the validation sets for the model with 2^`r round(log(max(mymodel$nestimators),2))` estimators.
+The following kernel_density compares the errors in both the training and the validation sets:
 
 ```{r, echo = FALSE}
-#Get prediction data
-vval_pred_file  <- paste0("predict_validation_",round(max(mymodel$nestimators)),".csv")
-tval_pred_file  <- paste0("predict_train_",round(max(mymodel$nestimators)),".csv")
-vval_pred  <- read.csv(vval_pred_file)
-tval_pred  <- read.csv(tval_pred_file)
+
+vval_pred  <- read.csv(paste0(model_path,"/predict_train.csv"))
+tval_pred  <- read.csv(paste0(model_path,"/predict_validation.csv"))
 
 #Get original data
-vval_original <- read.csv("valid_original.csv")
-tval_original <- read.csv("train_original.csv")
+vval_original <- read.csv(paste0(model_path,"/valid_original.csv"))
+tval_original <- read.csv(paste0(model_path,"/train_original.csv"))
 
 #Errors
 validation_errors <- vval_original$prediction - vval_pred$prediction
@@ -89,7 +64,7 @@ colnames(summary_df) <- c("Train errors", "Absolute Train errors", "Validation e
 
 kable(summary_df)
 ```
-
+ 
 ```{r, echo = FALSE}
 validation_errors <- as.data.frame(validation_errors)
 train_errors      <- as.data.frame(train_errors)
@@ -100,7 +75,6 @@ train_errors$type <- "Train"
 ggplot(rbind(validation_errors, train_errors)) + geom_density(aes(x = errors, color = type)) +
   theme_bw() + ggtitle("Error:\nPredicted log solubility - Experimental log solubility")
 ```
-
 ## Example
 You can run the model via the following command:
 
