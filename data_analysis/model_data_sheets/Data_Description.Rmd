@@ -8,12 +8,14 @@ output: html_document
 ```{r setup, include=FALSE, message=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 set.seed(923)
-csvdir <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/Complete_dataset_without_duplicates_with_categories.csv"
+csvdir <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/"
 library("tidyverse")
 library("readr")
 library("broom")
 library("kableExtra")
 umbralLogS <- log(0.3, base = 10)
+train_percent <- 0.6
+test_percent  <- 0.2 
 ```
 
 ## Data Description
@@ -58,6 +60,59 @@ ggplot(mysol, aes(x = logS)) +
 #Generate soluble datasrt
 mysol[, "Category"] <- "no soluble"
 mysol[which(mysol$logS > umbralLogS), "Category"] <- "soluble"
-write.csv(mysol, csvdir)
+write.csv(mysol, paste0(csvdir,"Complete_dataset_without_duplicates_with_categories.csv"), row.names = FALSE)
 ```
 
+We generated `train`, `test` and `validate` datasets which have the following characteristics
+
+```{r}
+mysol    <- mysol %>% mutate(id = row_number())
+train    <- mysol %>% sample_frac(train_percent)
+test     <- anti_join(mysol, train, by = 'id')
+validate <- test %>% sample_frac(test_percent/(1 - train_percent))
+test     <- anti_join(test, validate, by = "id")
+
+mytrain <- summary(train$logS)
+mytest  <- summary(test$logS)
+myvalid <- summary(validate$logS)
+
+mysummaries <- as.data.frame(rbind(mytrain, mytest, myvalid),
+                             row.names = c("Train","Test","Validate"))
+
+mysummaries$`Percent Soluble` <- c(
+  length(which(train$logS > umbralLogS))/nrow(train)*100,
+  length(which(test$logS > umbralLogS))/nrow(test)*100,
+  length(which(validate$logS > umbralLogS))/nrow(validate)*100)
+
+mysummaries$`Number of Molecules` <- c(nrow(train), nrow(test), nrow(validate))
+
+kable(mysummaries, digits = 3)  %>%
+  kable_styling(position = "center")
+
+```
+
+With adjusted kernel densities for their log solubilities as follows:
+```{r}
+ggplot(mapping = aes(x = logS, y = ..density..)) + 
+  geom_density(data = train, aes(color = "Train"), size = 1) + 
+  geom_density(data = test, aes(color = "Test"), size = 1) + 
+  geom_density(data = validate, aes(color = "Validate"), size = 1) + 
+  theme_classic() +
+  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "#a4893d",
+             linetype = "dotted") +
+  xlab("Log Solubility (logS)") +
+  ylab("Density") + 
+  ggtitle("Log Solubility dataset description.") +
+  annotate("text", x = umbralLogS + 1.5, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") + 
+  scale_color_manual("Dataset", 
+                     values = c("Train" = "#628078", 
+                                "Test" = "#ff3a22",
+                                "Validate" = "deepskyblue3")) +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+write.csv(train, paste0(csvdir,"TRAIN_Complete_dataset_without_duplicates_with_categories.csv"), row.names = FALSE)
+write.csv(test, paste0(csvdir,"TEST_Complete_dataset_without_duplicates_with_categories.csv"), row.names = FALSE)
+write.csv(validate, paste0(csvdir,"VALIDATE_Complete_dataset_without_duplicates_with_categories.csv"), row.names = FALSE)
+```
