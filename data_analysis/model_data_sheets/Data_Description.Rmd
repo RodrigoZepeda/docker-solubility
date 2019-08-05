@@ -1,0 +1,63 @@
+---
+title: "Data Description"
+author: "Rodrigo Zepeda"
+date: "2019"
+output: html_document
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+set.seed(923)
+csvdir <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/Complete_dataset_without_duplicates_with_categories.csv"
+library("tidyverse")
+library("readr")
+library("broom")
+library("kableExtra")
+umbralLogS <- log(0.3, base = 10)
+```
+
+## Data Description
+
+Data is available as [`Complete_dataset_without_duplicates`](https://raw.githubusercontent.com/RodrigoZepeda/docker-solubility/master/data_analysis/data/edited/Complete_dataset_without_duplicates.csv) on Github. 
+
+```{r, message=FALSE}
+mysol <- read_csv("https://raw.githubusercontent.com/RodrigoZepeda/docker-solubility/master/data_analysis/data/edited/Complete_dataset_without_duplicates.csv")
+```
+
+In log solubility, the variables include:
+```{r}
+myvars <- length(which(mysol$logS > umbralLogS)) 
+mysum <- summary(mysol$logS)
+kable(tidy(mysum), digits = 3)  %>%
+  kable_styling(position = "center")
+```
+
+Of which `r myvars` out of `r nrow(mysol)` (representing `r round(myvars/nrow(mysol)*100,2)` %) are above the solubility threshold of $\log S >$ `r round(umbralLogS,2)`. For those variables their distribution is:
+
+```{r}
+mysum <- summary(mysol$logS[which(mysol$logS > umbralLogS)])
+kable(tidy(mysum), digits = 3)  %>%
+  kable_styling(position = "center")
+```
+
+The overall (adjusted) distribution is shown by the following kernel density:
+```{r}
+ggplot(mysol, aes(x = logS)) + 
+  geom_histogram(aes(y = ..density..), bins = 100, fill = "#628078") +
+  geom_density(color = "#ff3a22", size = 1) + 
+  theme_classic() +
+  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "#a4893d",
+             linetype = "dotted") +
+  xlab("Log Solubility (logS)") +
+  ylab("Density") + 
+  ggtitle("Log Solubility dataset description.") +
+  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") 
+```
+
+```{r}
+#Generate soluble datasrt
+mysol[, "Category"] <- "no soluble"
+mysol[which(mysol$logS > umbralLogS), "Category"] <- "soluble"
+write.csv(mysol, csvdir)
+```
+

@@ -43,7 +43,7 @@ DATASETS
 """
 dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest/"
-nestimators = 20
+nestimators = 10
 
 #Create directory if not exists
 if not os.path.exists(modeldir):

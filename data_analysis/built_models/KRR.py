@@ -108,11 +108,11 @@ print(train_scores)
 
 print("Validation scores")
 print(valid_scores)
-
+metrics =   np.concatenate(([], ["r2","mse"]))
 print("Dataframe for n_estimator selection")
-df = pd.DataFrame({'metrics': ["r2","mse"],
-                   'train_scores': train_scores,
-                   'result_scores': valid_scores})
+df = pd.DataFrame({'metrics': metrics,
+                   'train_scores': list(train_scores.values()),
+                   'result_scores': list(valid_scores.values())})
 df.to_csv(modeldir + "KRRAnalysis.csv", index= False)
 
 
