@@ -1,8 +1,6 @@
 ---
 title: "Data Description"
-author: "Rodrigo Zepeda"
-date: "2019"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE, message=FALSE, warning=FALSE}
@@ -30,16 +28,14 @@ In log solubility, the variables include:
 ```{r}
 myvars <- length(which(mysol$logS > umbralLogS)) 
 mysum <- summary(mysol$logS)
-kable(tidy(mysum), digits = 3)  %>%
-  kable_styling(position = "center")
+kable(tidy(mysum), digits = 3)  
 ```
 
 Of which `r myvars` out of `r nrow(mysol)` (representing `r round(myvars/nrow(mysol)*100,2)` %) are above the solubility threshold of $\log S >$ `r round(umbralLogS,2)`. For those variables their distribution is:
 
 ```{r}
 mysum <- summary(mysol$logS[which(mysol$logS > umbralLogS)])
-kable(tidy(mysum), digits = 3)  %>%
-  kable_styling(position = "center")
+kable(tidy(mysum), digits = 3)  
 ```
 
 The overall (adjusted) distribution is shown by the following kernel density:
@@ -86,8 +82,7 @@ mysummaries$`Percent Soluble` <- c(
 
 mysummaries$`Number of Molecules` <- c(nrow(train), nrow(test), nrow(validate))
 
-kable(mysummaries, digits = 3)  %>%
-  kable_styling(position = "center")
+kable(mysummaries, digits = 3)
 
 ```
 
@@ -103,7 +98,7 @@ ggplot(mapping = aes(x = logS, y = ..density..)) +
   xlab("Log Solubility (logS)") +
   ylab("Density") + 
   ggtitle("Log Solubility dataset description.") +
-  annotate("text", x = umbralLogS + 1.5, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") + 
+  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") + 
   scale_color_manual("Dataset", 
                      values = c("Train" = "#628078", 
                                 "Test" = "#ff3a22",
