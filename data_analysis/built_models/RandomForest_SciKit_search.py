@@ -29,9 +29,9 @@ cpus = multiprocessing.cpu_count()
 dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest_2/"
 nestimators = int(pow(2,10))
-fbits = 5 #Bits in fingerprint
+fbits = 5   #Bits in fingerprint
 radius = 10 #Fingerprint radius
-niter = 50 #Search iter
+niter = 50  #Search iter
 cvfold = 3 
 #Create directory if not exists
 if not os.path.exists(modeldir):

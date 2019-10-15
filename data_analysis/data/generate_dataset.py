@@ -86,8 +86,27 @@ try:
 except:
     print("standrews error :)")
     
+#Import Mariano's new datasets
+nitro = pandas.read_table("raw/NitroMariano.csv", sep=",")
+nitro.columns = ["logS","smiles"]
+
+#Verify we are able to read:
+try:
+    [Chem.MolFromSmiles(x) for x in  nitro["smiles"]]
+except:
+    print("standrews error :)")
+    
+phospho = pandas.read_table("raw/FosfoMariano.csv", sep=",")
+phospho.columns = ["logS","smiles"]
+
+#Verify we are able to read:
+try:
+    [Chem.MolFromSmiles(x) for x in  phospho["smiles"]]
+except:
+    print("standrews error :)")    
+    
 #Create dataset
-solubility_df = pandas.concat([wang, hu_solubility, delaney, standrews], axis=0)
+solubility_df = pandas.concat([wang, hu_solubility, delaney, standrews, nitro, phospho], axis=0)
 solubility_df = solubility_df.reset_index(drop=True)
 
 solubility_df.to_csv("edited/Complete_dataset_repeated.csv", index = False)
