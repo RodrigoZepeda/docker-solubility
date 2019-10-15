@@ -66,6 +66,6 @@ logS,smiles
 -1.1,C1=C(C=C(C(=C1[N+](=O)[O-])C(=O)O)[N+](=O)[O-])[N+](=O)[O-]
 -1.52,C1=CC(=C(C(=C1)Br)[N+](=O)[O-])C(=O)O
 -2.63,C1=CC(=C(C(=C1)Cl)[N+](=O)[O-])C(=O)O
-Err:502,C1=CC(=C(C=C1C(=O)O)[N+](=O)[O-])Cl
-Err:502,C1=CC(=C(C=C1Cl)C(=O)O)[N+](=O)[O-]
-Err:502,C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])C(=O)O
+-2.76955107862173,C1=CC(=C(C=C1C(=O)O)[N+](=O)[O-])Cl
+-1.3190302815341,C1=CC(=C(C=C1Cl)C(=O)O)[N+](=O)[O-]
+-1.06651271215129,C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])C(=O)O
