@@ -1,955 +1,983 @@
 "logS","smiles","Category","id"
--3.43,"CN(C)C(=O)Nc1cccc(C(F)(F)F)c1","no soluble",579
--4.93,"CC(C)OC(C(c1ccc(cc1)Br)(c1ccc(cc1)Br)O)=O","no soluble",3585
--4.272,"Cc1ccc2ccccc2c1[N+](=O)[O-]","no soluble",2123
-1.1,"CCO","soluble",1434
--0.82,"O=C(O)CCCCC(=O)O","no soluble",1505
--2.287,"Cc1nc2nc[nH]c(=O)c2nc1C","no soluble",1917
--1.5,"C1CCCNC1CCC","no soluble",3796
--0.48,"c1ccccc1C(CN)O","soluble",2995
--1.669,"O=C1CC(c2ccccc2)CC(=O)C1[N+](=O)[O-]","no soluble",2432
--2.682,"O=C(CCCN1CCC(O)(c2ccccc2)CC1)c1ccccc1","no soluble",2490
--3.98,"N#Cc1ccc2c(c1)N(CCCN1CCC(O)CC1)c1ccccc1S2","no soluble",1526
 -2.118,"C#CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12","no soluble",2461
--4.53,"c1ccc(Cl)cc1C(c2ccc(Cl)cc2)(O)C(=O)OC(C)C","no soluble",4445
-0.36,"C1=CC=C2C3CC(CNC3)CN2C1=O","soluble",2943
--7.82,"Clc1ccc(-c2cc(Cl)c(Cl)c(Cl)c2Cl)cc1Cl","no soluble",259
--3.38,"CCC(C)c1cc(cc(c1O)[N+]([O-])=O)[N+]([O-])=O","no soluble",3933
--3.76,"Clc1cccc(C(Cl)(Cl)Cl)n1","no soluble",470
--3.21,"c1c(Br)cc(cc1)Cl","no soluble",3395
--2.68,"CCCC=C","no soluble",3322
--3.964,"COc1cc2c(c3c1c(=O)c1cccnc1n3C)C=CC(C)(C)O2","no soluble",2719
--4.97,"c1c2[nH]c3c(cccc3)c2ccc1","no soluble",3588
--6.02,"Fc1cccc(F)c1C(=O)NC(=O)Nc2ccc(Cl)cc2","no soluble",4590
--0.28,"CCC(=O)CC","soluble",1187
--2.33,"Cc1ccccc1[N+](=O)[O-]","no soluble",854
--7.337,"CC1(C)C(C=C(Cl)Cl)C1C(=O)OC(C#N)c2ccc(F)c(Oc3ccccc3)c2","no soluble",4141
--1.21,"CC(=O)OCC(C)C","no soluble",1254
--4.86,"CCN(C(=S)SSC(N(CC)CC)=S)CC","no soluble",3579
-0.266,"CN(C)C(=O)c1ccc(C(=O)N(C)C)cc1","soluble",2253
--5.4559,"NC(N)=Nc1nc(CSCCC(N)=NS(N)(=O)=O)cs1","no soluble",1816
--4.155,"CC(O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C","no soluble",2376
-0.85,"CCOC(=O)N","soluble",4202
--4.31,"CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO","no soluble",4563
--1.658,"CCOc1ccc(N(C)C(N)=O)cc1","no soluble",2394
--7.2,"c1c(C(C(Cl)Cl)c2ccc(cc2)Cl)ccc(c1)Cl","no soluble",3666
--8.54,"Clc1cc(Cl)cc(-c2cc(Cl)cc(Cl)c2)c1","no soluble",1757
--1.92,"Nc1cccc2ccccc12","no soluble",952
--3.397,"O=[N+]([O-])OCCCCCCCO[N+](=O)[O-]","no soluble",2095
-0.58,"CCC=O","soluble",1294
--7.278,"ClC1=C(Cl)C(Cl)(C(=C1Cl)Cl)C2(Cl)C(=C(Cl)C(=C2Cl)Cl)Cl","no soluble",4306
--3.96,"c1cc(cc2CCC3C(CCC4(C)C3CCC4=O)c12)O","no soluble",3487
--4.63,"CC(=O)OCC(=O)C1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C","no soluble",1256
--6.08,"CCCCCC1CCCC1","no soluble",102
--2.07,"O=C(O)Cc1c2c([nH]c1)cccc2","no soluble",3215
--4.42,"O=C4\C=C2/[C@]([C@H]1CC[C@@]3([C@@H](C(=O)C)CC[C@H]3[C@@H]1CC2)C)(C)CC4","no soluble",4725
--0.63,"CN(C=1C(=O)N(c2ccccc2)N(C1C)C)C","no soluble",3006
--7.21,"Clc1cc(Cl)c(-c2cccc(Cl)c2Cl)cc1Cl","no soluble",352
--4.61,"O=c1nc(-c2ccccc2)oc2ccccc12","no soluble",901
--4.12,"C1CC2(C)C(CCC2=O)C2CC=C3CC(CCC3(C)C12)O","no soluble",3503
--2.159,"NC(=O)NCCCCCC(=O)O","no soluble",2024
--0.97,"Cn1c(=O)c2c(ncn2C)n(C)c1=O","no soluble",711
--11.62,"Clc1c(Cl)c(c(c(c1Cl)c1c(c(c(c(c1Cl)Cl)Cl)Cl)Cl)Cl)Cl","no soluble",3696
--4.2557,"CN=C(NC#N)NCCSCc1nc[nH]c1C","no soluble",1805
--2.52,"CN(C)C1C(O)=C(C(N)=O)C(=O)C2(O)C(O)=C3C(=O)c4c(O)ccc(Cl)c4C(O)C3CC12","no soluble",227
--5.041,"CC1N(c2c(F)cc3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)CC1(C)N","no soluble",2799
--1.94,"c2c(C)cc1nc(C)ccc1c2","no soluble",4090
--3.064,"O=[N+]([O-])c1cc2c(cc1CO)OCO2","no soluble",1890
--5.16,"[O-][S+2](N)([O-])c1cc(c(c(c1)[N+]([O-])=O)N(CCC)CCC)[N+]([O-])=O","no soluble",4018
--1.64,"CC12CCC(CC1)C(C)(C)O2","no soluble",1101
--1.557,"CC(C)NCc1cccc(S(=O)(=O)c2csc(S(N)(=O)=O)c2)c1","no soluble",2639
--4.22,"c1c(N)c2cc3c(cccc3)[nH0]c2cc1","no soluble",3521
--1.27,"CCC(C)(C(C)(C)C)O","no soluble",3084
--2.6,"CC1(C)C(=O)N(Cl)C(=O)N1Cl","no soluble",536
--4.6,"S=C=Nc1cccc2ccccc12","no soluble",1590
--6.005,"O=C(O)c1ccc(P(=O)(c2ccccc2)c2ccc(C(=O)O)cc2)cc1","no soluble",2329
--0.8,"O=C(C(=C)C)OC","no soluble",3027
--3.164,"O=C(O)c1ccc([N+](=O)[O-])c2cccnc12","no soluble",2101
--1.4,"O=C(Nc1ccccc1)C","no soluble",4677
--0.17,"Cn2c(=O)n(C)c1ncn(CC(O)CO)c1c2=O","soluble",4624
--7.26,"CCCCCCCCCCCCCCCCO","no soluble",1418
--1.42,"O=C(C)CC(C)C","no soluble",3788
--2.24,"O=C(C)Nc1ccccc1O","no soluble",3248
--3.38,"c1c(NC(=O)OC(C)C)cccc1Cl","no soluble",3934
--3.93,"c1c(Cl)c2ccccc2cc1","no soluble",3483
--1.28,"CC(=O)c1ccccc1","no soluble",1192
--1.37,"N=C(N)N[N+](=O)[O-]","no soluble",898
--1.5199,"O=C(O)c1cc(N=Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)ccc1O","no soluble",1839
--4.54,"Clc1ccccc1-c1ccccc1","no soluble",359
--2.24,"Cc1cc(NS(=O)(=O)c2ccc(N)cc2)nc(C)n1","no soluble",1630
--2.07,"O=C(O)Cc1c[nH]c2ccccc12","no soluble",731
--3.414,"CC(C)c1nnc(NS(=O)(=O)c2ccc(N)cc2)s1","no soluble",2309
--1.06,"CCCl","no soluble",498
--2.56,"CC1=C(C(=O)Nc2ccccc2)CCCO1","no soluble",1038
--0.451,"FC(F)(F)c1nc2ncncc2[nH]1","soluble",1916
--3.15,"O=C(Nc1ccccc1)Nc2ccccc2","no soluble",4243
--1.32,"BrC=CBr","no soluble",58
--3.755,"CN1CCN=C(c2ccccc2)c2cc(Cl)ccc21","no soluble",2524
--2.106,"CCCc1ccn(CCC(=O)O)c(=O)c1","no soluble",2542
--1.67,"O=C(OCC(C)(COC(N)=O)CCC)N","no soluble",3149
--5.06,"O=C(O)CCC(=O)c1ccc(-c2ccccc2)cc1","no soluble",1508
--6.22,"Clc1ccc(Oc2ccc(Cl)cc2Cl)cc1","no soluble",1781
--2.36,"[nH0]1c2C=NC(=S)Nc2[nH0]cc1","no soluble",3270
--1.99,"O=C1C(O)(C(NC(N1)=O)=O)C1(C(NC(NC1=O)=O)=O)O","no soluble",3848
--4.8,"CC12CC2(C)C(=O)N(C1=O)c3cc(Cl)cc(Cl)c3","no soluble",4433
-0.393,"O=C1OC(C(O)C(O)CO)C(O)C1O","soluble",2845
--1.99,"Oc2ccc1CCCCc1c2","no soluble",4153
-1.15,"N1CCCC1","soluble",2909
--0.44,"OC1CCCCC1","soluble",1382
--2.27,"O=C(NC(=O)c1ccccc1)c1ccccc1","no soluble",1074
--0.6,"O=C1CCCCC1","no soluble",1153
--4.57,"C1=C2CCC3C(CCC4(C)C3CCC4(C#C)O)C2CCC1=O","no soluble",3556
--0.62,"Cc1c(N)c(=O)n(-c2ccccc2)n1C","no soluble",832
--4.4,"CCCCOC(=O)c1ccccc1C(=O)OCCCC","no soluble",4222
--0.74,"NC(=O)CC(N)C(=O)O","no soluble",997
--8.6,"c1c(c2c(Cl)c(Cl)cc(c2Cl)Cl)c(Cl)c(cc1)Cl","no soluble",3690
--3.24,"CC12CCC(=O)C=C1CCC1C2C(O)CC2(C)C(C(=O)CO)CCC12","no soluble",1377
--4.04,"c1c(O[P+]([S-])(OC)OC)cc(c(c1)[N+]([O-])=O)C","no soluble",3973
--4.02,"CC12CCC(=O)C=C1CCC1C2CCC2(C)C(O)CCC12","no soluble",1366
--4.92,"Nc1ccc(-c2ccc(N)c(Cl)c2)cc1Cl","no soluble",328
--2.91,"Cc1noc(NS(=O)(=O)c2ccc(N)cc2)c1C","no soluble",1636
--6.34,"CCOP(=S)(OCC)SC(CCl)N2C(=O)c1ccccc1C2=O","no soluble",4339
--1.12,"ClCCOCCCl","no soluble",495
--5.27,"CC(=O)C3(C)CCC4C2C=C(C)C1=CC(=O)CCC1(C)C2CCC34C","no soluble",4483
-0.52,"CCC(=O)C","soluble",4149
--3.43,"CC34CC(O)C1(F)C(CCC2=CC(=O)CCC12C)C3CCC4(O)C(=O)CO","no soluble",4142
--2.57,"CCC1(CCC(C)C)C(=O)NC(=O)NC1=O","no soluble",793
--3.658,"CCOP(=S)(OCC)Oc1nc(Cl)n(n1)C(C)C","no soluble",4191
--5.04,"Brc1cccc(Br)c1Br","no soluble",7
--0.74,"c1c(O)ccc(c1)[N+]([O-])=O","no soluble",3019
--2.03,"CC(=C)C=C","no soluble",3832
--1.4,"CCN(CC)CCOC(=O)c1ccc(N)cc1","no soluble",923
--5.37,"C1=C2CCC3C(CCC4(C)C3CCC4OC(CC)=O)C2(C)CCC1=O","no soluble",3614
--2.83,"O=c1[nH]c2cc(Cl)ccc2o1","no soluble",381
--3.671,"NS(=O)(=O)c1cc2c(s1)C(=O)CCS2(=O)=O","no soluble",2678
--1.811,"Nc1ccc(S(=O)(=O)Nc2ccc(I)nc2)cc1","no soluble",2260
--4.24,"N#Cc1c(Cl)cccc1Cl","no soluble",280
--1.23,"NC(Cc1ccccc1)C(=O)O","no soluble",994
--5.41,"CC12CC3C(CC1CCC1C2CCC2(C)C1CCC2O)S3","no soluble",3618
--6.51,"Clc1c(c2c(Cl)cc(cc2)Cl)ccc(c1)Cl","no soluble",4040
--3.09,"CN(C)[C@@H]3C(\O)=C(\C(N)=O)C(=O)[C@@]4(O)C(/O)=C2/C(=O)c1c(cccc1O)[C@@](C)(O)[C@H]2[C@H](O)[C@@H]34","no soluble",4720
--0.53,"NC(Cc1c[nH]cn1)C(=O)O","no soluble",775
--2.33,"O=S(=O)(c1cccc(O)c1)c1cccc(O)c1","no soluble",2420
--3.09,"CC1=C2C3OC(=O)C(C)C3CCC2(C)C=CC1=O","no soluble",1104
--0.96,"O=Cc1ccc(O)cc1","no soluble",1358
--4.42,"C=C(C)C1Cc2c(ccc3c2OC2COc4cc(OC)c(OC)cc4C2C3=O)O1","no soluble",1103
--2.594,"O=C(O)CNC(Cc1ccc(O)cc1)C(=O)O","no soluble",2373
--1.91,"C1C2CCC(CC1OC(C(c1ccccc1)CO)=O)N2C","no soluble",3188
--1.523,"CC1(C)C(=O)C(=O)C2CCC1C2","no soluble",2359
--3.46,"CCCC(C)C1(CC=C)C(=O)NC(=S)NC1=O","no soluble",4117
--3.8,"CN1C(=O)CN=C(c2ccccc2)c2cc(ccc21)[N+]([O-])=O","no soluble",3477
--4.88,"CC(C)N(C(C)C)C(=O)SCC(Cl)=C(Cl)Cl","no soluble",4580
--2.39,"O=C1NC(=O)NC(=O)C1(CC)C(C)CCC","no soluble",4377
--2.349,"O=C2NC(=O)C1(CCCC1)C(=O)N2","no soluble",4603
-0.72,"C[N+](C)(C)CC(=O)O","soluble",693
--2.68,"O=C1N(C(C)C)[S+2](Nc2c1cccc2)([O-])[O-]","no soluble",3321
--0.74,"CC(C)CC(=O)C","no soluble",4211
--3.11,"CC12CCC(=O)C=C1CCC1C2C(=O)CC2(C)C1CCC2(O)C(=O)CO","no soluble",1314
-0.49,"C1C(C)NCC(C)N1","soluble",2937
--4.48,"c1c(Cl)cc(cc1Cl)Cl","no soluble",3999
--0.38,"Nc1ccc(N)cc1","soluble",976
--0.364,"CN(C)c2c(C)n(C)n(c1ccccc1)c2=O","soluble",4608
--8.6,"Clc1cccc(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl","no soluble",4094
--2.92,"N(Nc1ccccc1)c2ccccc2","no soluble",4662
--4.92,"Cc1ccc(C)c2c(C)cccc12","no soluble",174
--5.38,"CCOP(=S)(OCC)Oc1ccc2oc(=O)c(Cl)c(C)c2c1","no soluble",455
--1.06,"CC1=CC(=O)CC(C)(C)C1","no soluble",1150
--3.976,"COc1ccc2cc(C(C)C(=O)OC3COC4C(O)COC34)ccc2c1","no soluble",2783
--1.749,"COc1ccc2c3c1OC1C(OC(C)=O)CCC4C(C2)N(C)CCC341","no soluble",2520
-1.11,"CN(C)C(=O)C","soluble",4442
--1.854,"CCOc1ccc(N(CC)C(N)=O)cc1","no soluble",2407
--2.14,"Cc1cccc(C(=O)O)c1","no soluble",1483
--0.11,"OC(CCl)CCl","soluble",501
--0.89,"CCC(C)C(C)(C)O","no soluble",1404
--4.51,"ClC1C(Cl)C(C(C(C1Cl)Cl)Cl)Cl","no soluble",3552
--2.759,"CCCCNC(=O)COC(=O)c1ccccc1","no soluble",2745
--2.71,"N1C(=S)C=Nc2c[nH0]c[nH0]c21","no soluble",3892
--1.11,"COc1ncc2nccnc2n1","no soluble",660
--4.706,"CCN2c1ccccc1N(C)C(=S)c3cccnc23","no soluble",4408
--3.46,"c1c(C=CC=CC(=O)N2CCCCC2)cc2c(OCO2)c1","no soluble",3936
--6,"c1c2cccc3c4c(cccc4)c(c23)cc1","no soluble",3636
--2.87,"c1c(N2C(=O)C(=C(C=N2)N)Cl)cccc1","no soluble",3351
--1.939,"O=C(NO)c1ccc([N+](=O)[O-])cc1","no soluble",2156
--3.9,"CN(C)C(=S)SSC(=S)N(C)C","no soluble",4643
-0,"c1c(O)cccc1","soluble",2960
--2.48,"c1c(N(C(=O)CCl)C(C)C)cccc1","no soluble",3294
--3.07,"C=CC1CN2CCC1CC2C(O)c1ccnc2ccccc12","no soluble",706
--2.615,"COc1ccc2cc(C(C)C(=O)OCC(O)CO)ccc2c1","no soluble",2778
--2.71,"CCCCCCCCCCSC(=N)N","no soluble",2462
--3.74,"[O-][S+2]([O-])(Nc1[nH0][nH0]c(C(C)(C)C)s1)c1ccc(cc1)N","no soluble",3951
--1.85,"CCCCOCCCC","no soluble",1206
--0.54,"OCC(CC)C(CCC)O","no soluble",3000
--3.46,"Ic1[nH]c(I)c(I)c1I","no soluble",604
--2.32,"c1c(N)ccc(c1)[S+2]([O-])(Nc1cc[nH0][nH0]1c1ccccc1)[O-]","no soluble",3257
--3.537,"Clc1ccc(C(Cn2ccnc2)OCc2cc(Cl)ccc2Cl)c(Cl)c1","no soluble",2826
--1.89,"C1CCN2CC3CC(CN4CCCCC34)C2C1","no soluble",695
--2.92,"NC(=O)c1ccccc1C(N)=O","no soluble",1001
--2.351,"CCN(CC)CC(C)OC(=O)c1ccc(N)cc1","no soluble",2340
--2.45,"Clc1cc(ccc1OC(C)C(O)=O)Cl","no soluble",3291
--1.35,"NC(=NO)N1Cc2cccc3c2C(CCC3)C1","no soluble",2575
--4.62,"C(Cc1ccccc1)c2ccccc2","no soluble",4220
--6.09,"COP(=S)(OC)Oc1cc(Cl)c(Br)cc1Cl","no soluble",4
--3.2956,"COc1ccc(CCN(C)CCCC(C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC","no soluble",1847
-0.054,"N=C(N)NCCCC(N)C(=O)O","soluble",1985
--2.64,"CN(C)CCN(Cc1ccccc1)c1ccccn1","no soluble",921
--2.99,"CC1CC2C(C(O)CC3(C)C2CCC3(O)C(=O)CO)C2(C)C=CC(=O)C=C12","no soluble",1326
--1.36,"CCc1ccccc1O","no soluble",1338
--0.82,"CCCOC(=O)CC","no soluble",1222
--3.094,"Nc1ccc(cc1)S(=O)(=O)c2ccc(N)cc2","no soluble",4177
--7.39,"Clc1ccc(-c2cc(Cl)c(Cl)cc2Cl)cc1Cl","no soluble",292
--0.85,"C=COCC","no soluble",1232
--2.77,"CCc1ccccc1","no soluble",160
--1.229,"CC1(C)OCC(COC(=O)c2ccccc2C(=O)O)O1","no soluble",2849
--1.87,"CC1CCCC(=O)C1","no soluble",1154
--1.87,"COc1ccc2c(c1O)C13CCN(C)C1(C=CC(=O)C3)CC2","no soluble",624
--2.33,"CCCOC(=O)c1ccc(cc1)N","no soluble",3258
--2.029,"COc1ccc2nccc(C(O)C3CC4CCN3CC4C(=O)O)c2c1","no soluble",2887
--2.34,"CNC(=O)Oc1cccc(N=CN(C)C)c1","no soluble",940
--4.19,"O=CNC(N1CCN(C(NC=O)C(Cl)(Cl)Cl)CC1)C(Cl)(Cl)Cl","no soluble",478
--6.523,"O=C1N(COC(=O)CCCCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3","no soluble",4160
--3.2385,"CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23","no soluble",1829
--1.71,"FC(F)(F)C(Cl)Br","no soluble",4676
--3.043,"O2c1cc(C)ccc1N(C)C(=O)c3cc(N)cnc23","no soluble",4157
--2.21,"CCC1(C(C)C)C(=O)NC(=O)NC1=O","no soluble",811
--3.15,"Oc1cc(Cl)c(Cl)c(Cl)c1Cl","no soluble",262
--3.079,"NS(=O)(=O)c1ccccc1-c1nc2ccccc2c(=O)[nH]1","no soluble",2330
--5.88,"CCCCCCCCC","no soluble",135
--0.62,"CC(C)[N+](=O)[O-]","no soluble",897
--2.28,"CCCN(CCC)CCC","no soluble",918
--4.08,"CC(N(C(=O)SCC(=CCl)Cl)C(C)C)C","no soluble",3496
--1.6,"ICC","no soluble",3802
--6.03,"CC1(C)C(C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2)C1(C)C","no soluble",916
--4.4,"Brc1ccc2ccccc2c1","no soluble",12
-0.59,"O=c1ccnc[nH]1","soluble",779
--1.275,"O=C1CC2OCC=C3C[N+]4([O-])CCC56c7ccccc7N1C5C2C3CC64","no soluble",1850
--3.85,"C1C(C)CCCC1","no soluble",3960
--7.28,"Clc1cccc(-c2cccc(Cl)c2Cl)c1Cl","no soluble",351
--0.03,"C1CCOCC1","soluble",1122
--1.53,"c1c(CN)cccc1","no soluble",3118
--1.23,"CC(=O)NS(=O)(=O)c1ccc(N)cc1","no soluble",1643
--1.783,"COc1cc(C(=O)CO)ccc1O","no soluble",2228
--1.55,"O=C(C1CCCCN1C)Nc1c(C)cccc1C","no soluble",3122
--0.55,"CC(=O)OC(C)C","no soluble",1301
--5.059,"O=C(OCC(=O)N(C1CCCCC1)C1CCCCC1)c1ccccc1","no soluble",2764
--1.47,"c1c(C(=O)O)csc1","no soluble",3110
--1.52,"CN1CC[C@]23c4c5ccc(c4O[C@H]2[C@H](C=C[C@H]3[C@H]1C5)O)OC","no soluble",4745
--1.088,"O=C(O)c1ccc2ccccc2n1","no soluble",1876
--8.4,"FC(F)(F)c1cccc(C(c2ccccc2)(c2ccccc2)n2cncn2)c1","no soluble",573
--1.929,"O=C(NCCCCCCNC(=O)OCCCCO)OCCCCO","no soluble",2068
--2.65,"C=C(Br)CC1(C(C)CC)C(=O)NC(=O)NC1=O","no soluble",30
--2.22,"CC(C)c1ccc(C)cc1O","no soluble",4571
--2.17,"CCOc1ccc(NC(N)=O)cc1","no soluble",1030
--4.19,"CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC","no soluble",4269
--7.92,"C1c2c(C)ccc3cc4c5c(ccc4c(c23)C1)cccc5","no soluble",3683
--1.35,"N#CN=C(NC)NCCSCc1c(C)[nH]c[nH0]1","no soluble",3781
--2.02,"Cc1ccccc1S(N)(=O)=O","no soluble",1614
--1.68,"O=C(O)CNC(=O)c1ccccc1","no soluble",1057
--1.39,"O=C1OC(=O)c2ccccc21","no soluble",1110
--2.98,"O=C(C1=CN(CC)c2c(C1=O)c[nH0]c([nH0]2)N1CCNCC1)O","no soluble",3908
--2.732,"CC(C)NC(=O)COC(=O)c1ccccc1","no soluble",2744
--2.09,"O=C(Oc1c(CSCC)cccc1)NC","no soluble",3838
--1.61,"CC(=O)c1ccc(N)cc1","no soluble",966
--3.26,"ClCC(=O)N(c1c(cccc1CC)CC)COC","no soluble",3402
--2.15,"CS(=O)(=O)c1ccc(C(O)C(CO)NC(=O)C(Cl)Cl)cc1","no soluble",532
--0.95,"NC(=O)NCc1ccccc1","no soluble",4286
--3.84,"CCCCOc1ccc(C(=O)OCC)c(N(CC)CC)c1","no soluble",927
--1.09,"CN(CCO)C(=O)COC(=O)c1ccccc1","no soluble",2657
--1.8,"CNC(=O)Oc1ccccc1","no soluble",1070
--4.7,"CC(=O)OCCN1CCN(CCCN2c3ccccc3Sc3ccc(Cl)cc32)CC1","no soluble",382
--0.85,"c1c(C)c(N)ccc1","no soluble",3753
--4.76,"CCOP(=S)(OCC)SCSC(C)(C)C","no soluble",1664
--2.21,"c1c(C)cccc1","no soluble",3238
--1.983,"Cc1cc(C(=O)CC(C)C)ccc1O","no soluble",2382
--1.6,"O=C(C(Cc1ccc(c(c1)O)O)N)O","no soluble",3804
--2.156,"CCCCC(=O)NNC(=O)CCCC","no soluble",2034
--0.5,"CC(C)(C)CCO","soluble",1414
--1.63,"O=Cc1ccc2c(c1)OCO2","no soluble",1124
--0.29,"N#CCCCl","soluble",494
--0.624,"Cc2c(N)c(=O)n(c1ccccc1)n2C","no soluble",4365
--3.664,"COc2c1occc1cc3ccc(=O)oc23","no soluble",4397
--5.46,"c1ccc(c(c1)CC(=O)O)Nc2c(cccc2Cl)Cl","no soluble",4731
--2.36,"CN(C(=O)NC1CCCCCCC1)C","no soluble",3268
--2.14,"COc1cccc(C(=O)O)c1OC","no soluble",2209
--2.723,"CN1CC(O)C2=CC(=NNC(N)=O)C(=O)C=C21","no soluble",2869
--2.03,"CCCCCl","no soluble",490
-0.74,"OCC1OC(O)C(O)C(O)C1O","soluble",1136
--3.78,"CC2Nc1cc(Cl)c(cc1C(=O)N2c3ccccc3C)S(N)(=O)=O","no soluble",4268
--0.93,"O=C(O)C(CO)c1ccccc1","no soluble",1435
--2.77,"Cc1ccc(C)cc1","no soluble",194
-0.04,"OCC(C)C","soluble",2956
--3.59,"O=C(Nc1ccccc1)c1ccccc1O","no soluble",1036
--1.49,"c1c(C=O)ccc(c1)OC","no soluble",3111
--2.302,"NC(=O)c1ccc(S(N)(=O)=O)cc1","no soluble",2324
--10.1,"Clc1cc(Oc2c(Cl)c(Cl)cc(Cl)c2Cl)c(Cl)c(Cl)c1Cl","no soluble",1731
--3.523,"Cc1cc(C)c(CC(C)(C)C(=O)NO)c(C)c1","no soluble",2237
--3.96,"c1c2cccc3C=Cc(c23)cc1","no soluble",3486
--1.527,"CN1CCN(C(c2ccccc2)c2ccccc2)CC1","no soluble",2478
--2.685,"OC(=S)COc1ccc(Cl)cc1Cl","no soluble",2408
--4.24,"CNC(=O)Oc1cc(cc(c1)C(C)(C)C)C(C)(C)C","no soluble",3523
--7.28,"Clc1cccc(c1Cl)c2cccc(Cl)c2Cl","no soluble",4294
--0.59,"CCCC(O)C=C","no soluble",4567
--1.5,"[nH0]1c2ccccc2sc1","no soluble",3795
--0.01,"CCCC=O","soluble",1293
--5.27,"Clc1ccccc1-c1ccccc1Cl","no soluble",357
--3.21,"Clc1cccc(Br)c1","no soluble",16
--3.319,"Cc1cc2cccc(O)c2nc1C","no soluble",1875
--0.87,"Clc1cnc2ncncc2n1","no soluble",438
--3.585,"CC(=O)CC(C)=Nc1ccc(O)cc1","no soluble",2279
--3.458,"CCCCOC(=O)c1ccc(NC(C)=O)cc1","no soluble",2426
--1.386,"OC(c1ccccc1)(c1ccccc1)C1CCNCC1","no soluble",2477
--1.85,"CC12CCC(C1)C(C)(C)C2=O","no soluble",1142
--4.07,"CCC(=C(CC)c1ccc(O)cc1)c1ccc(O)cc1","no soluble",1360
--2.42,"Oc1cccc2cccnc12","no soluble",631
--2.686,"COc1ccc(CCNC(=O)CNc2cccc(C(N)=O)c2)cc1OC","no soluble",2646
--3.699,"COC1=CC(=O)CC(C)C12Oc1cc(OC)cc(OC)c1C2=O","no soluble",2541
--3.33,"O=C7N2c1ccccc1[C@@]64[C@@H]2[C@@H]3[C@@H](OC/C=C5\[C@@H]3C[C@@H]6N(CC4)C5)C7","no soluble",4746
--2.621,"CCOC(=O)c1[nH]c(C)cc1C","no soluble",1870
--3.341,"CC(C)N(C(=O)COC(=O)c1ccccc1)C(C)C","no soluble",2654
--2.53,"c1c(OC)c(O)cc(c1Cl)Cl","no soluble",3298
--8.71,"Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cc(Cl)cc2Cl","no soluble",4541
--4.442,"CCCOCC(=Nc1ccc(Cl)cc1C(F)(F)F)n1ccnc1","no soluble",2785
--1.97,"c1c(F)ccc(c1)F","no soluble",3826
--1.64,"CC1(C2CCC(C)(CC2)O1)C","no soluble",3146
--4.53,"CCC1(CC)CCC(=O)NC1=O","no soluble",1905
--2.33,"[O-][N+](=O)c1ccccc1C","no soluble",3857
--2.98,"CCn1cc(C(=O)O)c(=O)c2cnc(N3CCNCC3)nc21","no soluble",691
--2.61,"O=C1NC(=O)c2c1cccc2","no soluble",3884
--1.349,"O=C(OCC(=O)N1CCC(O)CC1)c1ccccc1","no soluble",2754
--5.03,"ClC(Cl)CC(=O)NC2=C(Cl)C(=O)c1ccccc1C2=O","no soluble",4617
--3.912,"CCC1C(N)CN1c1cc2c(cc1F)c(=O)c(C(=O)O)cn2C1CC1","no soluble",2792
--4.73,"Oc1c2ccccc2cc2ccccc12","no soluble",1310
--2.647,"CC(=O)OCC1OC(OC(C)=O)C(OC(C)=O)C(OC(C)=O)C1OC(C)=O","no soluble",2903
--2.06,"CC(=O)c1ccc(S(=O)(=O)NC(=O)NC2CCCCC2)cc1","no soluble",1645
--2.88,"CNc1ccccc1C(=O)O","no soluble",1059
--7.02,"c1c2c(c3c(c(C)c2ccc1)c1c(cccc1)cc3)C","no soluble",3664
--2.33,"CC(=C)C","no soluble",4355
--2.925,"Cc1ccccc1n3c(C)nc2ccccc2c3=O","no soluble",4171
--0.06,"O=C1C(CC)NC(N1)=O","soluble",2964
--3.93,"Clc1cccc2ccccc12","no soluble",228
--3.99,"CC(C)Cc1ccc(C(C)C(=O)O)cc1","no soluble",1515
--5.24,"CC(C)=CC3C(C(=O)OCc2cccc(Oc1ccccc1)c2)C3(C)C","no soluble",4605
--4.48,"COc1ccc2c(c1)[nH]c1c(C)nccc12","no soluble",2046
--2.235,"OC(=S)CCCCCCC(O)=S","no soluble",2017
--2.62,"Cc1cc(NS(=O)(=O)c2ccc(N)cc2)no1","no soluble",1635
--6.89,"c1c(CC)cc2c(cc3c(c2)cccc3)c1","no soluble",3661
--2.111,"CC(=O)C=C(C)NC1CCCCC1NC(C)=CC(C)=O","no soluble",2374
--1.523,"CC(=O)OC1C(C2COC(C)(C)O2)OC2OC(C)(C)OC21","no soluble",2428
--3.64,"COc1cc2c(N)nc(N3CCN(C(=O)OCC(C)(C)O)CC3)nc2c(OC)c1OC","no soluble",689
--1.11,"COc1ncnc2nccnc12","no soluble",664
--3.302,"Oc1cc2ccccc2cc1C1=NCCN1","no soluble",2078
--3.35,"CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O","no soluble",4651
-1.12,"OCC(O)CO","soluble",1466
--2.44,"O=S(=O)(c1nnc(s1)NC(=O)C)N","no soluble",4681
--5.22,"Cc1cccc2c1Cc1ccccc1-2","no soluble",83
--4.375,"CCCCCCCCOC(=O)c1ccc(O)c(Cl)c1","no soluble",2422
--4.89,"CN(C)C(=O)Nc1ccc(Oc2ccc(Cl)cc2)cc1","no soluble",425
--3.36,"CCN1c2nc(N(C)CCO)ccc2NC(=O)c2cccnc21","no soluble",650
--1.56,"CC(CC(CCCC)=O)=O","no soluble",3126
--2.877,"CCOC(=O)Cc1sc(NS(=O)(=O)c2ccc(N)cc2)nc1C","no soluble",2438
--2.12,"c1c(S)cccc1","no soluble",3222
--3.209,"COc1cc([N+](=O)[O-])c2c(c1OC)C(=O)OC2","no soluble",2277
--1.6,"CC(C)CC(C)CO","no soluble",1440
--0.77,"OCC3OC(OCC2OC(OC(C#N)c1ccccc1)C(O)C(O)C2O)C(O)C(O)C3O","no soluble",4065
--5.64,"ClC2=C(Cl)C3(Cl)C1C=CCC1C2(Cl)C3(Cl)Cl","no soluble",4503
--2.44,"[O-][N+](=O)c1cccc(c1)C","no soluble",3288
--4.62,"Cc1ccc(-c2ccccc2)cc1","no soluble",193
--2.55,"c1c(C(O)c2ccccc2)cccc1","no soluble",3876
--5.14,"CCCCS[P+]([O-])(SCCCC)SCCCC","no soluble",3597
--1.345,"CC(=O)c1c(C)ncc(C(=O)O)c1C(=O)O","no soluble",2145
--4.15,"CC(C)(C)Cc1ccccc1","no soluble",113
--4.36,"O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1","no soluble",577
--2.528,"CCCC1(CCC)C(=O)NC(=O)NC1=O","no soluble",2136
-1.1,"c1cncnc1","soluble",716
--5.06,"CCCCCCCCBr","no soluble",37
--3.104,"COc1cc(OC)cc(C(=O)N(O)c2ccccc2)c1","no soluble",2612
--2.34,"ICI","no soluble",610
--3.88,"c1c(C(c2ccc3[nH0]c(NC(OC)=O)[nH]c3c2)=O)cccc1","no soluble",3961
--3.546,"Oc1c(O)c(Cl)c(Cl)c(Cl)c1Cl","no soluble",2093
--2.29,"O=N(=O)c1cccc(c1)N(=O)=O","no soluble",4448
--2.33,"CCCOC(=O)c1ccc(N)cc1","no soluble",972
--1.93,"OC(c1ccccc1)C(c1ccccc1)O","no soluble",3197
--0.55,"CC(C)OC(=O)C","no soluble",4455
--1.3,"ClC=CCl","no soluble",533
--3.76,"c1c(Cl)[nH0]c(cc1)C(Cl)(Cl)Cl","no soluble",3953
--3.3,"CCCSC(=O)N(CCC)CCC","no soluble",1777
--1.156,"O=[N+]([O-])c1cc(CCO)ccc1O","no soluble",2442
--2.089,"CC12CC(C)(NC(=O)N1)NC(=O)N2","no soluble",1948
-0.26,"C[N+](=O)[O-]","soluble",896
--2.296,"O=c1[nH]cnc2nc[nH]c12","no soluble",4180
--2.52,"c1ccccc1CC(c1ccccc1)O","no soluble",3872
--7.66,"Clc1ccc(-c2c(Cl)cc(Cl)c(Cl)c2Cl)cc1Cl","no soluble",251
--7.56,"Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl","no soluble",1711
--4.82,"COP(=S)(OC)Oc1nc(Cl)c(Cl)cc1Cl","no soluble",442
--3.48,"Oc1ccc(-c2ccccc2)cc1","no soluble",1352
--1.62,"O=C(NC)ON=C(C(C)(C)C)CSC","no soluble",3141
--2.59,"CCCCC(=O)CCCC","no soluble",1177
--4.66,"CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O","no soluble",4573
--1.55,"CCCCCC(C)O","no soluble",1455
--2.594,"NS(=O)(=O)c1cc2c(s1)SCCC2O","no soluble",2655
--2.23,"O=C1NC(=O)N(C)C(C1(CC)CC)=O","no soluble",3244
-1.11,"CC(=O)N(C)C","soluble",941
--3.171,"CN(C)C(=O)NC1CC2CC1C3CCCC23","no soluble",4452
--0.88,"CCCC(C(C)=O)C(C)=O","no soluble",1194
--1.545,"OC(CN1CCCCC1)c1ccc(Cl)c2ccccc12","no soluble",2483
--1.38,"c1c(CCCO)cccc1","no soluble",3098
--2.3,"CCCCCCCC(=O)O","no soluble",1503
--2.18,"O=C1NC(=O)NC(C1(c1ccccc1)CC=C)=O","no soluble",3233
--0.17,"OC1CC(O)C(O)C(O)C1O","soluble",1388
--1.196,"Cc1ccc2c3c1CCCC3CN(C(N)=NO)C2","no soluble",2573
--3.39,"CCCCCCCC(=O)OCC","no soluble",1239
--0.63,"CC(C)OC=O","no soluble",1300
--2.51,"O=C(O)COc1ccc(Cl)cc1Cl","no soluble",338
--2.54,"CCC=CC","no soluble",3299
--2.1,"[nH0]1c(N)[nH0]cc(Cc2cc(c(c(c2)OC)OCCOC)OC)c1N","no soluble",3839
--3.78,"c1c(C)c(C)c(cc1)Nc1ccccc1C(O)=O","no soluble",3955
--6.81,"CCCCCCCCCCCCCCCC(=O)O","no soluble",1494
--0.29,"OC(C(C)(C)C(C)(CC(O)=O)C(O)=O)=O","soluble",2980
--0.59,"O1CC1C","no soluble",3002
--8.65,"Clc1c(c2c(ccc(Cl)c2Cl)Cl)c(ccc1Cl)Cl","no soluble",4060
--0.06,"CC(OC)C","soluble",3723
--3.52,"Cc1ccccc1Cl","no soluble",364
--2.367,"CCCCCN(C)N=Nc1ccc(C(=O)O)cc1","no soluble",2628
--1.78,"O=C(C)Nc1ccc(cc1)F","no soluble",3170
--0.49,"CCCC(C)(C)O","soluble",1397
--0.72,"Oc1c(N)cccc1","no soluble",3017
-0.309,"CC(C)CC(N)C(=O)NCC(=O)NCC(=O)O","soluble",2007
--3.82,"COC(=O)C(C)Oc1ccc(Oc2ccc(Cl)cc2Cl)cc1","no soluble",1786
--3.484,"COc1cc(C#N)c2c(c1OC)C(=O)OC2","no soluble",2179
--4.84,"c1cc(cc2CCC3C(CCC4(C)C3CCC4O)c12)O","no soluble",4013
--2.59,"O=C(O)c1cccc(c1)Cl","no soluble",3308
--4.16,"C1CC2(C)C(CCC2=O)C2CCC3CC(CCC3(C)C12)O","no soluble",3511
--6.14,"c1c(Cl)cc(c(c1Cl)c1ccccc1)Cl","no soluble",3640
--6.124,"CCN(CC(C)=C)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O","no soluble",4162
--2.6,"N1C(=NCC1)CN(Cc1ccccc1)c1ccccc1","no soluble",3310
--2.6342,"CCCCN1CCCCC1C(=O)Nc1c(C)cccc1C","no soluble",1798
--3.94,"c1c2Sc3c(N(C)c2cc(c1)CC(O)=O)cccc3","no soluble",3965
--3.18,"CCCCC","no soluble",147
--3.39,"O=N(=O)c1ccc(cc1)N(=O)=O","no soluble",4255
--5.56,"Clc1cc(Cl)c(Cl)cc1Cl","no soluble",294
--2.37,"BrCCCC","no soluble",3272
--1.52,"CCCC(C)(C)CO","no soluble",1410
--3.3621,"CCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1","no soluble",1815
--2.172,"C=CCC1(CCCC)C(=O)NC(=O)NC1=O","no soluble",2169
--0.56,"O=C2N(c1ncn(c1C(=O)N2CCCCC(=O)C)C)C","no soluble",4708
--1.54,"Cc1c(O)cc(C)cc1","no soluble",3120
--1.92,"CCCOC(=O)CCC","no soluble",1221
--7.92,"Clc2c(Cl)c(Cl)c(c1ccccc1)c(Cl)c2Cl","no soluble",4386
--1.47,"CCCCC(O)CC","no soluble",1456
--2.57,"NC(Cc1ccc(O)cc1)C(=O)O","no soluble",993
--0.47,"CCC(C)CO","soluble",1439
--3.37,"[nH0]1c[nH0]c[nH0]1CC(c1ccc(cc1)F)(c1ccccc1F)O","no soluble",3426
--1.75,"CCCCC(=O)OCC","no soluble",1242
--3.08,"O=C(C)Nc1ccc(cc1)Br","no soluble",3915
--8.56,"Clc1cc(Cl)c(Cl)c(-c2cc(Cl)cc(Cl)c2Cl)c1","no soluble",1712
--1.99,"[O-][S+2]([O-])(NC(N)=N)c1ccc(cc1)N","no soluble",3828
--1.07,"O=C1C(=CNC(=O)N1)F","no soluble",3059
--5.28,"Clc1ccc(cc1)c2ccccc2Cl","no soluble",4159
--3.75,"CCc1ccc(CC)cc1","no soluble",158
-0.29,"C#C","soluble",204
--4.097,"O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3","no soluble",4204
--10.33,"Clc1cc2c(oc3cc(Cl)c(Cl)c(Cl)c32)c(Cl)c1Cl","no soluble",1713
--7.21,"Clc1cc(Cl)c(cc1Cl)c2cccc(Cl)c2Cl","no soluble",4240
--2.2935,"CC(C)NCC(O)COc1cccc2[nH]ccc12","no soluble",1833
--1.28,"c1c(NC)cccc1","no soluble",3777
--2.89,"CC(C)CCBr","no soluble",44
--3.61,"O=C\2c1c(nc(cc1)C)N(/C=C/2C(=O)O)CC","no soluble",4717
--3.31,"O=C(O)c1ccc(Cl)cc1","no soluble",418
--4.21,"c1c(NC(=O)c2ccccc2I)cccc1","no soluble",3519
-1,"O=C(O)CCCC(=O)O","soluble",1506
--2,"Fc1cccc(F)c1","no soluble",555
--0.85,"c1c(C)cc(cc1)N","no soluble",3037
--2.72,"CCCCOC(=O)c1ccc(O)cc1","no soluble",1211
--4.7889,"NCCc1c[nH]c2ccccc12","no soluble",1846
--4.69,"CCCCCCCCCCCC(=O)OC","no soluble",1277
--0.62,"CC(O)C(C)(C)C","no soluble",1449
--3.24,"CC(=O)Nc1cc(NS(=O)(=O)C(F)(F)F)c(C)cc1C","no soluble",584
--4.17,"O=C(O)c1cccnc1Nc1cccc(C(F)(F)F)c1","no soluble",578
--1.64,"c1ccccc1","no soluble",111
--1.48,"O=C1C=CNC(=O)N1","no soluble",3793
--1.712,"C=CC1(C(C)C)C(=O)NC(=O)NC1=O","no soluble",2736
--0.82,"O=C(O)CCCCC(O)=O","no soluble",3750
--2.29,"C1(NC(C(c2ccccc2)(C(=O)N1)CC)=O)=O","no soluble",4722
--4.118,"O=c1[nH]c(Nc2ccccc2)nc2[nH]cnc12","no soluble",2599
--0.74,"OCCc1ccccc1","no soluble",1413
--4.16,"OCCN1CCN(CCCN2c3ccccc3Sc3ccc(Cl)cc32)CC1","no soluble",383
--4.6,"c1ccc2c(c1)oc1ccccc12","no soluble",1091
--2.17,"O=C1NC(=O)NC(C1(C=1CCCCC1)CC)=O","no soluble",3231
-0.35,"OC1C(O)C(O)C(O)C(O)C1O","soluble",1389
--3.383,"O=C(NC(=O)c1cccnc1)Nc1ccccc1","no soluble",2168
--0.48,"CN1C2CC(OC(=O)C(CO)c3ccccc3)CC1C1OC12","soluble",645
--4.88,"CC(N(C(=O)SCC(=C(Cl)Cl)Cl)C(C)C)C","no soluble",4014
--1.28,"[nH0]1c(C)cc(N)[nH0]c1C","no soluble",3776
--3.59,"CC12CC(O)C3C(CCC4CC(O)CCC43C)C1CCC2=O","no soluble",1373
--3.504,"N(c1ccccc1)c2ccccc2","no soluble",4083
--1.42,"O=C(C)CCCCC","no soluble",3105
--4.45,"Cc1c(OCc2ccccn2)ccc2c(=O)cc(N3CCOCC3)oc12","no soluble",2726
--2.45,"Sc1[nH0]cc(c([nH0]1)O)C","no soluble",3290
--8.32,"c1c(Cl)c(Cl)cc(c1c1ccc(c(Cl)c1Cl)Cl)Cl","no soluble",4056
--1.61,"C=CCC1(CC)C(=O)NC(=O)NC1=O","no soluble",801
--2.884,"COc1c(C(=O)O)oc2ccccc12","no soluble",1925
--1.921,"CCCCCCCCOCC(O)CO","no soluble",2012
--0.29,"CCCC(C)O","soluble",1460
--4.796,"CCCCCCCCCCC(C)(C)C(=O)NO","no soluble",2226
-0.06,"OCC(O)C(O)C(O)C(O)CO","soluble",4195
--3.78,"Cc1ccccc1N1C(=O)c2cc(S(N)(=O)=O)c(Cl)cc2NC1C","no soluble",283
--1.38,"OCCCc1ccccc1","no soluble",1415
--4.45,"N(=Nc1ccccc1)c2ccccc2","no soluble",4621
--2.14,"O=c1ccc2ccccc2[nH]1","no soluble",734
--4.021,"CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1","no soluble",2318
--2.55,"O=[N+]([O-])c1ccccc1Cl","no soluble",855
-1.58,"O=C(C)N","soluble",2906
--4.35,"O=C(CCC(C)C1CCC2C3CC(C4CC(CCC4(C)C3CC(C12C)O)O)O)O","no soluble",3534
--2.09,"C=CCC=C","no soluble",167
--4.16,"CN2C(=C(O)c1ccccc1S2(=O)=O)C(=O)Nc3ccccn3","no soluble",4390
--5.593,"COc1ccc2cc(C(C)C(=O)OC3CCCCC3=O)ccc2c1","no soluble",2781
--2.19,"ON=Cc1ccc(o1)N(=O)=O","no soluble",4328
--2.071,"CCN(CC)C(=O)COC(=O)c1ccccc1","no soluble",2131
--4.66,"CC(COC(=O)c1ccccc1C(=O)OCC(C)C)C","no soluble",3567
--0.729,"CCOC(=O)N1CCN(C(=O)OCC)CC1","no soluble",2201
--0.66,"CCCOCC","no soluble",1216
--4.81,"ICCCCCCC","no soluble",3578
--3.22,"O=C1NCCN1c1ncc([N+](=O)[O-])s1","no soluble",892
--0.03,"C1CCCOC1","soluble",2963
--3.3,"CCCCCCCCC(=O)C","no soluble",4199
--0.41,"CC(C)C(C)(C)O","soluble",1406
--5.4,"O=C1C2CC=CCC2C(N1SC(C(Cl)Cl)(Cl)Cl)=O","no soluble",3617
--1.8536,"CC(C(=O)O)c1ccc2c(c1)[nH]c1ccc(Cl)cc12","no soluble",1799
--3.81,"c1c(OCC)ccc2c1sc([nH0]2)[S+2]([O-])(N)[O-]","no soluble",3478
--6.78,"CCN(Cc1c(F)cccc1Cl)c2c(cc(cc2N(=O)=O)C(F)(F)F)N(=O)=O","no soluble",4551
--4.41,"CCN(CC)c1nc(Cl)nc(N(CC)CC)n1","no soluble",444
--2.41,"COC(=O)c1ccc(OC)cc1","no soluble",1267
--4.634,"CCN2c1ncccc1N(C)C(=S)c3cccnc23","no soluble",4507
--3.84,"CCCCCC","no soluble",143
--6.29,"ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl","no soluble",4072
--3.824,"O=[N+]([O-])c1ccc2ccccc2c1","no soluble",2149
--8.53,"Clc1ccc(-c2ccc(Cl)c(Cl)c2)cc1Cl","no soluble",1755
--3.28,"OC1C=CC2C34CCN(C)C2Cc2ccc(c(c23)OC14)O","no soluble",3929
--5.24,"CC1(C)C(C=C(C)C)C1C(=O)OCc1cccc(c1)Oc1ccccc1","no soluble",4022
--2.29,"CCCI","no soluble",607
--2.25,"CN1[C@H]2CC[C@@H]1[C@H]([C@H](C2)OC(=O)c3ccccc3)C(=O)OC","no soluble",4692
--2.33,"Cc1ccccc1N(=O)=O","no soluble",4217
--0.403,"O=C(O)CC(O)CCC1=CCCC1=O","soluble",2562
--1.018,"OCCOc1cccc(OCCO)c1","no soluble",2153
--4.88,"Clc1cccc(-c2ccccc2)c1","no soluble",398
--2.23,"COC(=O)C1C(OC(=O)c2ccccc2)CC2CCC1N2C","no soluble",647
--2.36,"O=C(C)Nc1[nH0][nH0]c([S+2]([O-])(N)[O-])s1","no soluble",3861
--8.003,"CC(C)C(Nc1ccc(cc1Cl)C(F)(F)F)C(=O)OC(C#N)c2cccc(Oc3ccccc3)c2","no soluble",4329
--2.87,"CC1c2cccc(O)c2C(=O)C2=C(O)C3(O)C(=O)C(C(N)=O)=C(O)C(N(C)C)C3C(O)C21","no soluble",908
--0.554,"CCOC(=O)N1CC(C)N(C(N)=O)CC1C","no soluble",2102
-0.46,"N#CCCN(CCC#N)CC(=O)O","soluble",2031
--3.63,"CCCCCCCCCCO","no soluble",1422
--2.74,"CN1C(=O)NC(=O)C(C)(C2=CCCCC2)C1=O","no soluble",725
--3.35,"CCN(C(=O)SCCC)CCCC","no soluble",3932
--6.14,"Clc1ccc(cc1)c2c(Cl)cccc2Cl","no soluble",4589
--5.82,"Clc1c(Cl)c(Cl)c(N(=O)=O)c(Cl)c1Cl","no soluble",4419
--3.22,"Cc1c([N+](=O)[O-])cc([N+](=O)[O-])cc1[N+](=O)[O-]","no soluble",847
--4.073,"CCCCCCCOC(=O)c1ccc(O)cc1","no soluble",2302
--4.436,"CCOc1ccc(NC(=O)Nc2ccc(OCC)cc2)cc1","no soluble",2784
--5.05,"CC(C)CCC(C)(C)C","no soluble",115
--1.568,"O=C(OCC(=O)N1CCCC1)c1ccccc1","no soluble",2746
--4.31,"c1c(cccc1)c1ccccc1","no soluble",3532
--1.97,"Fc1ccc(F)cc1","no soluble",558
--3.405,"CCOC(=O)c1ccccc1C(=O)c1ccccc1","no soluble",2249
--1.71,"CCCCC(CC)CN","no soluble",990
--3.673,"CCCCOC(=O)c1ccc(O)c(Br)c1","no soluble",2398
--3.796,"CN2C(=O)CN=C(c1ccccc1)c3cc(ccc23)N(=O)=O","no soluble",4333
--2.49,"Cc1ccc([N+](=O)[O-])cc1","no soluble",874
--3.05,"NS(=O)(=O)c1cc2c(cc1Cl)N=CNS2(=O)=O","no soluble",285
--2.15,"C1=CC=CCC=C1","no soluble",101
--3.73,"CCCCC1C(=O)N(c2ccccc2)N(c2ccc(O)cc2)C1=O","no soluble",826
--6.47,"c1c(Cl)ccc(c1c1cccc(Cl)c1Cl)Cl","no soluble",3652
--2.92,"Oc1cccc2c(O)cccc12","no soluble",1309
--1.62,"ClCCCCl","no soluble",491
--4.13,"C1=C2CCC3C4CC(C(C4(C)CC(C3(C2(C)C=CC1=O)F)O)(C(COC(C)=O)=O)O)OC(C)=O","no soluble",3979
--4.71,"CCN1c2ccccc2N(C)C(=S)c2cccnc21","no soluble",1554
--0.8,"CCCC(CC)O","no soluble",3026
--0.173,"CC(C)CC(N)C(=O)NC(C(=O)O)C(C)C","soluble",1996
-0.3,"O=C1CCC(=O)N1","soluble",741
--4.077,"CC12CCC(c3cnc(NS(=O)(=O)c4ccc(N)cc4)nc31)C2(C)C","no soluble",2570
--2.5125,"CN(C)CCOC(c1ccccc1)c1ccccc1","no soluble",1814
--7.16,"Clc1cc(-c2ccccc2)c(Cl)c(Cl)c1Cl","no soluble",260
--5.26,"O=C1C2(Cl)C3(Cl)C4(Cl)C(Cl)(Cl)C5(Cl)C3(Cl)C1(Cl)C5(Cl)C24Cl","no soluble",223
--4.32,"CC1(C)OC2CC3C4CCC5=CC(=O)C=CC5(C)C4(F)C(O)CC3(C)C2(C(=O)CO)O1","no soluble",545
--4.314,"c1cc2ccc(OC)c(CC=C(C)(C))c2oc1=O","no soluble",4509
--3.73,"C=CCCCCC","no soluble",144
--0.903,"COc1c2occc2c(CN)c2ccc(=O)oc12","no soluble",2548
--2.54,"Oc1cccc2ncccc12","no soluble",623
--4.02,"COc1c(O)c(Cl)c(c(c1Cl)Cl)Cl","no soluble",3493
--5.65,"Clc1cc(Cl)c(Cl)c(Cl)c1Cl","no soluble",261
--3.9,"CCCCOC(=O)CCCCCCCCC(=O)OCCCC","no soluble",1213
--3.59,"Clc1ccc(Cl)c(Cl)c1","no soluble",335
--4,"C1=C2CCC3C4CCC(C4(C)CC(C3C2(C)CCC1=O)=O)(C(COC(C)=O)=O)O","no soluble",3971
--1.37,"c1c(Cl)cc(cc1)N","no soluble",3097
--3.55,"CCC(C)(C)C","no soluble",118
--1.4,"CCCC(CCC)O","no soluble",3103
--1.28,"CC(=O)c1cccc(N)c1","no soluble",961
--5.07,"CCCC(=O)OCN1C(=O)NC(c2ccccc2)(c2ccccc2)C1=O","no soluble",747
--4.398,"COC1=CC(=O)C2(Oc3c(Cl)c(OC)cc(OC)c3C2=O)C(C)C1","no soluble",2885
--3.02,"CCCCc1c(C)nc(NCC)nc1O","no soluble",1054
-1.02,"Oc1ccncc1","soluble",708
--2.82,"C=Cc1ccccc1","no soluble",80
--5.8,"Clc1cccc(-c2cccc(Cl)c2)c1","no soluble",397
--1.62,"C=CCN(CC=C)C(=O)C(Cl)Cl","no soluble",530
-1.06,"C1COCCN1","soluble",758
--1.77,"CC=CC=CC(=O)O","no soluble",1518
--3.45,"CC12CCC3C(CCC4=CC(=O)CCC34C)C2CCC1C(=O)CO","no soluble",4123
--3,"Cc1c([N+](=O)[O-])cccc1[N+](=O)[O-]","no soluble",850
--1.99,"C=CC(C)(CCC=C(C)C)O","no soluble",3827
--1.84,"C1C23CC(=C)C1(CCC2C12C=CC(C(C)(C1C3C(O)=O)C(=O)O2)O)O","no soluble",3177
--2.283,"CC(C)C1OC(O)C(Cc2ccccc2)NC1=O","no soluble",2897
--1.21,"CC(C)COC(=O)C","no soluble",4673
--3.09,"CC12CC(O)C3C(CCC4=CC(=O)CCC34C)C2CCC1(O)C(=O)CO","no soluble",4263
--2.283,"CONC(=O)c1ccc([N+](=O)[O-])cc1","no soluble",2160
--1.52,"CCC(C=O)CC","no soluble",1304
--6.59,"c1cccc2c3c(C)cc4ccccc4c3ccc12","no soluble",4470
--2.6565,"Oc1ccc(I)cc1","no soluble",1810
--2.09,"C=CC=C(C)C=CC=CC","no soluble",1698
--1.89,"C12CC(CN3CCCCC23)C2CCCCN2C1","no soluble",3182
--1.413,"NC(C(=O)NCC(=O)O)c1ccccc1","no soluble",2305
--5.9,"O=C5\C=C4/C(=C3/[C@@H](c1ccc(N(C)C)cc1)C[C@]2([C@@H](CC[C@]2(C#CC)O)[C@@H]3CC4)C)CC5","no soluble",4771
--3.95,"O=C1Nc2ccc(Cl)cc2C(c2ccccc2)=NC1O","no soluble",380
--4.46,"c1c(Oc2c(Cl)cc(cc2)Cl)c(O)cc(c1)Cl","no soluble",3548
--4.419,"CN1CCN(C2=Nc3ccccc3Oc3ccc(Cl)cc32)CC1","no soluble",2720
--7.32,"Clc1cc(Cl)c(c(Cl)c1)c2c(Cl)cccc2Cl","no soluble",4070
--1.89,"O=C1NC(=O)C2(CC2)C(=O)N1","no soluble",786
--3.39,"O=[N+]([O-])c1ccc([N+](=O)[O-])cc1","no soluble",878
--2.537,"O=[N+]([O-])c1cc([N+](=O)[O-])c2ccc(S(=O)(=O)O)cc2c1O","no soluble",2514
--2.58,"O=C(C)CCCCCCC","no soluble",3306
--2.38,"Clc1ccccc1","no soluble",432
--4.12,"c1c(CC(C)C)cccc1","no soluble",3502
-0.51,"O=C(O)CC(O)(CC(=O)O)C(=O)O","soluble",1403
--8.06,"c1ccc2c(c1)ccc1c3ccccc3ccc21","no soluble",73
--8.1,"Clc1cc(Cl)c(Oc2ccc(Cl)c(Cl)c2Cl)c(Cl)c1","no soluble",1717
--4.11,"CC1CCCCC1NC(=O)Nc1ccccc1","no soluble",1044
--0.8,"Cn1ccc(=O)[nH]c1=O","no soluble",720
--4.15,"C1CCCCCCC1","no soluble",95
--3.12,"CN(C)C1C(O)=C(C(N)=O)C(=O)C2(O)C(O)=C3C(=O)c4c(O)cccc4C(C)(O)C3CC12","no soluble",905
--0.28,"CC(O)C1C(=O)N2C(C(=O)O)=C(SCC(=N)N(C)C)C(C)C12","soluble",2806
--4.23,"ClC(Cl)=C=C(Cl)C(Cl)Cl","no soluble",1778
--1.886,"NC(=O)OCC1COC2(CCCCC2)O1","no soluble",1871
--2.92,"OCC1OC(n2c(-c3ccco3)nc3ccccc32)C(O)C1O","no soluble",2803
--1.96,"Nc1ccccc1N(=O)=O","no soluble",4293
--3.26,"COC(=O)c1cc(Cl)cc(N)c1Cl","no soluble",309
--3.64,"C1=C2CCC3C4CC(C)C(C4(C)CC(C3(C2(C)C=CC1=O)F)O)(C(CO)=O)O","no soluble",3457
--5,"COc1cc2cc3c(C)coc3cc2oc1=O","no soluble",2787
--3.953,"O=[N+]([O-])c1c(O)cccc1-c1ccccc1","no soluble",2406
--4.19,"CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC","no soluble",505
--4.76,"COC(=O)C1=C(C)NC(=C(C1c2ccccc2N(=O)=O)C(=O)OC)C","no soluble",4089
--7.91,"c1c(Cl)ccc(c1c1ccc(c(Cl)c1Cl)Cl)Cl","no soluble",4052
-0.96,"NC(=O)N","soluble",3704
--0.74,"c1c(NO)cccc1","no soluble",3020
--1.28,"O=C(C)c1ccccc1","no soluble",3085
--4.65,"O=C(C)C1CCC2C3CC=C4CC(CCC4(C)C3CCC12C)O","no soluble",4008
--8.94,"Clc1c(Cl)c(c2cc(ccc2Cl)Cl)c(c(c1Cl)Cl)Cl","no soluble",3693
--1.5,"ClCC[S+2]([O-])([O-])CCCl","no soluble",3112
--3.672,"O2c1ccccc1N(C)C(=O)c3cccnc23","no soluble",4358
--3.047,"COS(=O)(=O)c1ccc(C(=O)O)cc1","no soluble",2303
--3.965,"CCC(C)(C)C1CCC(=NO)C(=NO)C1","no soluble",2349
--3.21,"Cc1c(CC)cccc1","no soluble",3396
--1.56,"O=C1N(C)C(C2=C(N1)NC(N2)=O)=O","no soluble",3128
--5.68,"CCCN(c1c([N+](=O)[O-])cc(cc1[N+]([O-])=O)C(F)(F)F)CCC","no soluble",4027
--1.34,"Nc1ccc(cc1)S(N)(=O)=O","no soluble",4231
--0.17,"Cn1c(=O)c2c(ncn2CC(O)CO)n(C)c1=O","soluble",710
--1.47,"CCCCCOC(N)=O","no soluble",1016
--1.44,"CSSC","no soluble",1672
--4.61,"O1C(=O)c2ccccc2N=C1c1ccccc1","no soluble",4005
--2.06,"O=C1CC(CC=C1C)C(C)=C","no soluble",3212
--2.665,"CC1=CS(=O)(=O)c2ccccc21","no soluble",1868
--5.16,"CCCN(CCC)c1c(cc(cc1N(=O)=O)S(N)(=O)=O)N(=O)=O","no soluble",4627
--8.04,"C1c2ccccc2c3cc4ccccc4cc13","no soluble",4523
--1.155,"Nc1cc[nH]c(=O)n1","no soluble",4429
--4.43,"CCC(C(CC)c1ccc(O)cc1)c2ccc(O)cc2","no soluble",4257
--3.18,"CCN(CC)CCNC(c1cc(c(cc1OC)N)Cl)=O","no soluble",3392
--3.728,"CCOP(=O)(Cc1ccc(-c2nc3ccccc3s2)cc1)N1CCCC1=O","no soluble",2529
--2.47,"Nc1cc(Cl)cc(C(=O)O)c1Cl","no soluble",310
--7.01,"Cc1c(C)c2c3ccccc3ccc2c2ccccc12","no soluble",170
--1.837,"CCCCOC(=O)c1cccnc1","no soluble",1885
--1.06,"Oc1ccccc1Cl","no soluble",373
--1.48,"ClCC(Cl)Cl","no soluble",523
--3.946,"c1coc(CNc2ncnc3[nH]cnc23)c1","no soluble",2713
--3.28,"CCc1ccccc1CC","no soluble",154
--1.7,"COc1c(Cl)ccc(Cl)c1C(=O)O","no soluble",253
--4.43,"[nH0]1c(NC(C)C)[nH0]c(NC(C)C)[nH0]c1Cl","no soluble",3544
--0.82,"CCOC(=O)CC(=O)OCC","no soluble",1246
-0.74,"CC1CNCCN1","soluble",765
--0.4,"OCC(C)(C)C","soluble",3731
--3.06,"O=C2NC(=O)C1(CCCCC1)C(=O)N2","no soluble",4517
--0.88,"CCl","no soluble",1725
--2.58,"CCCCCCCC(C)=O","no soluble",1174
--8.23,"c1ccc2c(c1)c3cccc4c3c2cc5ccccc54","no soluble",4242
--6.19,"c1cc2ccc3cccc4ccc(c1)c2c34","no soluble",63
--5.66,"C#CC1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C","no soluble",1315
--3.37,"CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC","no soluble",1670
--3.6,"c1ccc2ccccc2c1","no soluble",76
--2.63,"O1CC(C2C1C(CO2)O[N+]([O-])=O)O[N+]([O-])=O","no soluble",3317
--2.8996,"COc1ccc(C2Sc3ccccc3N(CCN(C)C)C(=O)C2OC(C)=O)cc1","no soluble",1813
--1.55,"Oc1c(Cl)cc(cc1)Cl","no soluble",3124
--3.054,"O=C(O)c1cc(N=Nc2ccccc2)ccc1O","no soluble",2894
--5.47,"[O-][N+](c1c(N)c(cc(c1N(CC)CC)[N+]([O-])=O)C(F)(F)F)=O","no soluble",3621
--4.699,"CCCCOC1=CC(=O)CC(C)C12Oc1c(Cl)c(OC)cc(OC)c1C2=O","no soluble",2609
--1.971,"NNC(=O)c1ccc([N+](=O)[O-])s1","no soluble",2013
--1.91,"BrC(Br)Br","no soluble",51
--2.28,"COP(=O)(OC)OC(Br)C(Cl)(Cl)Br","no soluble",33
--2.59,"CC(C)=CCC1(C(C)C)C(=O)NC(=O)NC1=O","no soluble",812
--4.001,"CCN(CC)c1ccc2c(C)cc(=O)oc2c1","no soluble",2118
--2.06,"CC(C)=CCCC(C)=CC=O","no soluble",1306
--4.632,"CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2","no soluble",4669
--4.37,"COc1cc(Cl)c(Cl)c(Cl)c1OC","no soluble",1775
--1.06,"CC1(C)CC(C)=CC(=O)C1","no soluble",3764
--2.8,"Cc1cc(O)cc(C)c1Cl","no soluble",307
-0.38,"Cc1cccnc1C","soluble",672
--0.533,"NC(C(=O)O)c1ccc(O)cc1","no soluble",2682
--0.55,"NC(=O)CCC(N)C(=O)O","no soluble",995
--3.56,"CCCCCCCCCCNC(=O)OCC1OC(O)C(O)C(O)C1O","no soluble",2724
--1.54,"ClC(Cl)Br","no soluble",57
--7.67,"Clc1ccc(Oc2ccc(Cl)c(Cl)c2Cl)cc1Cl","no soluble",1736
--3.125,"O=c1cnc2[nH]c(=O)[nH]c(=O)c2[nH]1","no soluble",2077
--0.742,"COC(=O)c1ccccc1OC2OC(COC3OCC(O)C(O)C3O)C(O)C(O)C2O","no soluble",4637
--2.16,"Clc1c(OCC(=O)O)cccc1","no soluble",3229
--2.961,"COc1c(Cl)cc(Cl)c(OC)c1O","no soluble",2453
--3.24,"C=CCC(C)C","no soluble",213
--4.576,"CCOC(=O)c1ccccc1S(=O)(=O)NN(C=O)c2nc(Cl)cc(OC)n2","no soluble",4226
--1.13,"CC1CC(C)C(=O)C(C(O)CC2CC(=O)NC(=O)C2)C1","no soluble",742
--3.109,"CCCCCCCCCCNCC(O)CO","no soluble",2245
--2.54,"c1c(O)c2ccc[nH0]c2cc1","no soluble",3300
--0.8,"Nc1ccc(O)cc1","no soluble",977
--2.46,"CC(C)=CCC/C(C)=C\CO","no soluble",4158
--0.615,"CC(SSC(C)C(=O)O)C(=O)O","no soluble",1989
--2.759,"Nc1ccc(S(=O)(=O)Nc2ccc(S(N)(=O)=O)cc2)cc1","no soluble",2880
--1.1,"CCCCCCN","no soluble",989
--1.65,"O=C1NC(=O)C2(CCC2)C(=O)N1","no soluble",787
--1.34,"CCSCC","no soluble",1571
--4.56,"Brc1ccc(I)cc1","no soluble",599
--1.89,"O=C(O)c1ccccc1Cl","no soluble",367
--3.8,"Cc1cc(S(=O)(=O)c2ccccc2)ccc1NS(=O)(=O)C(F)(F)F","no soluble",585
--7.25,"Clc1ccc(Cl)c(c1)c2ccc(Cl)c(Cl)c2","no soluble",4121
-0.58,"COC=O","soluble",1269
--4.77,"CCCCN(C)C(=O)Nc1ccc(Cl)c(Cl)c1","no soluble",344
--2.861,"NS(=O)(=O)c1cc(C(=O)c2ccc(O)cc2)cs1","no soluble",2566
--0.72,"Nc1ccccc1O","no soluble",958
-0.608,"O=C(O)C(O)(CO)CC(O)CO","soluble",2905
--4.64,"CCCCCc1ccccc1","no soluble",128
--3.165,"COC(=O)c1ccc(O)c(Br)c1","no soluble",2272
--1.49,"c1ccc(c(c1)C(=O)O)C(=O)O","no soluble",4723
--2.36,"CNC(=O)Oc1ccc(N(C)C)c(C)c1","no soluble",934
--0.6,"O=C(C)OCC(COC(C)=O)OC(C)=O","no soluble",3004
--0.74,"CCOC(=O)C=C","no soluble",3018
--4.723,"O=[N+]([O-])c1ccc2c(c1)Cc1ccccc1-2","no soluble",2096
--3.6,"O=C1Nc2ccc(Cl)cc2C(c2ccccc2Cl)=NC1O","no soluble",361
--0.96,"N#CCC=CC","no soluble",3049
--5.25,"c1c(c2c(Cl)cc(cc2)Cl)cccc1","no soluble",3606
--1.36,"ClCC=C","no soluble",3782
--0.705,"CCC(SC(CC)C(=O)O)C(=O)O","no soluble",1991
--2.7,"CCCN(CCC)C(=O)SCC","no soluble",1790
--1.57,"Cc1cc(O)ccc1Cl","no soluble",318
--1.06,"ClCCCl","no soluble",493
--5.82,"O=[N+]([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl","no soluble",837
--1.73,"OC1(C=CC(=O)C=C1)c1cc(ccc1O)O","no soluble",3157
--0.022,"CN(C)c1cnc2cncnc2n1","soluble",1900
--2.196,"Cc1ccccc1NC(=O)C(=O)C(=O)Nc1ccccc1C","no soluble",2488
--8.8,"c1cc2cccc3c4cccc5cccc(c(c1)c23)c54","no soluble",69
--2.313,"CCC1(CC)NC(=O)C(CC)(CC)NC1=O","no soluble",1949
--2.8978,"CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21","no soluble",1827
--7.43,"Clc1ccc(-c2c(Cl)ccc(Cl)c2Cl)c(Cl)c1","no soluble",321
--2.503,"CCCC(CO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",2828
--3.407,"Cc1cccc(N(O)C(=O)CCc2ccccc2)c1","no soluble",2607
-1.1,"c1ccnnc1","soluble",833
--2.12,"[nH]1c2[nH0]c[nH0]c(N)c2[nH0]c1","no soluble",3223
--1.26,"Cc1cc(=O)[nH]c(=O)[nH]1","no soluble",818
--8.94,"Clc1ccc(Oc2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)cc1","no soluble",1723
--0.74,"ONc1ccccc1","no soluble",1082
--5.639,"CC1(N)CN(c2c(F)cc3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)C1","no soluble",2714
--1.37,"O=C(O)c1ccc(N)cc1","no soluble",4747
--7.42,"Clc1ccc(Cl)c(-c2c(Cl)c(Cl)cc(Cl)c2Cl)c1","no soluble",288
-1.22,"CC(=O)O","soluble",1510
-0.009,"CC(=O)NC(Cc1ccc(O)cc1)C(=O)O","soluble",2291
--4.52,"CS(=O)(=O)c1ccc(C2=C(c3ccccc3)C(=O)OC2)cc1","no soluble",2838
--1.81,"CCCCCCCO","no soluble",1425
--3.99,"C1=C2CCC3C(CCC4(C)C3CCC4(C)O)C2(C)CCC1=O","no soluble",3969
--2.878,"Nc2cnn(c1ccccc1)c(=O)c2Cl","no soluble",4612
--2.75,"CCCCCCCCC(=O)O","no soluble",1501
--3.04,"CC(C)Cc1ccc(C(C)C(=O)NO)cc1","no soluble",1083
--4.17,"O=C(O)c1ccc[nH0]c1Nc1cccc(C(F)(F)F)c1","no soluble",3981
--2.319,"O=C(NC1CCCCC1)c1cccnc1","no soluble",1932
--0.12,"CC(=O)C(C)C","soluble",1196
--1.6,"O=C(N)NC1C(NC(N1)=O)=O","no soluble",3801
--2.997,"COc1cccc(OCC(O)CO)c1OC","no soluble",2412
--2.18,"C=C(C)C1CCC(C)C(=O)C1","no soluble",1159
--4.16,"CN1C(C(=O)Nc2ccccn2)=C(O)c2ccccc2S1(=O)=O","no soluble",1550
--0.17,"O=NN1CCCCC1","soluble",686
--4.37,"C1CCc2ccccc2C1","no soluble",4415
--2.54,"ClC(Cl)=C(Cl)Cl","no soluble",461
--2.396,"Nc1c2ccccc2nc2ccc(F)cc12","no soluble",2468
--1.95,"Nc1ncnc2n(ccc12)C3OC(CO)C(O)C3O","no soluble",4151
--4.89,"c1c(C)cc2c(cc(cc2)C)c1","no soluble",4016
--3.487,"c1coc(-c2nc3ccccc3[nH]2)c1","no soluble",1923
--1.55,"CSc1cnc2ncncc2n1","no soluble",1577
--3,"c1c(C=CC(=O)OCC)cccc1","no soluble",3364
--2.555,"NC(CSCC(N)C(=O)O)C(=O)O","no soluble",1995
--1.89,"CCOC(=O)C1(c2ccccc2)CCN(C)CC1","no soluble",681
--5.54,"[S-][P+](SCS[P+]([S-])(OCC)OCC)(OCC)OCC","no soluble",3625
--2.68,"CC12CCC3(O)C(CCC4=CC(=O)CCC43C)C1CCC2=O","no soluble",2164
--5.259,"ClC1(C(=O)C2(Cl)C3(Cl)C14Cl)C5(Cl)C2(Cl)C3(Cl)C(Cl)(Cl)C45Cl","no soluble",4305
--5.4,"CCCCCCCCOC(=O)c1ccc(cc1)N","no soluble",3615
--2.27,"Cc1cc(C)nc(NS(=O)(=O)c2ccc(N)cc2)n1","no soluble",1623
--5.4,"ClC(Cl)C(Cl)(Cl)SN2C(=O)C1CC=CCC1C2=O","no soluble",4298
--3.39,"C=C(Cl)CSC(=S)N(CC)CC","no soluble",462
--4.223,"CCCCCOC(=O)c1ccc(O)c(I)c1","no soluble",2402
--3.933,"CCC1(CC)C(=O)NC(=O)N(CO)C1=O","no soluble",2729
--8.49,"c1ccc2cc3c(cc2c1)-c1cccc2cccc-3c12","no soluble",70
--3.819,"CCCOC(=O)c1ccccc1C(=O)OCCC","no soluble",2241
--3.67,"O=C(O)CCCOc1ccc(Cl)cc1Cl","no soluble",337
--2.38,"ClCC(Br)CBr","no soluble",53
--5.14,"CCCCSP(=O)(SCCCC)SCCCC","no soluble",1660
--2.43,"O=C1C=C(NC(=S)N1)C","no soluble",3285
--4.81,"CCCCCCCI","no soluble",605
--3.4,"c1c2COc3c(C(=CCCN(C)C)c2ccc1)cccc3","no soluble",3430
--8.6,"c1c2cc3c(cc4c(c3)cccc4)cc2ccc1","no soluble",4059
-0.487,"CN(C)C(=O)c1cccc(C(=O)N(C)C)c1","soluble",2232
--1.16,"O=C1NC(=O)NC(=O)C1(C)CC=C","no soluble",4193
--2.356,"O=C1NC(=O)NC(=O)C1(C(C)CCC)CC=C","no soluble",4301
--6.7447,"CC1=NS(=O)(=O)c2cc(Cl)ccc2N1","no soluble",1809
--1.74,"Oc1ccccc1N(=O)=O","no soluble",4126
--6.7,"Cc1cc(O)ccc1OP(=O)(Oc1cc(O)ccc1C)Oc1c(C)cccc1O","no soluble",1520
--1.96,"O=C(O)C=Cc1c[nH]cn1","no soluble",776
--3.43,"CC12CCC(=O)C=C1CCC1C3CCC(O)(C(=O)CO)C3(C)CC(O)C12F","no soluble",546
--2.31,"O=C(CCCCC)OCC","no soluble",3856
--0.35,"NC(=O)OCc1ccccc1","soluble",1010
--1.11,"COc1ncnc2nccnc12","no soluble",4345
--2.85,"O=C(c1ccccc1)C(c1ccccc1)O","no soluble",3902
--1.08,"C=CC","no soluble",202
--2.68,"c1cnc2c(c1)ccc3ncccc23","no soluble",4236
--5.723,"CCCCCCCCC(CO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",2134
--1.45,"s1cccc1","no soluble",3108
--9.16,"Clc1cc2oc3c(Cl)c(Cl)c(Cl)cc3c2cc1Cl","no soluble",1733
--0.09,"N#CCCl","soluble",504
--3.716,"O=c1ccc2nc3ccccc3sc-2c1","no soluble",1914
-0.652,"CCOC(=O)N1CC(C)NCC1C","soluble",2464
--6.57,"Cc1c2ccccc2c(C)c3ccccc13","no soluble",4259
--0.59,"CC1CO1","no soluble",1126
--3.19,"Clc1ccccc1Br","no soluble",10
--0.7,"Cc1ccc(O)cc1","no soluble",1355
--0.685,"CCC(C)C(NC(C)=O)C(=O)O","no soluble",1983
--1.4,"O=C(C)Nc1ccccc1Cl","no soluble",3102
--1.26,"Cc1[nH0](CCO)c(c[nH0]1)[N+]([O-])=O","no soluble",3774
--0.72,"CC(C)(C)C(C)(C)O","no soluble",1392
--2.56,"CC=C(C)C","no soluble",200
--3.687,"CCCOC(=O)c1ccc(O)c(I)c1","no soluble",2322
--2.59,"s1c(CC)ccc1","no soluble",3309
--2.285,"O=S(=O)(c1cccc(O)c1)c1ccccc1O","no soluble",2419
--7.82,"c1c(c2c(Cl)c(Cl)c(c(c2)Cl)Cl)ccc(c1Cl)Cl","no soluble",3680
--8.01,"Clc1c(Cl)ccc(c2ccc(c(Cl)c2Cl)Cl)c1Cl","no soluble",3685
--2.297,"CC(=NO)C(=NO)c1ccccc1","no soluble",2150
--2.63,"CCC1CN2CCC1CC2C(O)c1ccnc2ccccc12","no soluble",704
--2.968,"COC(=O)c1ccc(C(=O)O)cc1","no soluble",2109
--3.61,"CC(C)(C)C(=O)C(Oc1ccc(Cl)cc1)n1cncn1","no soluble",428
--6.57,"Cc1cc2c3ccccc3ccc2c4ccccc14","no soluble",4095
--1.64,"ClC(=C)Cl","no soluble",3144
--2.32,"Nc1ccc(S(=O)(=O)Nc2ccnn2-c2ccccc2)cc1","no soluble",1634
--1.43,"Cc1c(C)c(O)ccc1","no soluble",3107
--5.2,"OC(c1ccccc1)(CCN2CCCCC2)C3CCCCC3","no soluble",4769
--2.921,"CCCc1ncnc2c(O)cccc12","no soluble",1908
--2.35,"CCOc1ccc(NC(=O)C)cc1","no soluble",4078
--2.966,"O=C(O)c1ccc(Br)c([N+](=O)[O-])c1","no soluble",2154
--4.52,"C1N(CCCN2c3cc(C(F)(F)F)ccc3Sc3ccccc23)CCN(C1)C","no soluble",4001
--1.74,"Cc1ccc(cc1)S(=O)(=O)N","no soluble",4473
--2.6731,"CNCCCC12CCC(c3ccccc31)c1ccccc12","no soluble",1824
--1.38,"CC(C)CCC(C)O","no soluble",1462
--1.45,"c1ccsc1","no soluble",1542
--2.64,"O=C1NCNC(=O)C1(c2ccccc2)CC","no soluble",4753
-0.76,"c1cc[nH0]cc1","soluble",2926
--0.99,"COc1ccccc1OCC(O)COC(N)=O","no soluble",1020
--2.224,"CCCCCCCCNCC(O)CO","no soluble",2243
--3.93,"O=c2[nH]c(=O)c1[nH]c(=O)[nH]c1[nH]2","no soluble",4530
--0.72,"CCC(C)C(C)O","no soluble",1470
--2.62,"C#CC(C)OC(=O)Nc1cccc(Cl)c1","no soluble",403
--1.85,"O=C1C2(C)CCC(C2)C1(C)C","no soluble",3815
--2.1,"C1C=CCC1","no soluble",3840
--6.29,"c1c(c2c(Cl)cccc2)ccc(c1Cl)Cl","no soluble",3647
--1.17,"CCC(CC)CO","no soluble",1438
--1.41,"Cc1c(C)cc(cc1)O","no soluble",3784
--5.153,"CCN2c1cc(OC)cc(C)c1NC(=O)c3cccnc23","no soluble",4221
--1.626,"O=C(O)Cc1c[nH]c(=O)[nH]c1=O","no soluble",1952
--0.1,"O=Cc1ccco1","soluble",1114
--1.639,"CC(C(N)=O)S(=O)(=O)c1ccccc1","no soluble",2405
--4.079,"O=C(O)c1ccc(Cl)c(N=Nc2ccc(O)cc2)c1","no soluble",2074
--3.283,"COC(=O)CCCCCCCCC(=O)OC","no soluble",2042
--2.75,"Nc1c(Cl)c(Cl)nc(C(=O)O)c1Cl","no soluble",440
--3.319,"O=S(=O)(c1ccccc1O)c1ccccc1O","no soluble",2133
--5.666,"OC(c1ccc(Cl)cc1)(c2ccc(Cl)cc2)C(Cl)(Cl)Cl","no soluble",4337
--1.096,"NC(Cc1ccc(O)cc1)C(=O)NCC(=O)O","no soluble",2197
--0.74,"O=[N+]([O-])c1ccc(O)cc1","no soluble",883
--3.549,"CC(=O)OC1c2ccccc2N(C(N)=O)c2ccccc2C1OC(C)=O","no soluble",2740
--3.01,"CCCCCCCCCO","no soluble",1423
--4.16,"c1c2ccc(cc2ccc1OC)C(C)C(O)=O","no soluble",3508
-1.128,"CCOC(=O)N1CCN(C)CC1","soluble",2463
--2.42,"c1c(O)c2c(ccc[nH0]2)cc1","no soluble",3868
--4.066,"O=C(O)c1ccc(P(=O)(O)c2ccccc2)cc1","no soluble",2334
--3.73,"CCCCC1C(=O)N(N(C1=O)c2ccc(O)cc2)c3ccccc3","no soluble",4465
--2.18,"SCCCC","no soluble",3846
--2.557,"CC(C)CCC1(CCO)C(=O)NC(=S)NC1=O","no soluble",2250
-0.36,"O=c1cccc2n1CC1CNCC2C1","soluble",751
--2.32,"CCC1(c2ccccc2)C(=O)NC(=O)NC1=O","no soluble",794
--4.357,"COc1ccc([N+](=O)[O-])c2ccccc12","no soluble",2094
--3.949,"CCCCCCOC(=O)c1ccc(O)cc1","no soluble",2299
-0.61,"NC(=O)c1cccnc1","soluble",4635
--1.41,"O=C(O)CCc1ccccc1","no soluble",1492
--2.725,"COC(=O)C(C#N)C(=O)CC(C)C","no soluble",2033
--4.88,"c1c(Cl)cccc1c1ccccc1","no soluble",3580
--6.301,"O=C1N(COC(=O)CCCCCC)C(=O)C(N1)(c2ccccc2)c3ccccc3","no soluble",4166
--4.63,"CC(=O)OCC(=O)C3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C","no soluble",4285
-0.504,"CN(C)C(=O)CCC(=O)N(C)C","soluble",2727
--5.37,"CCC(=O)OC3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C","no soluble",4457
--3.168,"O=C2NC(=O)C1(CCCCCC1)C(=O)N2","no soluble",4543
--1.449,"O=S(=O)(CCCl)CCS(=O)(=O)CCCl","no soluble",2053
--0.82,"c1ccoc1","no soluble",1132
-0.01,"C=C(C)C(O)=O","soluble",3719
--3.26,"CCCCCOC(=O)c1ccc(N)cc1","no soluble",970
-0.02,"c1cnc2ncncc2n1","soluble",662
--3.73,"O=C1C(CCCC)C(N(c2ccc(cc2)O)N1c1ccccc1)=O","no soluble",3470
--2.46,"CC(C)=CCCC(C)=CCO","no soluble",1443
--2.31,"c1c(F)c(F)c(cc1F)F","no soluble",3254
--3.15,"O=C(Nc1ccccc1)Nc1ccccc1","no soluble",1041
--3.16,"Cc1cc(Cl)ccc1OCC(O)=S","no soluble",2399
--3.57,"COc1cc(C2c3cc4c(cc3C(OC3OC5COC(C)OC5C(O)C3O)C3COC(=O)C23)OCO4)cc(OC)c1O","no soluble",1138
--2.55,"OC(c1ccccc1)c1ccccc1","no soluble",1446
--8.49,"c1c2c3c(cccc3c3c2cc2c(c3)cccc2)cc1","no soluble",4058
--3.08,"CC(=O)Nc1ccc(Br)cc1","no soluble",23
--3.223,"CCOC(=O)c1ccc(O)c(Cl)c1","no soluble",2320
--3.82,"OC1CC2C3CCC(C(C)CCC(O)=O)C3(C)CCC2C2(C)CCC(CC12)O","no soluble",3480
--3.24,"Nc1ccc(Cl)c(Cl)c1","no soluble",342
--4.62,"COc1ccc2c(c1)c(CC(=O)O)c(C)n2C(=O)c1ccc(Cl)cc1","no soluble",417
-0.38,"Cc1c(C)ccc[nH0]1","soluble",2942
--2.82,"CC(C)(c1ccc(O)cc1)c1ccc(O)cc1","no soluble",1353
--8.65,"Clc1ccc(Cl)c(-c2c(Cl)ccc(Cl)c2Cl)c1Cl","no soluble",319
--0.46,"CCCNCCC","soluble",1050
--3.567,"CCCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21","no soluble",2553
--0.41,"OCC1OC(CO)(OC2OC(COC3OC(CO)C(O)C(O)C3O)C(O)C(O)C2O)C(O)C1O","soluble",4229
--0.876,"Cn1cnc2n(C)c(=O)n(C)c(=O)c12","no soluble",4631
--2.15,"CC(Br)CBr","no soluble",54
--1.61,"CC(=O)Nc1ccc(S(N)(=O)=O)cc1","no soluble",1617
--2.148,"O=C1NC(=O)NC(=O)C1(CC)C(C)C","no soluble",4516
--1.39,"O=C1NC(C(C(=O)N1)(CC)CC)=O","no soluble",3099
--6.29,"ClC1=C(C2(C3C4CC(C3C1(C2(Cl)Cl)Cl)C1C4O1)Cl)Cl","no soluble",3646
--2.18,"CC1CCC(CC1=O)C(C)=C","no soluble",3845
--2.461,"Cc1cc(no1)C(=O)NNCc2ccccc2","no soluble",4666
--2.377,"CC1NC(=O)c2ccccc2NC1=O","no soluble",2809
--0.45,"O=C(C)CC1CCCCN1","soluble",2991
--1.39,"Cn1c(=O)c2[nH]cnc2n(C)c1=O","no soluble",669
--0.6,"OCCCCC","no soluble",3741
--2.367,"O=C1Nc2ccccc2C(=O)N2CC(O)CC12","no soluble",2864
--4.445,"OC(CC(c1ccccc1)c3c(O)c2ccccc2oc3=O)c4ccc(cc4)c5ccc(Br)cc5","no soluble",4578
--3.4,"CCSC(=O)N(CC)C1CCCCC1","no soluble",4212
--3.46,"O=S(=O)(c1ccc(cc1)C)NC(=O)NCCCC","no soluble",4744
--5.23,"CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc21","no soluble",378
--0.91,"NC(=O)c1cnccn1","no soluble",1005
--4.14,"c1c(C)c2ccccc2c(c1)C","no soluble",3504
--5.266,"CCC(=O)C(CCCCCCOc1ccc(OC)cc1Cl)C(=O)CC","no soluble",2141
--3.09,"CCSCCSP(=S)(OC)OC","no soluble",1667
--4.24,"CNC(=O)Oc1cc(C(C)(C)C)cc(C(C)(C)C)c1","no soluble",1067
+-2.77,"c1c(CC)cccc1","no soluble",3949
 -0.24,"COC(C)(C)C","soluble",1193
+-2.352,"CNCc1ccc(C(=O)c2ccc(S(N)(=O)=O)s2)cc1","no soluble",2954
+-6.88,"CC(C)C(C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1)c1ccc(OC(F)F)cc1","no soluble",587
+-1.7,"c1c(NCC)cccc1","no soluble",3208
+-3.104,"CCCCC(CO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",2815
+-2.07,"OC1CCN2C1=Nc1ccccc1C2O","no soluble",687
+-0.74,"NC(=O)CC(N)C(=O)O","no soluble",997
+-2.39,"CC(C)C1CCC(=NO)C(=NO)C1","no soluble",2348
+-2.05,"CC(Oc1c(OC(=O)NC)cccc1)C","no soluble",3264
+-1.229,"OCCOc1ccc(OCCO)cc1","no soluble",2571
+-4.13,"CC(=O)OCC(=O)C3(O)C(CC4C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC34C)OC(C)=O ","no soluble",4265
+-6.09,"COP(=S)(OC)Oc1cc(Cl)c(Br)cc1Cl","no soluble",4
+-3.2385,"CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23","no soluble",1829
+-1.678,"O=[N+]([O-])OCCCCO[N+](=O)[O-]","no soluble",1959
+-4.44,"CCCCCCC=C","no soluble",4328
+-3.12,"CCCCN(CCCC)CCCC","no soluble",917
+-1.52,"CCC(C=O)CC","no soluble",1304
+-2.06,"CC(C)=CCCC(C)=CC=O","no soluble",1306
+-2.72,"CCCCOC(=O)c1ccc(O)cc1","no soluble",1211
+-1.01,"Oc1cccc(c1)N(=O)=O","no soluble",4192
+-7.16,"Clc1cc(-c2ccccc2)c(Cl)c(Cl)c1Cl","no soluble",260
+-0.49,"CCCOC=O","soluble",1218
+-2.68,"C=CCCC","no soluble",151
+-2.437,"CC(CCCO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",2829
+-3.35,"CCOP(=S)(OCC)N2C(=O)c1ccccc1C2=O","no soluble",4706
+0.74,"OCC1OC(O)C(O)C(O)C1O","soluble",1136
+-2.34,"ICI","no soluble",610
+-1.7,"O=CCCCCCC","no soluble",3209
+-3.699,"COc1ccc2cc(C(C)C(=O)OCCCCN3CCOCC3)ccc2c1","no soluble",2859
+-0.95,"CC(=O)N(C)c1ccccc1","no soluble",932
+-4.88,"CC(C)N(C(=O)SCC(Cl)=C(Cl)Cl)C(C)C","no soluble",459
+-2.35,"CC(C)C1CCC(C)CC1=O","no soluble",4169
+-4.82,"O=C(O)C(c1ccc(cc1)N3C(=O)c2ccccc2C3)C","no soluble",4768
+-2.6565,"Oc1ccc(I)cc1","no soluble",1810
+-1.66,"COC(=O)c1ccccc1C(=O)OC","no soluble",1270
+-2.369,"O=C1NC(=O)NC(=O)C1(CC=C)c1ccccc1","no soluble",4161
+-2.06,"C=CCC1(CC=C)C(=O)NC(=O)NC1=O","no soluble",804
+-10.41,"Clc1cc(Cl)c(Cl)c(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c1Cl","no soluble",241
+-4.634,"CCN2c1ncccc1N(C)C(=S)c3cccnc23 ","no soluble",4562
+-4.151,"CC(=O)Nc1ccc(S(=O)(=O)Nc2nc(C)cs2)cc1","no soluble",2335
+-5.88,"CCCCCCCCC","no soluble",135
+-0.22,"CC[N+](=O)[O-]","soluble",895
+-0.77,"N#CC(OC1OC(COC2OC(CO)C(O)C(O)C2O)C(O)C(O)C1O)c1ccccc1","no soluble",915
+-3.28,"c1c(OC)[nH0][nH0]c(c1)N[S+2]([O-])(c1ccc(cc1)N)[O-]","no soluble",3464
+-0.62,"[O-][N+](C(C)C)=O","no soluble",3797
+-2.87,"CC1c2cccc(O)c2C(=O)C2=C(O)C3(O)C(=O)C(C(N)=O)=C(O)C(N(C)C)C3C(O)C21","no soluble",908
+-4.4,"Brc1ccc2ccccc2c1","no soluble",12
+-1.46,"Cc1c[nH]c(=O)nc1N","no soluble",778
+-2.6892,"CC1=C(CC(=O)O)c2cc(F)ccc2C1=Cc1ccc(S(C)=O)cc1","no soluble",1841
+-2.82,"c1c(C)c[nH0]c([nH0]1)N[S+2]([O-])(c1ccc(cc1)N)[O-]","no soluble",3954
+-8.65,"Clc1ccc(Cl)c(-c2c(Cl)ccc(Cl)c2Cl)c1Cl","no soluble",319
+-3.09,"CC1=C2C3OC(=O)C(C)C3CCC2(C)C=CC1=O","no soluble",1104
+-0.66,"O=C(N)OCCCC","no soluble",3062
+-2.32,"Nc1ccc(S(=O)(=O)Nc2ccnn2-c2ccccc2)cc1","no soluble",1634
+-4.796,"CCCCCCCCCCC(C)(C)C(=O)NO","no soluble",2226
+-0.72,"CC(C(C)(C)O)(C)C","no soluble",3071
+-3.39,"CCCCCCCC(=O)OC","no soluble",1280
+-0.495,"CC(=O)N(C)C(=O)COC(=O)c1ccccc1","soluble",2748
+-0.53,"O=C(C(Cc1c[nH]c[nH0]1)N)O","no soluble",3054
+-3.369,"CCOc1ccccc1C(=O)N(O)c1ccccc1","no soluble",2430
+-2.621,"CCOC(=O)c1[nH]c(C)cc1C","no soluble",1870
+-0.97,"Nc1nc(=O)[nH]cc1F","no soluble",562
+-0.922,"O=C(NCCCCCCNC(=O)OCCO)OCCO","no soluble",2061
+-2.28,"COP(=O)(OC)OC(Br)C(Cl)(Cl)Br","no soluble",33
+-1.917,"CCC1(C)NC(=O)C(C)(CC)NC1=O","no soluble",1913
+-0.3,"CC(C)COC(N)=O","soluble",1019
+-1.64,"C1=C(C(=O)NC(=O)N1)[N+](=O)[O-]","no soluble",4841
+-0.67,"CCC(C)C(=O)C","no soluble",4631
+-5.27,"O=C(C)C1(C)CCC2C3C=C(C)C4=CC(CCC4(C)C3CCC12C)=O","no soluble",3662
+0.51,"O=C(CC(O)(CC(O)=O)C(O)=O)O","soluble",3766
+-2.77,"Sc1ncc2nccnc2n1","no soluble",1596
+-4.706,"CCN2c1ccccc1N(C)C(=S)c3cccnc23 ","no soluble",4463
+-4.11,"CC1CCCCC1NC(=O)Nc1ccccc1","no soluble",1044
+-4.31,"COc1ccc2ccc(=O)oc2c1CC=C(C)C","no soluble",1095
+-2.07,"S1c2cccc(C)c2[nH0]2c1[nH0][nH0]c2","no soluble",3891
+0.504,"CN(C)C(=O)CCC(=O)N(C)C","soluble",2727
+-1.2,"[nH0]1c(C)cc(c2ccccc21)O","no soluble",3825
+-0.72,"Nc1ccccc1O","no soluble",958
+-2.64,"CN(C)CCN(Cc1ccccc1)c1cccc[nH0]1","no soluble",3374
+-2.63,"CCC(Cl)CC","no soluble",515
+-4.4,"C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])Cl","no soluble",4855
+-3.246,"COC1=CC(=O)CC(C)C13Oc2c(Cl)c(OC)cc(OC)c2C3=O","no soluble",4699
+-3.604,"OC3N=C(c1ccccc1Cl)c2cc(Cl)ccc2NC3=O","no soluble",4602
+-2.64,"CN(C)CCN(Cc1ccccc1)c1ccccn1","no soluble",921
+-9.15,"Clc1cc(Cl)c(Cl)c(c1Cl)c2c(Cl)c(Cl)cc(Cl)c2Cl ","no soluble",4152
+-2.594,"NS(=O)(=O)c1cc2c(s1)SCCC2O","no soluble",2655
+1.13,"CNC(N)=O","soluble",1061
+-1.89,"O=C(O)c1ccccc1Cl","no soluble",367
+-7.92,"C1c2c(C)ccc3cc4c5c(ccc4c(c23)C1)cccc5","no soluble",3738
+-1.95,"CN(C)C(=O)Oc1nc(nc(C)c1C)N(C)C","no soluble",4381
+-2.18,"CCCCNC(=O)NS(=O)(=O)c1ccc(N)cc1","no soluble",1647
+-1.23,"OCC1OC(C(O)C1O)n2cnc3c(O)ncnc23","no soluble",4183
+-1.62,"O=C(NC)ON=C(C(C)(C)C)CSC","no soluble",3196
+-1.658,"CCOc1ccc(N(C)C(N)=O)cc1","no soluble",2394
+-0.74,"c1c(CCO)cccc1","no soluble",3801
+0.46,"N#CCCN(CCC#N)CC(=O)O","soluble",2031
+-0.72,"CC(C)(C)C(C)(C)O","no soluble",1392
+-2.73,"CCC(=C)C","no soluble",4468
+-7.32,"CC1COC2CC3(C)C(CC4C5C=C6CC(O)CCC6(C)CC5CCC43C)OC2C1","no soluble",1107
+-5.4,"O=C1C2CC=CCC2C(=O)N1SC(Cl)(Cl)C(Cl)Cl","no soluble",484
+-0.92,"CC(O)c1ccccc1","no soluble",1467
+-4.357,"COc1ccc([N+](=O)[O-])c2ccccc12","no soluble",2094
+-3.092,"CN1CCC(=C2c3ccccc3C=Cc3ccccc32)CC1","no soluble",2450
+-1.16,"O=C1NC(=O)NC(=O)C1(C)CC=C","no soluble",4248
+-1.78,"O=C(C)Nc1ccc(cc1)F","no soluble",3225
+-3.049,"COC(=O)c1ccc(N(C)C)cc1","no soluble",2208
+-2.641,"CCC1(c2ccccc2)NC(=O)NC1=O","no soluble",2847
+-6.62,"Clc1ccc(C(c2ccccc2Cl)C(Cl)(Cl)Cl)cc1","no soluble",474
+-1.63,"O=Cc1ccc2c(c1)OCO2","no soluble",1124
+-4.15,"Fc2cc(ccc2c1ccccc1)C(C(=O)O)C","no soluble",4756
+-0.5,"CC(C)(C)CCO","soluble",1414
+-2.88,"C1=C(C=C(C=C1[N+](=O)[O-])[N+](=O)[O-])[N+](=O)[O-]","no soluble",4858
+-6.96,"Cc1ccc2cc3ccccc3cc2c1","no soluble",188
+-1.8828,"NS(=O)(=O)c1ccc(C(=O)c2cccc(CN3CCOCC3)c2)s1","no soluble",2931
+-4.63,"CCOC(=O)Nc1cccc(OC(=O)Nc2ccccc2)c1","no soluble",1026
+-0.54,"OCC(CC)C(CCC)O","no soluble",3055
+-4.4,"CCCCOC(=O)c1ccccc1C(=O)OCCCC ","no soluble",4277
+-4.169,"CC(C)=NNC(=O)NC1c2ccccc2Oc2ccccc21","no soluble",2331
+-8.1,"Clc1cc(Cl)c(Oc2ccc(Cl)c(Cl)c2Cl)c(Cl)c1","no soluble",1717
+-3.68,"CC34CC(O)C1(F)C(CCC2=CC(=O)C=CC12C)C3CC(O)C4(O)C(=O)CO","no soluble",4153
+-3.006,"O=C(O)c1ccccc1C(=O)c1ccc(Br)cc1","no soluble",2234
+-1.45,"CCCCCC(=O)C","no soluble",4539
+-3.38,"CCC(C)c1cc(cc(N(=O)=O)c1O)N(=O)=O ","no soluble",4489
+-3.14,"c1c(NC(=O)C2=C(OCCS2)C)cccc1","no soluble",3443
+-6.01,"Clc1cccc(c1)c2cc(Cl)ccc2Cl ","no soluble",4164
+-1.386,"OC(c1ccccc1)(c1ccccc1)C1CCNCC1","no soluble",2477
+-3.411,"COc1c(O)c(OC)c(Cl)c(Cl)c1Cl","no soluble",2413
+-3.39,"O=C(CCCCCCC)OC","no soluble",3482
+-1.53,"C1=C(C=C(C(=C1[N+](=O)[O-])O)[N+](=O)[O-])[N+](=O)[O-]","no soluble",4859
+-1.58,"C(=N)(N)N[N+](=O)[O-]","no soluble",4827
+-0.4,"O=C1C(=O)NC(N1)=O","soluble",3785
+-5.53,"CCCCN(CC)c1c(cc(cc1N(=O)=O)C(F)(F)F)N(=O)=O","no soluble",4575
+0.58,"COC=O","soluble",1269
+-4.92,"Nc1ccc(-c2ccc(N)c(Cl)c2)cc1Cl","no soluble",328
+-3.21,"Clc1cccc(Br)c1","no soluble",16
+-2.369,"CCSC(=O)N1CCCCCC1","no soluble",1867
+-4.43,"COP(=S)(OC)SCC(=O)N(c1ccc(Cl)cc1)C(C)C","no soluble",419
+0.009,"CC(=O)NC(Cc1ccc(O)cc1)C(=O)O","soluble",2291
+-2.957,"OC(=S)COc1cc(Cl)c(Cl)cc1Cl","no soluble",2427
+-1.092,"CCN(CC)NC(=O)Nc1c(C)cccc1C","no soluble",2476
+-6.01,"CCC(C)C(=O)OC1CC(C)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21","no soluble",1129
+-4.58,"CC(C)(C)C(=O)OCC(=O)C1(O)CCC2C3CCC4=CC(=O)C=CC4(C)C3C(O)CC21C","no soluble",1323
+-6.39,"Clc1ccc(cc1Cl)c2ccccc2 ","no soluble",4334
+-2.54,"Oc1cccc2ncccc12","no soluble",623
+-2.686,"COc1ccc(CCNC(=O)CNc2cccc(C(N)=O)c2)cc1OC","no soluble",2646
+-1.454,"C#CCC(NC(=O)OC(C)(C)C)C(=O)NCC(=O)OC","no soluble",2536
+-4.58,"O=C(COC(C(C)(C)C)=O)C1(CCC2C3CCC4=CC(C=CC4(C)C3C(CC12C)O)=O)O","no soluble",4059
+-4.4492,"Cc1ccc(C(=O)c2ccc(S(N)(=O)=O)s2)cc1","no soluble",2952
+-1.488,"O=c1cc[nH]c(=O)[nH]1 ","no soluble",4293
+-2.654,"Cc1ccc2c(c1)C=CS2(=O)=O","no soluble",1864
+-1.331,"NS(=O)(=O)c1cc2cc(CNCc3ccccn3)sc2o1","no soluble",2648
+-2.07,"O=C(O)Cc1c2c([nH]c1)cccc2","no soluble",3270
+-1.41,"Cc1c(C)cc(cc1)O","no soluble",3839
+-3.328,"COc1ccc2cc(C(C)C(=O)OCCO)ccc2c1","no soluble",2769
+-0.94,"O=C1CCCCC1C","no soluble",3812
+-0.83,"[O-][S+](CC=C)SCC=C","no soluble",3087
+-2.016,"CCC(C)C1(CC=C)C(=O)NC(=O)NC1=O","no soluble",4269
+-5.592,"c1ccc2c(c1)Nc1ccccc1S2","no soluble",1901
+-1.48,"O=C1C=CNC(=O)N1","no soluble",3848
+1,"CN1CCCC1=O","soluble",682
+-1.95,"OC1C(C([nH0]2ccc3c(N)[nH0]c[nH0]c32)OC1CO)O","no soluble",3877
+-0.617,"COC(=O)C(NC(=O)C(Cl)Cl)C(C)O","no soluble",2741
+-4.066,"O=C(O)c1ccc(P(=O)(O)c2ccccc2)cc1","no soluble",2334
+-5.593,"COc1ccc2cc(C(C)C(=O)OC3CCCCC3=O)ccc2c1","no soluble",2781
+-4.6,"o1c2ccccc2c3ccccc13","no soluble",4303
+-0.01,"CCCC=O","soluble",1293
+-4.398,"COC1=CC(=O)C2(Oc3c(Cl)c(OC)cc(OC)c3C2=O)C(C)C1","no soluble",2885
+-4.07,"CCC(=C(CC)c1ccc(O)cc1)c2ccc(O)cc2 ","no soluble",4174
+-2.91,"Cc1noc(NS(=O)(=O)c2ccc(N)cc2)c1C","no soluble",1636
+-0.46,"CCCNCCC","soluble",1050
+-4.63,"Clc1c(Cl)c(cc(c1)Cl)Cl","no soluble",3619
+-2.03,"CC(=C)C=C","no soluble",3887
+-4.83,"Clc1ccc(cc1Cl)[C@H]3c2c(cccc2)[C@@H](NC)CC3","no soluble",4749
+-1.6449,"CCCCNCc1ccc(S(=O)(=O)c2ccc(S(N)(=O)=O)s2)cc1","no soluble",2939
+-3.18,"Sc2nc1ccccc1s2 ","no soluble",4450
+-3.24,"C=CCC(C)C","no soluble",213
+-3.4,"C=CCCCCCCCCC(=O)O","no soluble",1500
+-1,"CCCC(C)(O)CC","no soluble",1396
+-1.815,"CCCCC(=O)NCCNC(=O)CCCC","no soluble",2040
+0.309,"CC(C)CC(N)C(=O)NCC(=O)NCC(=O)O","soluble",2007
+-2.27,"Cc1cc(C)nc(NS(=O)(=O)c2ccc(N)cc2)n1","no soluble",1623
+-4.6,"c1c2cccc(N=C=S)c2ccc1","no soluble",3613
+-1.983,"Cc1cc(C(=O)CC(C)C)ccc1O","no soluble",2382
+-1.523,"CC(=O)OC1C(C2COC(C)(C)O2)OC2OC(C)(C)OC21","no soluble",2428
+-1.89,"CCOC(=O)C1(c2ccccc2)CCN(C)CC1","no soluble",681
+-5.15,"CCN1c2cc(OC)cc(C)c2NC(=O)c2cccnc21","no soluble",656
+-3.125,"O=c1cnc2[nH]c(=O)[nH]c(=O)c2[nH]1","no soluble",2077
+-1.971,"NNC(=O)c1ccc([N+](=O)[O-])s1","no soluble",2013
+-2.52,"OC(Cc1ccccc1)c1ccccc1","no soluble",1450
+-0.85,"CN(C)C(=O)OC1=CC(=O)CC(C)(C)C1","no soluble",948
+-4,"Cc1c(C)c(C)cc(C)c1C","no soluble",4025
+-1.803,"c1ccccc1(OC(=O)NC)","no soluble",4330
+-0.19,"CCCC(=O)C","soluble",4151
+-2.82,"C=Cc1ccccc1","no soluble",80
+-1.63,"O=Cc2ccc1OCOc1c2 ","no soluble",4409
+-3.458,"CCCCOC(=O)c1ccc(NC(C)=O)cc1","no soluble",2426
+-5.8,"Clc1cccc(-c2cccc(Cl)c2)c1","no soluble",397
+-2.82,"CCC1C2CC3C4N(C)c5ccccc5C45CC(C2C5O)N3C1O","no soluble",644
+-0.74,"c1c(NO)cccc1","no soluble",3075
+-3.1,"CNC(=N)NS(=O)(=O)c1ccc2ccccc2c1","no soluble",2434
+-1.54,"Cc1c(O)cc(C)cc1","no soluble",3175
+-2.536,"Nc1ccc2cccc(S(=O)(=O)O)c2c1","no soluble",2289
+-4.67,"CCCCCCCCCCCCO","no soluble",1421
+-4.31,"CC5(C)OC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O5)C(=O)CO ","no soluble",4618
+-5.75,"CCOP(=S)(CC)Oc1cc(Cl)c(Cl)cc1Cl","no soluble",299
+-1.97,"C1C=CCC=C1","no soluble",3259
+-5.23,"Cc1c(C)c(C)c(C)c(C)c1C","no soluble",180
+-1.84,"OC1C(C(CO)O)OC2C1OC(C(Cl)(Cl)Cl)O2","no soluble",3867
+-3.95,"O=C(OCCCCCC)c1ccc(cc1)N","no soluble",3539
+-5.266,"CCC(=O)C(CCCCCCOc1ccc(OC)cc1Cl)C(=O)CC","no soluble",2141
+-4.15,"CC(C)(C)Cc1ccccc1","no soluble",113
+-1.506,"Cc1c[nH]c(=O)[nH]c1=O ","no soluble",4182
+-3.04,"FC(F)(Cl)C(F)(Cl)Cl","no soluble",563
+-5.723,"CCCCCCCCC(CO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",2134
+1.02,"Oc1ccncc1","soluble",708
+-5.06,"CCCCCCCCBr","no soluble",37
+-3.498,"O=S1(=O)OC2(c3cc(O)ccc3Oc3ccc(O)cc32)c2ccccc21","no soluble",2611
+-5.46,"OC1C=CC2C1C3(Cl)C(=C(Cl)C2(Cl)C3(Cl)Cl)Cl ","no soluble",4554
+-4.56,"Brc1ccc(I)cc1","no soluble",599
+-2,"ClC(Cl)(Cl)N(=O)=O","no soluble",4614
+-3.314,"CC(=NNC(=O)c1ccncc1)C(=O)O","no soluble",2085
+-2.92,"c1(OC)ccc(CC=C)cc1","no soluble",4447
+-1.61,"CC(=O)c1ccc(N)cc1","no soluble",966
+-1.19,"Cc1c(O)ccc(C)c1","no soluble",3127
+-4.16,"C1CC2(C)C(CCC2=O)C2CCC3CC(CCC3(C)C12)O","no soluble",3566
+-1.6,"CC(Cl)CCl","no soluble",518
+-2.831,"Clc2ccc1oc(=O)[nH]c1c2","no soluble",4479
+-8.54,"Clc1cc(Cl)cc(-c2cc(Cl)cc(Cl)c2)c1","no soluble",1757
+-1.39,"Cn1c(=O)n(C)c2nc[nH]c2c1=O","no soluble",4135
 -1.645,"CCN(CC)CCOC(=O)c1ccc(NC(C)=O)cc1","no soluble",2437
--1.329,"CCOC(=O)CCCC(=O)OCC","no soluble",2028
--8,"c1ccc2c3c(ccc2c1)c4cccc5cccc3c45","no soluble",4495
--2.48,"O=C(O)C=Cc1ccccc1","no soluble",1517
--3.085,"CCCC(C)CC1(CCO)C(=O)NC(=S)NC1=O","no soluble",2258
+-1.489,"Cc1nc2cncnc2n(C)c1=O","no soluble",1940
+-3.22,"O=C1NCCN1c1ncc([N+](=O)[O-])s1","no soluble",892
+-5.35,"FC(F)(F)c1cc(ccc1)Nc2ccccc2C(=O)O","no soluble",4758
+-2.86,"CN(C)C=Nc1ccc(Cl)cc1C","no soluble",4362
+-6.29,"ClC1=C(Cl)C2(Cl)C3C4CC(C5OC45)C3C1(Cl)C2(Cl)Cl","no soluble",230
+-3.46,"COc1cc(Cl)c(Cl)cc1OC","no soluble",1694
+-3.9,"C#CC(C)N(C)C(=O)Nc1ccc(Cl)cc1","no soluble",423
+-4.65,"CC(=O)C3CCC4C2CC=C1CC(O)CCC1(C)C2CCC34C ","no soluble",4219
+-3.11,"CC12CCC(=O)C=C1CCC1C2C(=O)CC2(C)C1CCC2(O)C(=O)CO","no soluble",1314
+-0.82,"O=C(CC(=O)OCC)OCC","no soluble",3084
+-0.6,"O=C1CCCCC1","no soluble",1153
+-0.98,"CC(=O)Nc1ccc(N)cc1","no soluble",1028
+-0.47,"CCC(C)CO","soluble",1439
+-2.539,"CCCNC(=O)COC(=O)c1ccccc1","no soluble",2651
+-1.63,"c1c(C=O)cc2c(OCO2)c1","no soluble",3198
+-2.36,"CNC(=O)Oc1ccc(N(C)C)c(C)c1","no soluble",934
+-7.15,"Clc1ccc(cc1)C(c2ccc(Cl)cc2)C(Cl)(Cl)Cl","no soluble",4586
+-1.63,"CC(=O)CC(=O)C(C)(C)C","no soluble",1171
+-1.545,"OC(CN1CCCCC1)c1ccc(Cl)c2ccccc12","no soluble",2483
+-0.3,"O=C(N)OCC(C)C","soluble",3037
+-2.65,"O=C(O)Cc1cccc2ccccc12","no soluble",1490
+-1.6,"O1CC1c1ccccc1","no soluble",3188
+-3.27,"O=C(C)CCC1C(N(c2ccccc2)N(c2ccccc2)C1=O)=O","no soluble",3983
+-1.73,"O=C1C=CC(O)(c2cc(O)ccc2O)C=C1","no soluble",1364
+-4.473,"COc1ccc(C(=O)c2csc(S(N)(=O)=O)c2)cc1","no soluble",2568
+-1.52,"CC(C)CCOC=O","no soluble",1224
+-3.38,"CCCCCCCCC(=O)OC","no soluble",1279
+-7,"Clc1ccc(Cl)c(-c2cc(Cl)ccc2Cl)c1","no soluble",313
+-2.08,"CC(C)c1ccc(c(c1)O)C","no soluble",3271
+-1.45,"CCCC[N+](=O)[O-]","no soluble",4847
+-1.155,"Nc1cc[nH]c(=O)n1 ","no soluble",4484
+-3.8,"CC(C)C1=CC2=CCC3C(C)(C(=O)O)CCCC3(C)C2CC1","no soluble",1478
+-1.552,"CC(C)CNCc1cccc(S(=O)(=O)c2ccc(S(N)(=O)=O)s2)c1","no soluble",2943
+0,"OCCCC","soluble",3775
+-2.003,"CC(C)CNCc1ccc(C(=O)c2ccc(S(N)(=O)=O)s2)cc1","no soluble",2955
+-0.31,"NC(N)=NC#N ","soluble",4613
+-6.51,"Clc1ccccc1C(c1ccc(cc1)Cl)C(Cl)Cl","no soluble",3708
+-3.67,"O=C(O)CCCOc1ccc(Cl)cc1Cl","no soluble",337
+-2.367,"CCCCCN(C)N=Nc1ccc(C(=O)O)cc1","no soluble",2628
+-0.96,"N#CCC=CC","no soluble",3104
+-4.35,"CC(CCC(=O)O)C1CCC2C3C(O)C(O)C4CC(O)CCC4(C)C3CCC12C","no soluble",1375
+1.08,"O=C(CC(C)N)O","soluble",2970
+-2.891,"CSC(CCC(SC)C(=O)O)C(=O)O","no soluble",1993
+-3.3,"CCCSC(=O)N(CCC)CCC","no soluble",1777
+-1.579,"O=C(O)c1ccc(F)c([N+](=O)[O-])c1","no soluble",2178
+-2.68,"NS(=O)(=O)c2cc1c(NC(NS1(=O)=O)C(Cl)Cl)cc2Cl ","no soluble",4542
+-2.12,"[nH]1c2[nH0]c[nH0]c(N)c2[nH0]c1","no soluble",3278
+-3.37,"C1C2CC(C3C(CC(C4(C)C(CCC34)C(C)CCC(O)=O)O)C2(C)CCC1O)O","no soluble",3477
+-4.3,"O=C(C)OCC(C1(CCC2C3CCC4=CC(CCC4(C)C3C(CC12C)O)=O)O)=O","no soluble",3585
+-2.44,"O=S(=O)(c1nnc(s1)NC(=O)C)N","no soluble",4736
+-2.15,"O=C(N1C(=O)NCC1)NCC(C)C","no soluble",3282
+-8.06,"Cc1cc(Cc2cc(Cl)ccc2Cl)c(Cl)cc1Cl","no soluble",1780
+-5.89,"Cc1c2ccccc2cc3ccccc13","no soluble",4493
+-3.73,"C=CCCCCC","no soluble",144
+-1.46,"CC([N+](=O)[O-])(Cl)Cl","no soluble",4830
+-5.65,"Clc1cc(Cl)c(Cl)c(Cl)c1Cl","no soluble",261
+-1.83,"O=C(C)N=C1N(N=C(S1)[S+2]([O-])(N)[O-])C","no soluble",3231
+0.35,"OC1C(O)C(O)C(O)C(O)C1O","soluble",1389
+-2.6342,"CCCCN1CCCCC1C(=O)Nc1c(C)cccc1C","no soluble",1798
+-2.172,"C=CCC1(CCCC)C(=O)NC(=O)NC1=O","no soluble",2169
+-5.4559,"NC(N)=Nc1nc(CSCCC(N)=NS(N)(=O)=O)cs1","no soluble",1816
+-0.72,"O=C(C)OCCC","no soluble",3070
+-5.64,"CCCCOC(=O)c1ccccc1C(=O)OCc1ccccc1","no soluble",1209
+-0.85,"OCc1ccccc1OC1OC(CO)C(O)C(O)C1O","no soluble",1134
+-1.6,"CC(C)CC(C)CO","no soluble",1440
+-1.71,"CCCCC(CC)CN","no soluble",990
+-2.99,"C1=C2C(C)CC3C4CCC(C4(C)CC(C3C2(C)C=CC1=O)O)(C(CO)=O)O","no soluble",3964
+-1.45,"OC(=O)C1CCCCC1","no soluble",3844
+-7.26,"CCCCCCCCCCCCCCCCO","no soluble",1418
+-2.8,"Cc1c(Cl)c(C)cc(c1)O","no soluble",3394
+-0.77,"CCOCCOCC","no soluble",1227
+-2.33,"CC(=C)C","no soluble",4410
+-4.01,"COC(=O)c1ccc(C(=O)OC)cc1","no soluble",1697
+-4.328,"CN(C)C(=O)Nc1ccc(c(Cl)c1)n2nc(oc2=O)C(C)(C)C","no soluble",4315
+0.02,"c1c2c([nH0]cc[nH0]2)[nH0]c[nH0]1","soluble",3013
+-2.09,"CN(C)C(=O)Oc1cc(C)nn1c2ccccc2","no soluble",4271
+-2.57,"CCCC","no soluble",150
+-2.77,"Cc1ccc(C)cc1","no soluble",194
+-4.42,"O=C4\C=C2/[C@]([C@H]1CC[C@@]3([C@@H](C(=O)C)CC[C@H]3[C@@H]1CC2)C)(C)CC4","no soluble",4780
+-3.54,"c1c(C(C)C)ccc(c1)NC(N(C)C)=O","no soluble",3994
+-2.09,"C=CC=C(C)C=CC=CC","no soluble",1698
+0.02,"n1c2c(ncc1)ncnc2","soluble",4820
+-2.5125,"CN(C)CCOC(c1ccccc1)c1ccccc1","no soluble",1814
+-2.484,"Cc1[nH]c(=O)n(c(=O)c1Cl)C(C)(C)C","no soluble",4526
+-1.31,"c1c(C)c(O)c(cc1)C","no soluble",3834
+-6.29,"ClC4=C(Cl)C5(Cl)C3C1CC(C2OC12)C3C4(Cl)C5(Cl)Cl","no soluble",4127
+-2.89,"CC(C)CCBr","no soluble",44
+-2.54,"[nH0]1c(OC)cc([nH0]c1C)N[S+2]([O-])(c1ccc(cc1)N)[O-]","no soluble",3356
+-4.16,"OCCN1CCN(CCCN2c3ccccc3Sc3ccc(Cl)cc32)CC1","no soluble",383
+-3.37,"C=CC1C2CCN(C1)C(C2)C(c1cc[nH0]c2ccc(cc12)OC)O","no soluble",3479
+-4.24,"c1(C(C)(C)C)cc(C(C)(C)C)cc(OC(=O)NC)c1","no soluble",4714
+-4.31,"CCCCCCCCCCCCCCC(=O)O","no soluble",1495
+-1.8,"OC(Cn1cncn1)(Cn1cncn1)c1ccc(F)cc1F","no soluble",543
+0.39,"OC1C(COC(C1O)O)O","soluble",2995
+-0.12,"CC(=O)C(C)C","soluble",1196
+-2.8978,"CCn1cc(C(=O)O)c(=O)c2cc(F)c(N3CCNCC3)cc21","no soluble",1827
+-3,"CCOC(=O)C=Cc1ccccc1","no soluble",1249
+-0.52,"CC(C)CCO","soluble",1433
+-8.4,"FC(F)(F)c1cccc(C(c2ccccc2)(c2ccccc2)n2cncn2)c1","no soluble",573
+-4.52,"CN1CCN(CCCN2c3ccccc3Sc3ccc(C(F)(F)F)cc32)CC1","no soluble",569
+-1.64,"c1ccccc1","no soluble",111
+-6.49,"CCCN(CCC)c1c(cc(cc1N(=O)=O)C(C)C)N(=O)=O","no soluble",4287
+-5.312,"CNC1CN(c2c(F)cc3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)C1","no soluble",2715
+-0.04,"CCOC(=O)C","soluble",4237
+-6.32,"ClC1=C(Cl)C2(Cl)C3C(Cl)C=CC3C1(Cl)C2(Cl)Cl","no soluble",235
+-1.99,"CC12CCC(CC2=O)C1(C)C","no soluble",3884
+-1.789,"CCC(C)CN(C)N=Nc1ccc(C(=O)O)cc1","no soluble",2602
+-1.27,"CCC(C)(O)C(C)(C)C","no soluble",1391
+-1.52,"Nc1ccccc1Cl","no soluble",368
+0.01,"NNC(=O)c1ccncc1","soluble",1078
+-1.58,"O=C(C)Nc1ccc(cc1)C=O","no soluble",3186
+-2.32,"CC1(C)C2CCC1(C)C(O)C2","no soluble",1365
+-3.383,"O=C(NC(=O)c1cccnc1)Nc1ccccc1","no soluble",2168
+-2.42,"Oc1cccc2cccnc12","no soluble",631
+-2.658,"O=C1NC(=O)NC(=O)C1(CC)CCC(C)C","no soluble",4549
+-3.4,"CCSC(=O)N(CC)C1CCCCC1 ","no soluble",4267
+-1.41,"Cc1ccc(O)cc1C","no soluble",1348
+-3.79,"Cc1cccc(C)c1NC(=O)c2cc(c(Cl)cc2O)S(N)(=O)=O","no soluble",4638
+-0.44,"C1C(O)CCCC1","soluble",3045
+-5.332,"CC1(N)CN(c2c(F)cc3c(=O)c(C(=O)O)cn(C4CC4)c3c2Cl)C1","no soluble",2709
+-2,"ClC(C)(Cl)Cl","no soluble",3261
+-4.9,"CC4CC3C2CCC1=CC(=O)C=CC1(C)C2(F)C(O)CC3(C)C4(O)C(=O)COC(C)=O ","no soluble",4701
+-2.57,"CCC1(CCC(C)C)C(=O)NC(=O)NC1=O","no soluble",793
+-3.222,"Cc1ccc(-n2ccc(=O)c(O)c2C)cc1","no soluble",1921
+-1.357,"CCSC(CCC(SCC)C(=O)O)C(=O)O","no soluble",2003
+-2.46,"CC(C)=CCCC(C)=CCO","no soluble",1443
+-2.824,"CCCCCCC(CCC)(CCC)C(=O)NO","no soluble",2225
+-1.98,"Oc2cccc1ccccc12","no soluble",4773
+-7.66,"Clc1ccc(-c2c(Cl)cc(Cl)c(Cl)c2Cl)cc1Cl","no soluble",251
+-1.08,"CCCCC(C)(C)O","no soluble",1395
+-1.55,"CSc1cnc2ncncc2n1","no soluble",1577
+-2.92,"Cc1ccccc1-n1c(C)nc2ccccc2c1=O","no soluble",726
+-3.223,"CCOC(=O)c1ccc(O)c(Cl)c1","no soluble",2320
+-3,"Cc1c([N+](=O)[O-])cccc1[N+](=O)[O-]","no soluble",850
+-2.029,"COc1ccc2nccc(C(O)C3CC4CCN3CC4C(=O)O)c2c1","no soluble",2887
+-3.43,"CN(C(=O)Nc1cccc(c1)C(F)(F)F)C","no soluble",3489
+-4.29,"CCc1ccc2ccccc2c1","no soluble",157
+-3.58,"Nc1nc2[nH]cnc2c(=O)[nH]1","no soluble",772
+-3.622,"CCCCCC(=O)OCSc1ncnc2[nH]cnc12","no soluble",2762
+-1.573,"COCCN(CCOC)C(=O)COC(=O)c1ccccc1","no soluble",2760
+-3.6,"COc1c2ccoc2cc2oc(=O)ccc12","no soluble",2125
+-3.67,"c1c2ccccc2[nH0]c2c1cccc2","no soluble",4000
+-2.832,"O=C(O)C(Oc1ccccc1Cl)Oc1ccccc1Cl","no soluble",2199
+-1.28,"CCCCCOC(=O)CC","no soluble",1204
+-3.75,"C1=C2CCC3C4CCC(C4(C)CCC3C2(C)CCC1=O)C(CO)=O","no soluble",4007
+-2.28,"O=C1NC(=O)C([N+](=O)[O-])C(=O)N1","no soluble",887
+-1.1196,"CC(C)CNCc1ccc(S(=O)(=O)c2ccc(S(N)(=O)=O)s2)cc1","no soluble",2938
+-0.55,"O=C(C)OC(C)C","no soluble",3793
+-4.12,"CC34CCC1C(CC=C2CC(O)CCC12C)C3CCC4=O","no soluble",4487
+-0.17,"OC1CC(O)C(O)C(O)C1O","soluble",1388
+-4.28,"C1=C2CC(C3C(CCC4(C)C3CCC43CCC(=O)O3)C2(C)CCC1=O)SC(C)=O","no soluble",4039
+-8.49,"c1ccc2cc3c4cccc5cccc(c3cc2c1)c45","no soluble",4391
+-6.22,"Clc1ccc(Oc2ccc(Cl)cc2Cl)cc1","no soluble",1781
+-3.12,"O=C1C=2C(CC3C(C(=C(C(C3(C2O)O)=O)C(N)=O)O)N(C)C)C(C)(c2cccc(c21)O)O","no soluble",3437
+-5.33,"CCCCCCCCCCCCCC(=O)O","no soluble",1496
+-4.89,"CN(C)C(=O)Nc1ccc(Oc2ccc(Cl)cc2)cc1","no soluble",425
+-1.75,"CCCCC(=O)OCC","no soluble",1242
+-1.22,"Cc1ncc(N(=O)=O)n1CCO","no soluble",4506
+-4.44,"C=CCCCCCC","no soluble",142
+-4.88,"CC(C)N(C(C)C)C(=O)SCC(Cl)=C(Cl)Cl","no soluble",4635
+-1.345,"CC(=O)c1c(C)ncc(C(=O)O)c1C(=O)O","no soluble",2145
+-10.13,"Clc1cc(Oc2cc(Cl)c(Cl)c(Cl)c2Cl)c(Cl)c(Cl)c1Cl","no soluble",1730
+-2.7,"Nc1ccc(cc1)c2ccc(N)cc2","no soluble",4430
+-7.92,"c1cc(C)cc2c1c3cc4cccc5CCc(c45)c3cc2","no soluble",4565
+-2.86,"NC(Cc1cc(I)c(O)c(I)c1)C(=O)O","no soluble",590
+-3.86,"O=C2NC(=O)NC2(c1ccccc1)c3ccccc3","no soluble",4779
+-1.01,"OC(CNC(C)(C)C)COc1cccc2c1C[C@H](O)[C@H](O)C2","no soluble",4791
+-0.435,"O=S(=O)(N1CCCC1)N1CCCC1","soluble",2561
+-3.14,"O=C1C(=C(C(C2C(C3C(=C(C21O)O)C(c1c(cccc1O)C3(C)O)=O)O)N(C)C)O)C(N)=O","no soluble",3441
+-2.297,"CC(=NO)C(=NO)c1ccccc1","no soluble",2150
+-5.23,"CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc21","no soluble",378
+-2.09,"COc1cc2c(cc1OC)C13CCN4CC5=CCOC6CC(=O)N2C1C6C5CC43","no soluble",639
+-3.81,"CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3 ","no soluble",4350
+0.38,"Cc1cncc(C)c1","soluble",697
+-4.61,"O=c1oc(-c2ccccc2)nc2ccccc12","no soluble",902
+-3.164,"O=C(O)c1ccc([N+](=O)[O-])c2cccnc12","no soluble",2101
+-2.747,"C=CCC(C(=O)NC(N)=O)C(C)C","no soluble",2026
+-0.85,"CCC(O)(CC)CC","no soluble",1399
+-2.52,"Cn1cnc2c1c(=O)[nH]c(=O)n2C","no soluble",712
+-3.8,"Cc1cc(ccc1NS(=O)(=O)C(F)(F)F)S(=O)(=O)c2ccccc2","no soluble",4438
+-6.21,"Clc1ccc(-c2ccc(Cl)cc2Cl)cc1","no soluble",332
+-4.614,"CCCCCCCC(=O)OCSc1ncnc2[nH]cnc12","no soluble",2765
+-5.82,"O=[N+]([O-])c1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl","no soluble",837
+-1.413,"NC(C(=O)NCC(=O)O)c1ccccc1","no soluble",2305
+-0.52,"OCCC(C)C","soluble",3792
+-7.53,"CCCCOC(=O)C(C)c1ccc2cc(OC)ccc2c1","no soluble",2768
+-5.05,"CC(C)CCC(C)(C)C","no soluble",115
+-1.06,"O=C(CCCCC)O","no soluble",3821
+-3.933,"CCC1(CC)C(=O)NC(=O)N(CO)C1=O","no soluble",2729
+-3.21,"O=C1C=CC2C(CC(CC3(CC(C(C(CC(C=CC=CC=CC=CCC(C)O1)OC1C(C(C(C(C)O1)O)N)O)O3)C(O)=O)O)O)O)O2","no soluble",3979
+-3.37,"OC(Cn1cncn1)(c1ccc(F)cc1)c1ccccc1F","no soluble",544
+-2.76,"C1C2CC(C(c3cc[nH0]c4ccc(cc34)OC)O)N(C1)CC2C=C","no soluble",3391
+-3.109,"CCCCCCCCCCNCC(O)CO","no soluble",2245
+-1.85,"CCCCCCCN","no soluble",988
+-4.223,"CCCCCOC(=O)c1ccc(O)c(I)c1","no soluble",2402
+-1.4569,"CC(C)CCNCc1cccc(C(=O)c2ccc(S(N)(=O)=O)s2)c1","no soluble",2932
+-3.8,"CN1C(=O)CN=C(c2ccccc2)c2cc([N+](=O)[O-])ccc21","no soluble",861
+-1.04,"OCC(CC)(C)C","no soluble",3818
+-1.7,"COc1c(Cl)ccc(Cl)c1C(=O)O","no soluble",253
+-2.15,"C1=CC=CCC=C1","no soluble",101
+-2.16,"c1ccc2[nH]ncc2c1","no soluble",820
+-6.29,"ClC12C3C(C4C(C3Cl)O4)C(C(=C1Cl)Cl)(C2(Cl)Cl)Cl","no soluble",4091
+-3.17,"CCCCCCCCC=O","no soluble",1288
+-4.19,"O=CNC(N1CCN(C(NC=O)C(Cl)(Cl)Cl)CC1)C(Cl)(Cl)Cl","no soluble",478
+-1.75,"ClC=C","no soluble",4515
+-3.14,"CC1=C(C(=O)Nc2ccccc2)SCCO1","no soluble",1536
+0.81,"c1c(O)cc(cc1)O","soluble",2980
+-1.888,"CC(O[N+](=O)[O-])C(C)O[N+](=O)[O-]","no soluble",1984
+-3.93,"O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1","no soluble",736
+-2.861,"NS(=O)(=O)c1cc(C(=O)c2ccc(O)cc2)cs1","no soluble",2566
+-2.4352,"CN(C)Cc1c[nH]c2ccc(Br)cc12","no soluble",1797
+-5.46,"OC1C=CC2C1C1(Cl)C(Cl)=C(Cl)C2(Cl)C1(Cl)Cl","no soluble",236
+-4.12,"CC(C)Cc1ccccc1","no soluble",205
+-7.28,"O=C(NC(=O)c1c(F)cccc1F)Nc1cc(Cl)c(F)c(Cl)c1F","no soluble",537
+-2.82,"CC(C)(c1ccc(O)cc1)c1ccc(O)cc1","no soluble",1353
+-3.84,"CCCCCC","no soluble",143
+-3.187,"CC(NC(=O)Cc1ccccc1)c1ccccc1","no soluble",2549
+-0.43,"O=C(O)CCI","soluble",608
+-2.59,"O=C(CCCC)CCCC","no soluble",3936
+-11.62,"Clc1c(Cl)c(Cl)c(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c(Cl)c1Cl","no soluble",239
+-6.14,"CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC","no soluble",1201
+-3.26,"COC(=O)c1cc(Cl)cc(N)c1Cl","no soluble",309
+-2.21,"CCC1(C(C)C)C(=O)NC(=O)NC1=O ","no soluble",4504
+-3.36,"O=C1C(CC)(C(C)CCC)C(NC(N1)=S)=O","no soluble",3476
+-0.29,"c1c(O)c(CO)ccc1","soluble",3036
+-2.41,"COC(=O)c1ccc(cc1)OC","no soluble",3335
+-3.55,"CCC(C)(C)C","no soluble",118
+-0.42,"c1ccccc1C(C(C)NC)O","soluble",3044
+-1.92,"Nc1cccc2ccccc12","no soluble",952
+-2.93,"O=C1NC(=O)C2C=CC=CC12","no soluble",739
+-1.519,"COc1ccc2cc(C(C)C(=O)OCCN3CCNCC3)ccc2c1","no soluble",2857
+-2.56,"CC1=C(C(=O)Nc2ccccc2)CCCO1","no soluble",1038
+-1.55,"Cc1cccc(C)c1NC(=O)C1CCCCN1C","no soluble",703
+-3.6,"c1ccc2ccccc2c1","no soluble",76
+-3.75,"CN1C(=O)CN=C(c2ccccc2)c2cc(Cl)ccc21","no soluble",377
+-2.63,"CCCC(C)Cl","no soluble",514
+0.36,"O=c1cccc2n1CC1CNCC2C1","soluble",751
+-2.3,"CCCCCCCC(=O)O","no soluble",1503
+-2.58,"c1c(OC)c[nH0]c([nH0]1)N[S+2]([O-])(c1ccc(cc1)N)[O-]","no soluble",3360
+-3.77,"CC(C)c1ccc(C)cc1","no soluble",4677
+-5.47,"CCN(CC)c1c([N+](=O)[O-])cc(C(F)(F)F)c(N)c1[N+](=O)[O-]","no soluble",839
+-2.696,"CCC1(C(=O)NC(=O)NC1=O)C2=CCC3CCC2C3","no soluble",4311
+-0.97,"O=C1c2c(N(C(=O)N1C)C)[nH0]c[nH0]2C","no soluble",3107
+-1.936,"O=C(O)C1CN2CCC1CC2C(O)c1ccnc2ccccc12","no soluble",2875
+-2.79,"C1=CC=C(C(=C1)[N+](=O)[O-])S(=O)(=O)N","no soluble",4885
+-1.19,"CCC([N+](=O)[O-])Cl","no soluble",4836
+-2.283,"CONC(=O)c1ccc([N+](=O)[O-])cc1","no soluble",2160
+-0.82,"CCCC(=O)OC","no soluble",1283
+-3.4,"CN(C)CCC=C1c2ccccc2COc2ccccc21","no soluble",920
+-5.54,"[S-][P+](SCS[P+]([S-])(OCC)OCC)(OCC)OCC","no soluble",3680
+-2.7,"CCCN(CCC)C(=O)SCC","no soluble",1790
+-5.87,"Clc1ccc2c(c1)Oc1ccccc1O2","no soluble",1678
+-1.04,"C1c2c(cccc2)NC1","no soluble",3113
+-3.414,"CC(C)c1nnc(NS(=O)(=O)c2ccc(N)cc2)s1","no soluble",2309
+-8,"CC(C)C(Nc1ccc(C(F)(F)F)cc1Cl)C(=O)OC(C#N)c1cccc(Oc2ccccc2)c1","no soluble",571
+-3.6,"O=C1Nc2ccc(Cl)cc2C(c2ccccc2Cl)=NC1O","no soluble",361
+-3.3,"O=C(OCCCCCCCC)N","no soluble",3986
+-2.046,"Cc1nnc(-c2ccccc2)c(=O)n1N","no soluble",2705
+-3.54,"O=N(=O)c1cccc2ccccc12","no soluble",4630
+-3.36,"COC(=O)Nc1nc2cc(C(=O)c3ccccc3)ccc2[nH]1","no soluble",783
+-2.19,"Nc1cccc([N+](=O)[O-])c1","no soluble",872
+-1.224,"CN(C)CC(O)c1ccc(Cl)c2ccccc12","no soluble",2509
+-8.8,"c12c3cccc1cccc2c1cccc2c1c3ccc2","no soluble",3747
+-2.62,"C#CC(C)OC(=O)Nc1cccc(Cl)c1","no soluble",403
+-2.7,"[O-][S+2]([O-])(Nc1cccc[nH0]1)c1ccc(cc1)N","no soluble",3946
+-0.44,"OC1CCCCC1","soluble",1382
+-6.74,"c1ccc2c(c1)c1ccccc1c1ccccc21","no soluble",72
+-9.12,"Clc1ccc(Oc2cc(Cl)c(Cl)c(Cl)c2Cl)c(Cl)c1Cl","no soluble",1707
+-2.17,"CCOc1ccc(NC(N)=O)cc1","no soluble",1030
+-0.97,"Cn1c(=O)c2c(ncn2C)n(C)c1=O","no soluble",711
+-4.37,"c1ccc2c(c1)CCCC2","no soluble",91
+-4.61,"O=c1nc(-c2ccccc2)oc2ccccc12","no soluble",901
+-5.423,"CC1N(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1(C)N","no soluble",2794
+-2.22,"c12c(O)cccc1cccc2","no soluble",3295
+-8.89,"Clc1ccc2c(c1)Oc1cc(Cl)c(Cl)c(Cl)c1O2","no soluble",1760
+-3.886,"Cc1cc(=O)oc2c3c4c(cc12)CCCN4CCC3","no soluble",1865
+-5,"COc1cc2cc3c(C)coc3cc2oc1=O","no soluble",2787
+-3.52,"Clc1ccc(NC(=O)N(OC)C)cc1Cl","no soluble",4797
+-1.92,"c1c(N(C)C)cccc1","no soluble",3248
+-4.24,"N#Cc1c(Cl)cccc1Cl","no soluble",280
+-2.28,"OC(=O)c1ccccc1c1ccccc1C(O)=O","no soluble",3906
+-2.615,"COc1ccc2cc(C(C)C(=O)OCC(O)CO)ccc2c1","no soluble",2778
+-4.087,"CCCCCCOC(=O)c1ccc(O)c(Cl)c1","no soluble",2409
+-3.51,"[O-][S+2]([O-])(Nc1[nH0]ccc[nH0]1)c1ccc(cc1)N","no soluble",3495
+-1.06,"CCCl","no soluble",498
+-7.39,"Clc1cccc(Cl)c1c2c(Cl)cccc2Cl ","no soluble",4650
+-3.168,"O=C2NC(=O)C1(CCCCCC1)C(=O)N2 ","no soluble",4598
+-1.96,"ClC(=CCl)Cl","no soluble",3880
+1,"O=C(O)CCCC(O)=O","soluble",2975
+-0.13,"CC(C)(C(C(O)=O)N)S","soluble",3023
+-5.21,"Clc1cccc(Cl)c1c2ccccc2 ","no soluble",4615
+-3.18,"C1CCC=CCC1","no soluble",4697
+-0.6,"O=C(C)OCC(COC(C)=O)OC(C)=O","no soluble",3059
+-3.957,"CCC1(CC)CCC(=O)N(CO)C1=O","no soluble",2728
+-3.177,"O=c1[nH]cnc2nc(-c3ccccc3)c(-c3ccccc3)nc12","no soluble",2307
+0.385,"CC(CC(=O)Nc1ccccc1)C(=O)O","soluble",2366
+-4.594,"O=c2[nH]c1CCCc1c(=O)n2C3CCCCC3","no soluble",4132
+-0.8,"c1c(N)ccc(c1)O","no soluble",3079
+-2.148,"O=C1NC(=O)NC(=O)C1(CC)C(C)C","no soluble",4571
+-4.632,"CCOC(=O)Nc2cccc(OC(=O)Nc1ccccc1)c2 ","no soluble",4724
+-2.63,"CCC1CN2CCC1CC2C(O)c1ccnc2ccccc12","no soluble",704
+-1.67,"CCCC(C)(COC(N)=O)COC(N)=O","no soluble",1011
+-4.23,"CCOP(=S)(OCC)SCCSCC","no soluble",1662
+-3.96,"O(c1ccccc1)c2ccccc2","no soluble",4688
+-4.26,"CC(CC(C)C)C","no soluble",3582
+-3.509,"Cc1ccc(S(=O)(=O)N(Cl)Cl)cc1","no soluble",1858
+-3.6,"c1c2ccccc2ccc1","no soluble",3506
+-3.04,"CC(C)Cc1ccc(C(C)C(=O)NO)cc1","no soluble",1083
+-0.24,"OCC1OC(OC2C(CO)OC(O)C(O)C2O)C(O)C(O)C1O","soluble",1135
+-2.54,"CCC=CC","no soluble",3354
+-7.2,"ClC(Cl)C(c1ccc(Cl)cc1)c2ccc(Cl)cc2 ","no soluble",4673
+-2.84,"O=C(C)Nc1ccc(cc1)Cl","no soluble",3401
+-2.25,"C(C(CO[N+](=O)[O-])O[N+](=O)[O-])O[N+](=O)[O-]","no soluble",4833
+-1.16,"OC(=O)c1cc(c(c(c1)O)O)O","no soluble",3824
+-2.07,"Cc2cccc3sc1nncn1c23 ","no soluble",4654
+-2.145,"CCN(CC)C(C)CN1c2ccccc2Sc2ccccc21","no soluble",2528
+-3.78,"Cc1ccccc1N1C(=O)c2cc(S(N)(=O)=O)c(Cl)cc2NC1C","no soluble",283
+-3.75,"CCc1ccc(CC)cc1","no soluble",158
+-3.278,"O=S(=O)(c1ccccc1)N(Br)Br","no soluble",1879
+-3,"CCC(=O)Nc1ccc(Cl)c(Cl)c1","no soluble",343
+-4.19,"CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC","no soluble",505
+-2.83,"O=[N+]([O-])c1cc([N+](=O)[O-])c(O)c([N+](=O)[O-])c1","no soluble",2698
+-2.92,"O=C(N)c1ccccc1C(N)=O","no soluble",3413
+-3.23,"C=CCCCC","no soluble",148
+-7.33,"ClC1=C(Cl)C2(Cl)C3C4C=CC(C4)C3C1(Cl)C2(Cl)Cl","no soluble",232
+-3.29,"O=C1c2cc(c(cc2NC(CC)N1)Cl)[S+2](N)([O-])[O-]","no soluble",3985
+-0.85,"C=COCC","no soluble",1232
+-1.5,"CCCC1CCCCN1","no soluble",762
+0.52,"CCC(=O)C","soluble",4204
+0.48,"O=C2\C=C(/N(N2c1ccccc1)C)C","soluble",4804
+-8.56,"Clc1cc(Cl)c(Cl)c(-c2cc(Cl)cc(Cl)c2Cl)c1","no soluble",1712
+-1.06,"CC1=CC(=O)CC(C)(C)C1","no soluble",1150
+-6.73,"c1ccc2c(c1)c3ccccc3c4c2cccc4","no soluble",4825
+-6.19,"c1cc2ccc3cccc4ccc(c1)c2c34","no soluble",63
+-3,"c1c(NC(=O)CC)cc(c(c1)Cl)Cl","no soluble",3420
+-1.34,"CCCOC(C)C","no soluble",1296
+-1.13,"O=C1CC(CC(C2CC(C)CC(C)C2=O)O)CC(N1)=O","no soluble",3122
+-2.36,"CN(C(=O)NC1CCCCCCC1)C","no soluble",3323
+-5.14,"CCCCSP(=O)(SCCCC)SCCCC","no soluble",1660
+-8.06,"c1ccc2c(c1)ccc1c3ccccc3ccc21","no soluble",73
+0.52,"O=C(C)OC","soluble",3765
+-5.66,"COP(=S)(Oc1cc(Cl)c(Br)cc1Cl)c1ccccc1","no soluble",1792
+-3.4,"c1c2COc3c(C(=CCCN(C)C)c2ccc1)cccc3","no soluble",3485
+-2.31,"CC(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O","no soluble",2866
+-4.57,"c1c(O[P+]([S-])(OC)OC)cc(c(c1)SC)C","no soluble",4058
+-3.407,"Cc1cccc(N(O)C(=O)CCc2ccccc2)c1","no soluble",2607
+-3.124,"NC(CCSSCCC(N)C(=O)O)C(=O)O","no soluble",2005
+-1.91,"BrC(Br)Br","no soluble",51
+-1.17,"BrCBr","no soluble",34
+-1.16,"C=CCC1(C)C(=O)NC(=O)NC1=O","no soluble",805
+-2.059,"CCOP(=O)(OCC)Oc1ccc([N+](=O)[O-])cc1","no soluble",2113
+0.52,"COC(C)=O","soluble",1285
+-2.43,"c1c(NC(=O)C2=C(OCC[S+2]2([O-])[O-])C)cccc1","no soluble",3342
+-6.08,"CCCCCC1CCCC1","no soluble",102
+-6.94,"Clc1ccc(-c2c(Cl)cc(Cl)cc2Cl)cc1","no soluble",1756
+-2.62,"CCN2c1ncccc1N(C)C(=O)c3cccnc23 ","no soluble",4256
+-7.05,"Clc1ccc(-c2ccc(Cl)c(Cl)c2Cl)cc1Cl","no soluble",272
+-1.23,"OCC1OC(n2cnc3c(O)ncnc32)C(O)C1O","no soluble",668
+-0.98,"O=C(C)Nc1ccc(cc1)N","no soluble",3108
+-1.589,"NS(=O)(=O)c1cc2c(s1)CC(O)CS2(=O)=O","no soluble",2674
+-2.57,"NC(Cc1ccc(O)cc1)C(=O)O","no soluble",993
+-5.405,"CNC1CN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)C1","no soluble",2707
+-1.54,"ClC(Cl)Br","no soluble",57
+-0.88,"CCl","no soluble",1725
+-1.929,"CC(=NNC(=O)c1nccs1)C(=O)O","no soluble",2075
+-4.442,"CCCOCC(=Nc1ccc(Cl)cc1C(F)(F)F)n1ccnc1","no soluble",2785
+-4.57,"C1=C2CCC3C(CCC4(C)C3CCC4(C#C)O)C2CCC1=O","no soluble",3611
+-3.024,"COc1ccc(S(=O)(=O)c2coc(S(N)(=O)=O)c2)cc1","no soluble",2446
+-2.56,"CC=C(C)C","no soluble",200
+-3.24,"O=C4\C=C2/[C@]([C@H]1[C@@H](O)C[C@@]3([C@@H](C(=O)CO)CC[C@H]3[C@@H]1CC2)C)(C)CC4","no soluble",4806
+-3.93,"O=C1NC(=O)C2C3C(C(O)(c4ccccc4)c4ccccn4)=CC(C3=C(c3ccccc3)c3ccccn3)C12","no soluble",738
+-1.64,"O=C1NC(=O)NC(C1(CCCC)CC)=O","no soluble",3202
+-2.224,"CCCCCCCCNCC(O)CO","no soluble",2243
+-8.4,"c1c(C(F)(F)F)cccc1C(c1ccccc1)(c1ccccc1)[nH0]1c[nH0]c[nH0]1","no soluble",3743
+-1.8,"c1c(OC(=O)NC)cc(cc1)C","no soluble",3227
+-2.33,"CCCOC(=O)c1ccc(N)cc1","no soluble",972
+-3.451,"NS(=O)(=O)c1cc(ccc1Cl)C2(O)NC(=O)c3ccccc23","no soluble",4727
+-2.24,"Cc1c(CCCC)c(O)[nH0]c([nH0]1)N(C)C","no soluble",3301
+-1.659,"CC(CCO[N+](=O)[O-])O[N+](=O)[O-]","no soluble",1961
+-3.096,"CC(O)C(O)c1cnc2nc(N)[nH]c(=O)c2n1","no soluble",2856
+-2.86,"COc1cc(Cc2cnc(N)nc2N)cc(OC)c1OC","no soluble",982
+-1.89,"O=C1NC(=O)C2(CC2)C(=O)N1","no soluble",786
+-2.68,"CC(C)N1C(=O)c2ccccc2NS1(=O)=O","no soluble",1549
+-2.11,"c1cc(ccc1[C@H]([C@@H](CO)NC(=O)C(Cl)Cl)O)[N+](=O)[O-]","no soluble",4805
+-3.8,"Cc1cc(S(=O)(=O)c2ccccc2)ccc1NS(=O)(=O)C(F)(F)F","no soluble",585
+-2.51,"O=C(O)COc1ccc(Cl)cc1Cl","no soluble",338
+-4.36,"O=C(O)c1ccccc1Nc1cccc(C(F)(F)F)c1","no soluble",577
+-3.25,"O=C(C)Nc1ccc(cc1)I","no soluble",3456
+-0.96,"CCOC(=O)CCC(=O)OCC","no soluble",1244
+-0.82,"o1cccc1","no soluble",3085
+-1.57,"Cc1cc(O)ccc1Cl","no soluble",318
+-0.403,"O=C(O)CC(O)CCC1=CCCC1=O","soluble",2562
+-1.6,"COCC(=O)N(c1c(C)cccc1C)C(C)C(=O)OC","no soluble",950
+-1.116,"CC(C)CC(N)C(=O)NC(Cc1c[nH]c2ccccc12)C(=O)O","no soluble",2886
+-4.64,"CCCCCc1ccccc1","no soluble",128
+-0.544,"O=C(NCCO)c1cc(O)ccc1O","no soluble",2280
+-0.3098,"CC(C)C(N)C(=O)O","soluble",2909
+-3.57,"CCN(CC)C(=O)C(C)Oc1cccc2ccccc12","no soluble",931
+-2.48,"c1c(N(C(=O)CCl)C(C)C)cccc1","no soluble",3349
+-2.62,"O=C(N)OCCCCCCC","no soluble",3370
+-3.397,"O=[N+]([O-])OCCCCCCCO[N+](=O)[O-]","no soluble",2095
+-2.19,"c1c(N)cccc1[N+]([O-])=O","no soluble",3291
+-3.59,"Clc1ccc(Cl)c(Cl)c1","no soluble",335
+-2.23,"O=C1NC(=O)N(C)C(C1(CC)CC)=O","no soluble",3299
+-2.82,"[O-][S+2]([O-])(c1ccc(cc1)N)c1ccc(cc1)N","no soluble",3400
+-4.907,"O=C1N(COC(=O)CC)C(=O)C(N1)(c2ccccc2)c3ccccc3","no soluble",4446
+-3.11,"C1=C2CCC3C4CCC(C4(C)CC(C3C2(C)CCC1=O)=O)(C(CO)=O)O","no soluble",3436
+-3.456,"Nc1[nH]c(=O)[nH]c2nc(=O)[nH]c1-2","no soluble",1976
+-4.23,"ClC(Cl)=C=C(Cl)C(Cl)Cl","no soluble",1778
+-0.12,"[nH0]1c(C)[nH0]c2c([nH0]cc[nH0]2)c1","soluble",3022
+-7.42,"Clc1ccc(Cl)c(-c2c(Cl)c(Cl)cc(Cl)c2Cl)c1","no soluble",288
+-0.36,"s1c(N)[nH0]cc1","soluble",3783
+-2.31,"ClC(Cl)(Cl)Cl","no soluble",481
+1.1,"c1ccnnc1","soluble",833
+-3.67,"ClC(C(Cl)(Cl)Cl)(Cl)Cl","no soluble",3516
+0.359,"CN(C)c1ncc2nccnc2n1","soluble",1899
+-1.493,"CCOc1ccc(C(=O)OCCNC(C)c2ccccc2)cc1","no soluble",2487
+-1.6,"ClCC(C)Cl","no soluble",3189
+-1.11,"[nH0]1c(OC)[nH0]cc2c1[nH0]cc[nH0]2","no soluble",3119
+-8.66,"c1ccc2c(c1)ccc1cc3c(ccc4ccccc43)cc12","no soluble",66
+-2.101,"O=C1CC(C(=O)O)Cc2ccccc21","no soluble",1942
+-6.7447,"CC1=NS(=O)(=O)c2cc(Cl)ccc2N1","no soluble",1809
+-5.56,"Clc1cc(Cl)c(Cl)cc1Cl","no soluble",294
+-3.861,"CN(C)c1ccc(N=Nc2ccc(S(=O)(=O)O)cc2)cc1","no soluble",2816
+-2.604,"O=C(c1cccc(F)c1)N(O)c1ccccc1","no soluble",2604
+-0.63,"Cc1c(N(C)C)c(=O)n(-c2ccccc2)n1C","no soluble",831
+-4.51,"ClC1C(Cl)C(C(C(C1Cl)Cl)Cl)Cl","no soluble",3607
+-2.59,"CC(C)=CCC1(C(C)C)C(=O)NC(=O)NC1=O","no soluble",812
+-7.56,"Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl","no soluble",1711
+-2.08,"CCNc1nc(NC(C)C)nc(OC)n1","no soluble",1071
+-1.242,"O=C(O)CC(CSC(=O)O)c1ccccc1","no soluble",2702
+-3.021,"COc2c1occc1c(OC)c3c(=O)cc(C)oc23 ","no soluble",4548
+-7.82,"Clc1ccc(-c2cc(Cl)c(Cl)c(Cl)c2Cl)cc1Cl","no soluble",259
+-3.44,"CCCCCCCCCC(=O)O","no soluble",1499
+-5.233,"CCOP(=S)(OCC)SCn1c(=O)oc2cc(Cl)ccc12","no soluble",4385
+-6.29,"Clc1ccc(cc1)c2cccc(Cl)c2Cl ","no soluble",4300
+-2.155,"NC(=O)c1cccc(S(N)(=O)=O)c1","no soluble",2300
+-3.481,"Cn1ncc2cc3c(Nc4cccc(Br)c4)ncnc3cc21","no soluble",2820
+-0.89,"CCC(C)C(C)(C)O","no soluble",1404
+-1.91,"O=C(C)Nc1ccc(cc1)OC(C)=O","no soluble",3244
+-4.057,"O=c1[nH]c(=O)c2[nH]c(=O)c(=O)[nH]c2[nH]1","no soluble",2100
+-1.45,"O=C(O)C1CCCCC1","no soluble",1486
+-2.27,"O=C(NC(=O)c1ccccc1)c1ccccc1","no soluble",1074
+-2.55,"c1ccccc1C(O)c2ccccc2","no soluble",4379
+-2.854,"O=C1CNC(=O)c2ccccc2N1","no soluble",1928
+-2.58,"CCCCCCCC(C)=O","no soluble",1174
+-8.23,"c1ccc2c(c1)c3cccc4c3c2cc5ccccc54","no soluble",4297
+-4.228,"CCCCCCCOC(=O)c1ccc(O)c(Cl)c1","no soluble",2415
+-1.2219,"NC(CC(=O)O)C(=O)O","no soluble",2912
+-3.08,"O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12","no soluble",1139
+-2.07,"Cc1cccc2sc3nncn3c12","no soluble",1532
+0.38,"Cc1cccnc1C","soluble",672
+-0.17,"O=NN1CCCCC1","soluble",686
+-1.2219,"CCNC1CC(C)S(=O)(=O)c2sc(S(N)(=O)=O)cc21","no soluble",2911
+-4.82,"COP(=S)(OC)Oc1nc(Cl)c(Cl)cc1Cl","no soluble",442
+-3.945,"Oc1ccc(N=Nc2ccccc2)cc1","no soluble",2890
+-0.2,"CC(C(C)C)O","soluble",3032
+-1.382,"CS(=O)(=O)c1ccc(C(=N)N)cc1","no soluble",2466
+-7.11,"c1c(cccc1)c1ccc(cc1)c1ccccc1","no soluble",3720
+-1.85,"CC2(C)C1CCC(C)(C1)C2=O","no soluble",4556
+-2.287,"Cc1nc2nc[nH]c(=O)c2nc1C","no soluble",1917
+-3.36,"CCCC(C)C1(CC)C(=O)NC(=S)NC1=O","no soluble",1558
+-0.93,"O=C(C(c1ccccc1)CO)O","no soluble",3811
+-0.685,"CCC(C)C(NC(C)=O)C(=O)O","no soluble",1983
+-3.68,"Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(CC(O)C(O)C(O)CO)c2cc1C","no soluble",670
+-4.72,"Cc1c(C)cc2ccccc2c1","no soluble",4064
+-2.33,"O=[N+]([O-])OC1CCCC(O[N+](=O)[O-])C1","no soluble",2831
+-2.68,"CC12CCC3(O)C(CCC4=CC(=O)CCC43C)C1CCC2=O","no soluble",2164
+-1.45,"c1c2cc[nH0]cc2ccc1","no soluble",3164
+-4.17,"O=C(O)c1ccc[nH0]c1Nc1cccc(C(F)(F)F)c1","no soluble",4036
+-2.02,"Cc1ccccc1S(N)(=O)=O","no soluble",1614
+-2.96,"C1=CC(=C(C=C1[N+](=O)[O-])[N+](=O)[O-])O","no soluble",4867
+-4.41,"CCN(CC)c1nc(Cl)nc(N(CC)CC)n1","no soluble",444
+-3.953,"O=[N+]([O-])c1c(O)cccc1-c1ccccc1","no soluble",2406
+-3.946,"c1coc(CNc2ncnc3[nH]cnc23)c1","no soluble",2713
+-8.8,"c1cc2cccc3c4cccc5cccc(c(c1)c23)c54","no soluble",69
+-3.523,"Cc1cc(C)c(CC(C)(C)C(=O)NO)c(C)c1","no soluble",2237
+-2.47,"Nc1cc(Cl)cc(C(=O)O)c1Cl","no soluble",310
+-2.38,"ClCC(Br)CBr","no soluble",53
+-1.23,"CC(=O)NS(=O)(=O)c1ccc(N)cc1","no soluble",1643
+-6.96,"c1c(C)cc2c(cc3c(c2)cccc3)c1","no soluble",3718
+-5.22,"NC(Cc1cc(I)c(Oc2ccc(O)c(I)c2)c(I)c1)C(=O)O","no soluble",589
+-2.85,"O=C(c1ccccc1)C(c1ccccc1)O","no soluble",3957
+-4.73,"c12c(O)c3ccccc3cc1cccc2","no soluble",4065
+-2.253,"O=C1NC(=O)NC(=O)C1(CC)CC=C(C)C","no soluble",4607
+-3.346,"CCC(CC)(Cc1ccc(C)cc1)C(=O)NO","no soluble",2231
+-3.61,"O=C\2c1c(nc(cc1)C)N(/C=C/2C(=O)O)CC","no soluble",4772
+-1.45,"C1=CC(=CC=C1[N+](=O)[O-])O","no soluble",4872
+0.88,"COCCOCCOC","soluble",1788
+-2.32,"c1c(N)ccc(c1)[S+2]([O-])(Nc1cc[nH0][nH0]1c1ccccc1)[O-]","no soluble",3312
+-1.06,"CCCCCC(=O)O","no soluble",1504
+-0.53,"NC(Cc1c[nH]cn1)C(=O)O","no soluble",775
+-6.02,"O=C(NC(=O)c1c(F)cccc1F)Nc1ccc(Cl)cc1","no soluble",538
+-3.39,"O=N(=O)c1ccc(cc1)N(=O)=O","no soluble",4310
+-4.43,"c1c(C(=O)CCCN2CCC(CC2)(c2ccc(cc2)Cl)O)ccc(c1)F","no soluble",4050
+-0.03,"C1CCCOC1","soluble",3018
+0.96,"NC(N)=O","soluble",1008
+0.58,"CCC=O","soluble",1294
+-2.42,"Cc1c[nH]c2ccccc12 ","no soluble",4402
+-4.62,"Cc1ccc(-c2ccccc2)cc1","no soluble",193
+-1.655,"O=C2NC(=O)C1(CCC1)C(=O)N2","no soluble",4141
+-2.071,"CCN(CC)C(=O)COC(=O)c1ccccc1","no soluble",2131
+-3.31,"O=C(C)CCCCCCCC","no soluble",3470
+-8.94,"Clc1ccc(Oc2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)cc1","no soluble",1723
+-1.609,"O=C(OCC(=O)N1CCC1)c1ccccc1","no soluble",2743
+-1.12,"ClCCOCCCl","no soluble",495
+-2.6,"c1cc(ccc1OC)C(C1CC1)(c1c[nH0]c[nH0]c1)O","no soluble",3367
+-3.8,"ON=C1C=CC(=NO)c2ncccc21","no soluble",1910
+1.128,"CCOC(=O)N1CCN(C)CC1","soluble",2463
+-0.85,"CCN(C#N)N=O","no soluble",4834
+-2.759,"CCCCNC(=O)COC(=O)c1ccccc1","no soluble",2745
+-1.39,"O=C1OC(=O)c2ccccc21","no soluble",1110
+-3.19,"Clc1ccccc1Br","no soluble",10
+-4.71,"CC(=O)C1(O)CCC2C3CCC4=CC(=O)CCC4(C)C3CCC21C","no soluble",1317
+-0.984,"CCC(C)C(NCCC#N)C(=O)O","no soluble",1956
+-2.36,"[nH0]1c(SC)c2c([nH0]cc[nH0]2)[nH0]c1","no soluble",3324
+-3.09,"CC3C2CCC1(C)C=CC(=O)C(=C1C2OC3=O)C","no soluble",4416
+-3.98,"c1c2Sc3c(N(CCCN4CCC(O)CC4)c2cc(c1)C#N)cccc3","no soluble",3544
+-4.74,"CC12CCC3C(CCC4CC(=O)CCC43C)C1CCC2O","no soluble",1367
+-3.4,"Cc1cc(C)cc(C)c1","no soluble",191
+-6.005,"O=C(O)c1ccc(P(=O)(c2ccccc2)c2ccc(C(=O)O)cc2)cc1","no soluble",2329
+1.13,"O=C(NC)N","soluble",3752
+-2.285,"O=S(=O)(c1cccc(O)c1)c1ccccc1O","no soluble",2419
+-3.504,"N(c1ccccc1)c2ccccc2","no soluble",4138
+-3.127,"c1ccccc1n2ncc(N)c(Br)c2(=O)","no soluble",4143
+-3.824,"O=[N+]([O-])c1ccc2ccccc2c1","no soluble",2149
+-1.89,"C1CCN2CC3CC(CN4CCCCC34)C2C1","no soluble",695
+-2.167,"O=C1CCCCCN1C(=O)c1ccccc1","no soluble",2107
+-3.04,"Clc1cccc(Cl)c1","no soluble",399
+-5.24,"CC(C)=CC3C(C(=O)OCc2cccc(Oc1ccccc1)c2)C3(C)C ","no soluble",4660
+-3.6,"OC1C(Nc2ccc(cc2C(c2ccccc2Cl)=N1)Cl)=O","no soluble",3507
+-1.83,"CC(=O)N=c1sc(S(N)(=O)=O)nn1C","no soluble",1621
+-3.31,"OC(=O)c1cc(cc(c1O)I)I","no soluble",3468
+-3.89,"O=C(C)CC(c1ccccc1)C1=C(c2ccccc2OC1=O)O","no soluble",4017
+-4.572,"O=S1(=O)c2ccccc2-c2ccccc21","no soluble",1907
+-2.22,"c1c(C)cc(c(c1)C(C)C)O","no soluble",3296
+-1.018,"OCCOc1cccc(OCCO)c1","no soluble",2153
+-0.88,"OC1CCC(C)CC1","no soluble",3097
+-3.46,"O=C(C=CC=Cc2ccc1OCOc1c2)N3CCCCC3","no soluble",4710
+-3.537,"Clc1ccc(C(Cn2ccnc2)OCc2cc(Cl)ccc2Cl)c(Cl)c1","no soluble",2826
+-2.0025,"CN(C)CCC(c1ccc(Cl)cc1)c1ccccn1","no soluble",1802
+-2.55,"OC(c1ccccc1)c1ccccc1","no soluble",1446
+-6.7,"Cc1cc(O)ccc1OP(=O)(Oc1cc(O)ccc1C)Oc1c(C)cccc1O","no soluble",1520
+-3.716,"O=c1ccc2nc3ccccc3sc-2c1","no soluble",1914
+-2.06,"OC(=O)c1ccccc1C","no soluble",3268
+-1.47,"CCCCCOC(N)=O","no soluble",1016
+-3.819,"CCCOC(=O)c1ccccc1C(=O)OCCC","no soluble",2241
+-5.282,"CC34CCC1C(=CCc2cc(O)ccc12)C3CCC4=O","no soluble",4280
+-2.461,"Cc1cc(no1)C(=O)NNCc2ccccc2","no soluble",4721
+-1.47,"CCCCC(O)CC","no soluble",1456
+-2.83,"O=c1[nH]c2cc(Cl)ccc2o1","no soluble",381
+-3.67,"c3ccc2nc1ccccc1cc2c3","no soluble",4306
+-4.16,"CN2C(=C(O)c1ccccc1S2(=O)=O)C(=O)Nc3ccccn3 ","no soluble",4445
+-6.09,"Clc1c(O[P+]([S-])(OC)OC)cc(c(c1)Br)Cl","no soluble",4088
+-5.639,"CC1(N)CN(c2c(F)cc3c(=O)c(C(=O)O)cn(C4CC4)c3c2F)C1","no soluble",2714
+-1.38,"OCCCc1ccccc1","no soluble",1415
+-4.576,"CCOC(=O)c1ccccc1S(=O)(=O)NN(C=O)c2nc(Cl)cc(OC)n2","no soluble",4281
+-1.37,"O=C(O)c1ccc(N)cc1","no soluble",4802
+-3.008,"CCCCCCCCNC(=O)c1cccnc1","no soluble",1947
+-2.84,"O=c1oc2ccccc2c(O)c1C1CCCc2ccccc21","no soluble",1097
+-2.685,"OC(=S)COc1ccc(Cl)cc1Cl","no soluble",2408
+-1.929,"O=C(NCCCCCCNC(=O)OCCCCO)OCCCCO","no soluble",2068
+-0.897,"NC(=O)NCC(=O)NCC(=O)O","no soluble",2038
+-2.84,"CC(=O)Nc1ccc(Cl)cc1","no soluble",421
+-2.237,"CCNC(=O)COC(=O)c1ccccc1","no soluble",2128
+-1.939,"O=C(NO)c1ccc([N+](=O)[O-])cc1","no soluble",2156
+-4.127,"Nc1ccc(S(=O)(=O)c2ccc(Cl)cc2)cc1","no soluble",2185
+-2.49,"Cc1ccc([N+](=O)[O-])cc1","no soluble",874
+-3.99,"ClCCCCCCC","no soluble",4023
+0.51,"O=C(O)CC(O)(CC(=O)O)C(=O)O","soluble",1403
+-4.61,"O=C1c2c(cc(c(c2OC21C(C)CC(C=C2OC)=O)Cl)OC)OC","no soluble",3615
+-2.71,"CCCCCCCCCCSC(=N)N","no soluble",2462
+-7.278,"ClC1=C(Cl)C(Cl)(C(=C1Cl)Cl)C2(Cl)C(=C(Cl)C(=C2Cl)Cl)Cl","no soluble",4361
+-4.097,"O=C1NC(=O)C(N1)(c2ccccc2)c3ccccc3","no soluble",4259
+-2.54,"Oc1cccc2ncccc12 ","no soluble",4336
+-3.405,"CCOC(=O)c1ccccc1C(=O)c1ccccc1","no soluble",2249
+-2.98,"O=C1NC(=O)C2(CCCCCCC2)C(=O)N1","no soluble",791
+-0.27,"OC(C1C(C2CCC1O2)C(O)=O)=O","soluble",3034
+-1.6,"NC(Cc1ccc(O)c(O)c1)C(=O)O","no soluble",992
+-3.283,"COC(=O)CCCCCCCCC(=O)OC","no soluble",2042
+-1.9,"COC1=C(OC)C2C(=O)OCC2C=C1","no soluble",1119
+-1.28,"CC(=O)c1cccc(N)c1","no soluble",961
+-3.638,"Nc1ccccc1C=Nc1ccccc1O","no soluble",2301
+-2.37,"CCOc1ccc(NC(C)=O)cc1","no soluble",1029
+-1.639,"CC(C(N)=O)S(=O)(=O)c1ccccc1","no soluble",2405
+-1.14,"CC(C)CCCO","no soluble",1430
+-4.08,"C(c1ccccc1)c2ccccc2","no soluble",4605
+-1.09,"Oc1ccc(Br)cc1","no soluble",24
+-2.302,"NC(=O)c1ccc(S(N)(=O)=O)cc1","no soluble",2324
+-2.4,"COc1c2c(c(OC)c3c1C(C=C(O3)C)=O)occ2","no soluble",3921
+-7.39,"Clc1ccc(-c2cc(Cl)c(Cl)cc2Cl)cc1Cl","no soluble",292
+-1.03,"CC(=O)Nc1ccc(O)cc1","no soluble",1033
+-3.88,"c1c(C(c2ccc3[nH0]c(NC(OC)=O)[nH]c3c2)=O)cccc1","no soluble",4016
+-5.32,"O=C4[C@]3(CC[C@@H]2c1ccc(O)cc1CC[C@H]2[C@@H]3CC4)C","no soluble",4809
+-1.837,"CCCCOC(=O)c1cccnc1","no soluble",1885
+-2.15,"CC(Br)CBr","no soluble",54
+-3.33,"Oc1c(Br)cc(cc1Br)C#N","no soluble",3473
+-4.36,"c1c(Nc2c(C(=O)O)cccc2)cc(cc1)C(F)(F)F","no soluble",3591
+-5.67,"CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl ","no soluble",4492
+-1.11,"COc1ncnc2nccnc12","no soluble",664
+-4.19,"CCCCOCN(C(=O)CCl)c1c(CC)cccc1CC ","no soluble",4324
+-1.749,"COc1ccc2c3c1OC1C(OC(C)=O)CCC4C(C2)N(C)CCC341","no soluble",2520
+-4.021,"CCCN(CCC)S(=O)(=O)c1ccc(C(=O)O)cc1","no soluble",2318
+-4.64,"c1c(CCCCC)cccc1","no soluble",3621
+-3.364,"CN(C)c1nc(nc(n1)N(C)C)N(C)C","no soluble",4597
+-5.27,"Clc1ccccc1-c1ccccc1Cl","no soluble",357
+-2.92,"NC(=O)c1ccccc1C(N)=O","no soluble",1001
+-2.528,"CCCC1(CCC)C(=O)NC(=O)NC1=O","no soluble",2136
+-3.68,"Cc1ccc(S(=O)(=O)NC(=O)NN2CCCCCC2)cc1","no soluble",1649
+-1.67,"CC(=O)OC1CCCCC1","no soluble",1169
+-3.31,"Cn1ccc2cc3c(Nc4cccc(Br)c4)ncnc3cc21","no soluble",2819
+-3.361,"CCCCCCCCCCNC(=O)C(C)O","no soluble",2022
+-4.37,"O=C(Nc1cccc(Cl)c1)OCC#CCCl","no soluble",486
+-2.788,"CC12C=CC(=O)C=C1CCC1C2CCC2(C)C(=O)CCC12","no soluble",2262
+-2.16,"c1c2cc(O)ccc2[nH0]cc1","no soluble",3285
+-1.08,"CC(C)OP(=O)(OC(C)C)F","no soluble",4899
+-0.74,"c1c(O)ccc(c1)[N+]([O-])=O","no soluble",3074
+-4.8019,"CC(C)NCC(O)COc1cccc2ccccc12","no soluble",1835
+-2.12,"Nc1ncnc2[nH]cnc12","no soluble",735
+-2.111,"CCOP(=O)(OCC)SCCSCC","no soluble",1958
+-1.62,"CNC(=O)ON=C(CSC)C(C)(C)C ","no soluble",4712
+-1.85,"CCCCOCCCC","no soluble",1206
+-3.3621,"CCN1CCN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)CC1","no soluble",1815
+-2.29,"CCCI","no soluble",607
+-3.699,"COC1=CC(=O)CC(C)C12Oc1cc(OC)cc(OC)c1C2=O","no soluble",2541
+-0.09,"CCOCC","soluble",1231
+-4.16,"CCCCc1c(C)nc(NCC)nc1OS(=O)(=O)N(C)C ","no soluble",4561
+-2.75,"OC(=O)c1c(c(c(c([nH0]1)Cl)Cl)N)Cl","no soluble",3390
+0.159,"CCCCCCCCSC(=N)N","soluble",2560
+-5.27,"c1ccc2c(c1)[nH]c3ccccc32","no soluble",4560
+0.96,"CN1C(=O)C=CC=C1","soluble",2978
+-7.39,"Clc1ccc(c(Cl)c1)c2cc(Cl)c(Cl)c(Cl)c2Cl ","no soluble",4612
+-1.4949,"Cc1cc(O)ccc1C(=O)O","no soluble",2918
+-2.33,"[O-][N+](=O)c1ccccc1C","no soluble",3912
+-3.14,"CC1=C(SCCO1)C(=O)Nc2ccccc2","no soluble",4337
+-1.275,"O=C1CC2OCC=C3C[N+]4([O-])CCC56c7ccccc7N1C5C2C3CC64","no soluble",1850
+-1.29,"OC1CCCCCCC1","no soluble",1384
+-5.252,"CN(C)c1ccc(N=Nc2ccccc2)cc1","no soluble",2808
+-2.35,"CCOc1ccc(NC(=O)C)cc1","no soluble",4133
+-5.078,"Cc1coc2cc3oc(=O)c(N)cc3cc12","no soluble",2786
+-2.54,"ClC(Cl)=C(Cl)Cl","no soluble",461
+-2.677,"COc1cc(OC)cc(OC)c1","no soluble",1884
+-4.54,"Clc1ccccc1-c1ccccc1","no soluble",359
+0.57,"C=CC=O","soluble",1302
+-5.931,"OC4=C(C1CCC(CC1)c2ccc(Cl)cc2)C(=O)c3ccccc3C4=O","no soluble",4155
+-4.66,"CCOP(=S)(OCC)Oc1ccc(cc1)N(=O)=O","no soluble",4628
+-1.539,"NS(=O)(=O)c1cc2c(s1)S(=O)(=O)CC(O)C2","no soluble",2679
+-0.705,"CCC(SC(CC)C(=O)O)C(=O)O","no soluble",1991
+-5.04,"Brc1cccc(Br)c1Br","no soluble",7
+0.58,"CNCC(O)c1cccc(O)c1","soluble",2922
+-1.77,"CC(C)(C)C1=CC(=C(C=C1)OP(=O)(NC)OC)Cl","no soluble",4910
+-1.184,"Nc1ccn(C2CC(F)C(CO)O2)c(=O)n1","no soluble",2872
+-5.19,"O=C1c2ccccc2C(=O)c3ccccc13","no soluble",4725
+-4.14,"Cc1ccc(C)c2ccccc12","no soluble",175
+-2.727,"O=C(c1ccccc1)N(O)c1ccccc1","no soluble",2212
+-5.064,"CCCCC(CC)COC(=O)CCCCC(=O)OCC(CC)CCCC","no soluble",2064
+-3.31,"O=C(O)c1ccc(Cl)cc1","no soluble",418
+-1.57,"Clc1c(C)cc(cc1)O","no soluble",3184
+-1.4,"c1c(C)cc(C)cc1O","no soluble",3155
+-1.2884,"CCC(C)NCc1cccc(S(=O)(=O)c2ccc(S(N)(=O)=O)s2)c1","no soluble",2944
+-7.28,"Fc1cccc(F)c1C(=O)NC(=O)Nc2cc(Cl)c(F)c(Cl)c2F ","no soluble",4262
+-1.2,"c1c(CO)ccc(c1)C","no soluble",3129
+-5.36,"CCN1c2cc(Cl)ccc2NC(=O)c2cccnc21","no soluble",379
+0.393,"O=C1OC(C(O)C(O)CO)C(O)C1O","soluble",2845
+-0.67,"CCC(C)C(C)=O","no soluble",1195
+-0.424,"CCN(C)N=Nc1ccc(C(=O)O)cc1","soluble",2625
+-7.01,"Cc1c(C)c2c3ccccc3ccc2c2ccccc12","no soluble",170
+-5.07,"CCCC(=O)OCN1C(=O)NC(c2ccccc2)(c2ccccc2)C1=O","no soluble",747
+-3.57,"COc1cc(C2c3cc4c(cc3C(OC3OC5COC(C)OC5C(O)C3O)C3COC(=O)C23)OCO4)cc(OC)c1O","no soluble",1138
+-3.15,"Oc1cc(Cl)c(Cl)c(Cl)c1Cl","no soluble",262
+-1.26,"Cc1cc(=O)[nH]c(=O)[nH]1","no soluble",818
+-1.19,"O=Cc1ccccc1","no soluble",1287
+-3.59,"c1c(Cl)c(Cl)cc(c1)Cl","no soluble",3504
+-2.29,"c1c(OCC(=O)O)ccc(c1)Cl","no soluble",3907
+-1.64,"[O-][S+2]1([O-])NC(c2c1cccc2)=O","no soluble",3200
+-2.35,"O=C(c1c(C(=O)OCC)cccc1)OCC","no soluble",3319
+0.72,"C[N+](C)(C)CC(=O)O","soluble",693
+-0.09,"CC(O)C(N)C(=O)O","soluble",999
+-1.658,"CC(NC(=O)C(N)c1ccccc1)c1ccccc1","no soluble",2900
+-0.3,"CC1(C)C2CCC1(CS(=O)(=O)O)C(=O)C2","soluble",2695
+-3.88,"COC(=O)Nc2nc1ccc(cc1[nH]2)C(=O)c3ccccc3","no soluble",4640
+-0.96,"O=Cc1ccc(O)cc1","no soluble",1358
+-5.46,"Clc2ccc(Oc1ccc(cc1)N(=O)=O)c(Cl)c2","no soluble",4159
+-3.93,"Clc1cccc2ccccc12","no soluble",228
+-1.38,"CC(C)CCC(C)O","no soluble",1462
+-1.6,"O=C(N)NC1C(NC(N1)=O)=O","no soluble",3856
+-1.8,"O=N(=O)c1ccccc1","no soluble",4322
+-1.09,"BrCC","no soluble",3116
+-1.57,"C1C(COCO1)([N+](=O)[O-])Br","no soluble",4844
+-1.3,"ClC=CCl","no soluble",533
+-4.48,"COc1ccc2c(c1)[nH]c1c(C)nccc12","no soluble",2046
+-2.304,"Cc1c(NC(=O)Nc2ccccc2)c(=O)n(-c2ccccc2)n1C","no soluble",2380
+-1.06,"ClCCCl","no soluble",493
+-6.01,"c1c(Cl)cc(cc1)c1cc(ccc1Cl)Cl","no soluble",3692
+-4.88,"Clc1cccc(-c2ccccc2)c1","no soluble",398
+-0.8,"Nc1ccc(O)cc1","no soluble",977
+-4.2,"CC(C)OP(=S)(OC(C)C)SCCNS(=O)(=O)c1ccccc1","no soluble",1641
+-2.6731,"CNCCCC12CCC(c3ccccc31)c1ccccc12","no soluble",1824
+-3.35,"CN(C(=O)NC(C)(C)c1ccccc1)c2ccccc2","no soluble",4332
+-3.586,"CC2Cc1ccccc1N2NC(=O)c3ccc(Cl)c(c3)S(N)(=O)=O ","no soluble",4308
+-0.59,"C=CC(O)CCC","no soluble",1461
+-0.87,"c1c(Cl)[nH0]c2c(c[nH0]c[nH0]2)[nH0]1","no soluble",3096
+-0.41,"CC#C","soluble",4233
+-2.15,"ClC(Cl)C(=O)N[C@@H]([C@H](O)c1ccc(cc1)S(=O)(=O)C)CO","no soluble",4741
+0.487,"CN(C)C(=O)c1cccc(C(=O)N(C)C)c1","soluble",2232
+-0.12,"CC(C)C(=O)C","soluble",4653
+-4.359,"CCOC(=O)Cc1ccc(-c2nc3ccccc3s2)cc1","no soluble",2531
+-2.158,"O=C(O)CNC(Cc1ccccc1)C(=O)O","no soluble",2370
+-4.38,"c1ccc2c(c1)sc1ccccc12","no soluble",1524
+-1.626,"O=C(O)Cc1c[nH]c(=O)[nH]c1=O","no soluble",1952
+-1.77,"CC=CC=CC(=O)O","no soluble",1518
+0.94,"CN(C(=O)N(C)C)C","soluble",3761
+-2.55,"Clc1ccccc1N(=O)=O","no soluble",4320
+-1.473,"CCC1(CCO)C(=O)NC(=S)NC1=O","no soluble",2124
+-2.82,"O=C1N(C)C(N(O1)c1ccc(c(Cl)c1)Cl)=O","no soluble",3397
+-2.256,"Cc1cn(Cc2ccccc2)c(=O)[nH]c1=O","no soluble",2098
+-4.24,"CCCCCCCC#C","no soluble",3580
+-0.83,"CCCC(=O)CC","no soluble",1182
+-1.815,"OC(CCN1CCCCC1)(c1ccccc1)C1CCCCC1","no soluble",2619
+-7.42,"c1c2c3c(ccc2ccc1)c1c([nH]3)c2ccccc2cc1","no soluble",3729
+-1.09,"CN(CCO)C(=O)COC(=O)c1ccccc1","no soluble",2657
+-2.4,"Nc1nc(N)c2nc(-c3ccccc3)c(N)nc2n1","no soluble",980
+-3.99,"CC(C)Cc1ccc(C(C)C(=O)O)cc1","no soluble",1515
+-4.397,"COP(=S)(OC)SSP(=S)(OC)OC","no soluble",2057
+-3.54,"CC(C)c1ccc(NC(=O)N(C)C)cc1","no soluble",945
+-6.14,"c1c(Cl)cc(c(c1Cl)c1ccccc1)Cl","no soluble",3695
+-4.42,"C=C(C)C1Cc2c(ccc3c2OC2COc4cc(OC)c(OC)cc4C2C3=O)O1","no soluble",1103
+-2.22,"O=N(=O)OCC(CON(=O)=O)ON(=O)=O ","no soluble",4457
+-2.36,"O=CCCCCCCC","no soluble",3321
+-2.71,"CCN(CCOC(c1ccc(cc1)OCC)=O)CC","no soluble",3384
+-1.94,"C=CCC","no soluble",165
+-1.86,"C(=NN)(N)N[N+](=O)[O-]","no soluble",4828
+-4.32,"CC1(C)OC2CC3C4CCC5=CC(=O)C=CC5(C)C4(F)C(O)CC3(C)C2(C(=O)CO)O1","no soluble",545
+-6.01,"Cc1ccc(OP(=O)(Oc2cccc(C)c2)Oc3ccccc3C)cc1","no soluble",4211
+-1.526,"COc1ccc(C)cc1S(N)(=O)=O","no soluble",2396
+-0.4,"OCC(C)(C)C","soluble",3786
+-2.48,"O=S(=O)(NS(=O)(=O)c1ccc(Cl)cc1)c1ccc(Cl)cc1","no soluble",2693
+-1.32,"BrC=CBr","no soluble",58
+0.52,"O=C(C)CC","soluble",2991
+-1.42,"CC1(C(=O)O)CCC(C(=O)O)C1(C)C","no soluble",1479
+-2.41,"O=C(Nc1ccccc1)C(O)COc1ccccc1","no soluble",2429
+-5.37,"CCC(=O)OC1CCC2C3CCC4=CC(=O)CCC4(C)C3CCC12C","no soluble",1166
+-5,"CCOC1=CC(=O)CC(C)C12Oc1c(Cl)c(OC)cc(OC)c1C2=O","no soluble",2589
+-2.16,"Clc1c(OCC(=O)O)cccc1","no soluble",3284
+-3.165,"COC(=O)c1ccc(O)c(Br)c1","no soluble",2272
+-1.348,"NS(=O)(=O)c1cc2c(s1)S(=O)CCC2O","no soluble",2670
+-5.382,"CCOP(=S)(OCC)Oc2ccc1oc(=O)c(Cl)c(C)c1c2","no soluble",4582
+-1.921,"CCCCCCCCOCC(O)CO","no soluble",2012
+-2.19,"Nc1cccc(c1)N(=O)=O","no soluble",4458
+-5.324,"NC1CN(c2cc3c(cc2F)c(=O)c(C(=O)O)cn3C2CC2)C1","no soluble",2706

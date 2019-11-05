@@ -11,12 +11,11 @@ import os
 
 import pandas as pd
 import numpy as np
-from math import pow
 
 from catboost import Pool, CatBoostClassifier
 
 import multiprocessing
-from rdkitfeaturize import *
+from rdkitfeaturize import rdkfeaturization, numericize
 
 np.random.seed(1342341)
 
@@ -30,23 +29,22 @@ cpus = multiprocessing.cpu_count()
 if cpus <= 1: #Default to one cpu
     cpus = 2;
 
-inputfiledir  = "/home/rod/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/"
+#inputfiledir  = "/home/rod/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/"
 train_file    = "TRAIN_Complete_dataset_without_duplicates_with_categories.csv"
 test_file     = "TEST_Complete_dataset_without_duplicates_with_categories.csv"
 validate_file = "VALIDATE_Complete_dataset_without_duplicates_with_categories.csv"
-modeldir      = "random_forest_2/"
-nestimators   = int(pow(2,10)) #Deepchem with 1024=2^10 results in 0.97/0.94
+modeldir      = "catboost/"
 fbits         = 11             #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
-radius        = 2              #Fingerprint radius. Deehcpem has 2
+radius        = 2             #Fingerprint radius. Deehcpem has 2
  
 #Create directory if not exists
 if not os.path.exists(modeldir):
     os.makedirs(modeldir)
 
 try: 
-    validset = pd.read_csv(inputfiledir + validate_file).drop(["id"],axis = 1)  
-    trainset = pd.read_csv(inputfiledir + train_file).drop(["id"],axis = 1)  
-    testset  = pd.read_csv(inputfiledir + test_file).drop(["id"],axis = 1)    
+    validset = pd.read_csv(validate_file).drop(["id"],axis = 1)  
+    trainset = pd.read_csv(train_file).drop(["id"],axis = 1)  
+    testset  = pd.read_csv(test_file).drop(["id"],axis = 1)    
 except: 
     print("Unable to locate valid, train and test files")
     
@@ -65,9 +63,9 @@ numericize(validset)
 #https://catboost.ai/docs/concepts/python-reference_pool.html
 cattrain = Pool(data = trainset.drop(["smiles", "logS","Normalized_logS","Category"], \
                              axis = 1), label = trainset["Category"])
-cattest  = Pool(testset.drop(["smiles", "logS","Normalized_logS","Category"], \
+cattest  = Pool(data = testset.drop(["smiles", "logS","Normalized_logS","Category"], \
                              axis = 1), label = testset["Category"])
-catvalid = Pool(validset.drop(["smiles", "logS","Normalized_logS","Category"], \
+catvalid = Pool(data = validset.drop(["smiles", "logS","Normalized_logS","Category"], \
                              axis = 1), label = validset["Category"])
 
 #Run Sci-Kit learn
@@ -79,8 +77,8 @@ sum_positive = trainset['Category'].sum()
 sum_negative = len(trainset) - trainset['Category'].sum() 
 scale_pos_weight = sum_negative / sum_positive
 
-model = CatBoostClassifier(iterations = 100, 
-                           #depth=10, 
+model = CatBoostClassifier(iterations = 1000, 
+                          # depth=10, 
                            #l2_leaf_reg = 10,
                            #border_count=254,
                            verbose = True,
@@ -91,13 +89,15 @@ model = CatBoostClassifier(iterations = 100,
                            loss_function='Logloss')
 
 # Train the model on training data
-model.fit(cattrain, eval_set = cattest, plot = True)
+model.fit(cattrain, eval_set = cattest, plot = False)
 
 #Pecision metrics
-model.eval_metrics(cattrain,"Precision")
-model.eval_metrics(cattest,"Precision")
+train_precision = model.eval_metrics(cattrain,"Precision")
+test_precision  = model.eval_metrics(cattest, "Precision")
 
 model.save_model("Catboost_Sol")
+predictrain = model.predict(cattrain)
+predictest  = model.predict(cattest)
 
 #LOad model
 """
@@ -111,4 +111,3 @@ try:
 except:
     print("Random forest")
 
-#quit()

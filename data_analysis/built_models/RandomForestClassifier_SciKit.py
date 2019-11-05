@@ -12,7 +12,7 @@ import os
 import pandas as pd
 import numpy as np
 import multiprocessing
-from math import pow
+from math import pow, log
 
 np.random.seed(1342341)
 
@@ -27,14 +27,15 @@ cpus = multiprocessing.cpu_count()
 dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest_classifier/"
 nestimators = int(pow(2,10)) #Deepchem with 1024=2^10 results in 0.97/0.94
-fbits = 5 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
+fbits = 11 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
 radius = 2 #Fingerprint radius. Deehcpem has 2
 train_perc = 0.6 #percent of data in train set. Deepchem has 0.8
-logs_limit = 0.5
- 
+logs_limit = log(0.3, 10)
+
 #Create directory if not exists
 if not os.path.exists(modeldir):
     os.makedirs(modeldir)
+
 
 #Import database
 database = pd.read_csv(dataset_file)
@@ -63,12 +64,7 @@ print("Total cases are ", total_cases, " of sample representing ", round(100*tot
 database["Classification"] = True
 database["Classification"] = [(x > logs_limit) for x in database["logS"]]
 
-#Plot logS  values
-"""
-import matplotlib.pyplot as plt
-plt.hist(np.exp(database["logS"]), bins='auto') 
-plt.show()
-"""
+print("Total cases are ", 100*database.Classification.sum()/len(database),"% of cases" )
 
 # Split the data into training and testing sets
 train, validate, test = np.split(database.sample(frac=1), [int(train_perc*len(database)), int((0.5 + train_perc/2)*len(database))])
@@ -77,9 +73,13 @@ train_cases    = sum(x > logs_limit for x in train["logS"])
 validate_cases = sum(x > logs_limit for x in validate["logS"])
 test_cases     = sum(x > logs_limit for x in test["logS"])
 
-print("Total train cases are ", train_cases, " of sample representing ", round(100*total_cases/len(train),2), "% of cases" )
-print("Total valid cases are ", validate_cases, " of sample representing ", round(100*total_cases/len(validate),2), "% of cases" )
-print("Total taste cases are ", test_cases, " of sample representing ", round(100*total_cases/len(test),2), "% of cases" )
+print("Total train cases are ", 100*train.Classification.sum()/len(train), "% of cases" )
+print("Total valid cases are ", 100*validate.Classification.sum()/len(validate), "% of cases" )
+print("Total test cases are ", 100*test.Classification.sum()/len(test), "% of cases" )
+
+correct_check = pd.concat([train, test, validate])
+print("Total check cases are ", 100*correct_check.Classification.sum()/len(database), "% of cases" )
+
 
 
 #Run Sci-Kit learn
@@ -103,15 +103,9 @@ predictions_t = rf.predict(train.drop(["smiles", "logS","Classification"], axis 
 
 
 #Get r^2
-from sklearn.metrics import accuracy_score
-print('Train Sklearn accuracy:', round(accuracy_score(predictions_t, train["Classification"]) , 2))
-print('Pred Sklearn accuracy:', round(accuracy_score(predictions, test["Classification"]) , 2))
-from sklearn.metrics import classification_report 
-
-
-print("Train\n", classification_report(predictions_t, train["Classification"]))
-print("Predict\n",classification_report(predictions, test["Classification"]))
-
+from sklearn.metrics import precision_score
+print('Train Sklearn accuracy:', round(precision_score(predictions_t, train["Classification"]) , 2))
+print('Pred Sklearn accuracy:', round(precision_score(predictions, test["Classification"]) , 2))
 
 try:
     from notifyending import notify_ending

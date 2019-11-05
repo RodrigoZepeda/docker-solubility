@@ -9,6 +9,7 @@ import pandas
 from rdkit import Chem
 from rdkit.Chem import AllChem
 
+
 #Import Hou dataset
 hu_solubility = pandas.read_table('raw/data_set.dat', header = None,
                                   usecols = [0,2], sep ='\s+', 
@@ -28,7 +29,7 @@ wang_t2 = pandas.read_excel("raw/wang/ci800406y_si_002.xls", usecols = [1,14], s
 wang_t3 = pandas.read_excel("raw/wang/ci800406y_si_003.xls", usecols = [1,13], skiprows=2)
 wang_t4 = pandas.read_excel("raw/wang/ci800406y_si_004.xls", usecols = [2,13], skiprows=2)
 wang_t5 = pandas.read_excel("raw/wang/ci800406y_si_005.xls", usecols = [1,14], skiprows=2)
-wang_t5 = wang_t1.drop(range(119,wang_t5.shape[0])) #Last rows contain info on dataset
+wang_t5 = wang_t5.drop(range(119,wang_t5.shape[0])) #Last rows contain info on dataset
 
 wang = pandas.concat([wang_t1, wang_t2, wang_t3, wang_t4, wang_t5], axis=0)
 
@@ -86,6 +87,7 @@ try:
 except:
     print("standrews error :)")
     
+
 #Import Mariano's new datasets
 nitro = pandas.read_table("raw/NitroMariano.csv", sep=",")
 nitro.columns = ["logS","smiles"]
@@ -94,7 +96,7 @@ nitro.columns = ["logS","smiles"]
 try:
     [Chem.MolFromSmiles(x) for x in  nitro["smiles"]]
 except:
-    print("standrews error :)")
+    print("Nitro error :)")
     
 phospho = pandas.read_table("raw/FosfoMariano.csv", sep=",")
 phospho.columns = ["logS","smiles"]
@@ -103,10 +105,12 @@ phospho.columns = ["logS","smiles"]
 try:
     [Chem.MolFromSmiles(x) for x in  phospho["smiles"]]
 except:
-    print("standrews error :)")    
+    print("Fosfo error :)")    
     
 #Create dataset
 solubility_df = pandas.concat([wang, hu_solubility, delaney, standrews, nitro, phospho], axis=0)
+
+#solubility_df = pandas.concat([wang, hu_solubility, delaney, standrews], axis=0)
 solubility_df = solubility_df.reset_index(drop=True)
 
 solubility_df.to_csv("edited/Complete_dataset_repeated.csv", index = False)

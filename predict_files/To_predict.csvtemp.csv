@@ -1,6 +1,0 @@
-smiles,tasks
-COC(C)(C)CCCC(C)CC=CC(C)=CC(=O)OC(C)C,1.0
-CCOC(=O)CC,1.0
-CSc1nc(NC(C)C)nc(NC(C)C)n1,1.0
-C#CC(C)N(C)C(=O)Nc1ccc(Cl)cc1,1.0
-Cc1cc2ccccc2cc1C,1.0

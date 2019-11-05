@@ -67,25 +67,25 @@ maximum
 
 <td style="text-align:right;">
 
-\-4.11
+\-4.08
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.7
+\-2.68
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.974
+\-2.943
 
 </td>
 
 <td style="text-align:right;">
 
-\-1.568
+\-1.54
 
 </td>
 
@@ -101,9 +101,8 @@ maximum
 
 </table>
 
-Of which 434 out of 4771 (representing 9.1 %) are above the solubility
-threshold of \(\log S >\) -0.52. For those variables their distribution
-is:
+Of which 448 out of 4910 (representing 9.12 %) are above the solubility
+threshold of `logS >` -0.52. For those variables their distribution is:
 
 <table>
 
@@ -163,7 +162,7 @@ maximum
 
 <td style="text-align:right;">
 
-\-0.28
+\-0.272
 
 </td>
 
@@ -175,13 +174,13 @@ maximum
 
 <td style="text-align:right;">
 
-0.193
+0.192
 
 </td>
 
 <td style="text-align:right;">
 
-0.58
+0.572
 
 </td>
 
@@ -284,25 +283,25 @@ Train
 
 <td style="text-align:right;">
 
-\-4.160
+\-4.150
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.730
+\-2.691
 
 </td>
 
 <td style="text-align:right;">
 
-\-3.012
+\-2.996
 
 </td>
 
 <td style="text-align:right;">
 
-\-1.600
+\-1.552
 
 </td>
 
@@ -314,13 +313,13 @@ Train
 
 <td style="text-align:right;">
 
-9.012
+8.995
 
 </td>
 
 <td style="text-align:right;">
 
-2863
+2946
 
 </td>
 
@@ -342,43 +341,43 @@ Test
 
 <td style="text-align:right;">
 
-\-4.000
+\-3.917
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.680
+\-2.650
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.903
+\-2.822
 
 </td>
 
 <td style="text-align:right;">
 
-\-1.522
+\-1.500
 
 </td>
 
 <td style="text-align:right;">
 
-1.58
+1.34
 
 </td>
 
 <td style="text-align:right;">
 
-9.434
+9.980
 
 </td>
 
 <td style="text-align:right;">
 
-954
+982
 
 </td>
 
@@ -400,43 +399,43 @@ Validate
 
 <td style="text-align:right;">
 
-\-4.079
+\-3.998
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.632
+\-2.640
 
 </td>
 
 <td style="text-align:right;">
 
-\-2.930
+\-2.903
 
 </td>
 
 <td style="text-align:right;">
 
-\-1.528
+\-1.550
 
 </td>
 
 <td style="text-align:right;">
 
-1.58
+1.13
 
 </td>
 
 <td style="text-align:right;">
 
-9.015
+8.656
 
 </td>
 
 <td style="text-align:right;">
 
-954
+982
 
 </td>
 
@@ -447,4 +446,4 @@ Validate
 </table>
 
 With adjusted kernel densities for their log solubilities as follows:
-![](Data_Description_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](Data_Description_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->

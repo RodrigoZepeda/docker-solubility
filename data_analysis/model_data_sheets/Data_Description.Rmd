@@ -6,6 +6,7 @@ output: github_document
 ```{r setup, include=FALSE, message=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 set.seed(923)
+#set.seed(1234)
 csvdir <- "~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/"
 library("tidyverse")
 library("readr")
@@ -21,17 +22,18 @@ test_percent  <- 0.2
 Data is available as [`Complete_dataset_without_duplicates`](https://raw.githubusercontent.com/RodrigoZepeda/docker-solubility/master/data_analysis/data/edited/Complete_dataset_without_duplicates.csv) on Github. 
 
 ```{r, message=FALSE}
-mysol <- read_csv("https://raw.githubusercontent.com/RodrigoZepeda/docker-solubility/master/data_analysis/data/edited/Complete_dataset_without_duplicates.csv")
+mysol <- read.csv("~/Dropbox/Quimica/Docker/docker-solubility/data_analysis/data/edited/Complete_dataset_without_duplicates.csv")
+  #read_csv("https://raw.githubusercontent.com/RodrigoZepeda/docker-solubility/master/data_analysis/data/edited/Complete_dataset_without_duplicates.csv", col_names = TRUE)
 ```
 
 In log solubility, the variables include:
 ```{r}
 myvars <- length(which(mysol$logS > umbralLogS)) 
-mysum <- summary(mysol$logS)
+mysum  <- summary(mysol$logS)
 kable(tidy(mysum), digits = 3)  
 ```
 
-Of which `r myvars` out of `r nrow(mysol)` (representing `r round(myvars/nrow(mysol)*100,2)` %) are above the solubility threshold of $\log S >$ `r round(umbralLogS,2)`. For those variables their distribution is:
+Of which `r myvars` out of `r nrow(mysol)` (representing `r round(myvars/nrow(mysol)*100,2)` %) are above the solubility threshold of `logS >` `r round(umbralLogS,2)`. For those variables their distribution is:
 
 ```{r}
 mysum <- summary(mysol$logS[which(mysol$logS > umbralLogS)])
@@ -41,15 +43,22 @@ kable(tidy(mysum), digits = 3)
 The overall (adjusted) distribution is shown by the following kernel density:
 ```{r}
 ggplot(mysol, aes(x = logS)) + 
-  geom_histogram(aes(y = ..density..), bins = 100, fill = "#628078") +
+  geom_histogram(aes(y = ..density..), bins = 100, fill = "deepskyblue3") +
   geom_density(color = "#ff3a22", size = 1) + 
   theme_classic() +
-  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "#a4893d",
+  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "black",
              linetype = "dotted") +
-  xlab("Log Solubility (logS)") +
+  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "black") + 
+  xlab("Log solubility (logS)") +
   ylab("Density") + 
-  ggtitle("Log Solubility dataset description.") +
-  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") 
+  ggtitle("Log Solubility dataset description.") 
+
+  
+
+```
+
+```{r}
+ggsave("Logs.pdf", width = 5, height = 5, bg = "transparent")
 ```
 
 ```{r}
@@ -93,12 +102,12 @@ ggplot(mapping = aes(x = logS, y = ..density..)) +
   geom_density(data = test, aes(color = "Test"), size = 1) + 
   geom_density(data = validate, aes(color = "Validate"), size = 1) + 
   theme_classic() +
-  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "#a4893d",
+  geom_vline(aes(xintercept = umbralLogS), size = 1, color = "black",
              linetype = "dotted") +
   xlab("Log Solubility (logS)") +
   ylab("Density") + 
   ggtitle("Log Solubility dataset description.") +
-  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "#a4893d") + 
+  annotate("text", x = umbralLogS + 1, y = 0.2, label = "Solubility\nthreshold", color = "black") + 
   scale_color_manual("Dataset", 
                      values = c("Train" = "#628078", 
                                 "Test" = "#ff3a22",

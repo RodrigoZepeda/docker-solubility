@@ -29,10 +29,10 @@ DATASETS
 #Count number of processors of server
 cpus = multiprocessing.cpu_count()
 
-dataset_file = "Complete_dataset_without_duplicates.csv"
-train_file   = "train_deepchem.csv"
-test_file    = "test_deepchem.csv"
-modeldir     = "random_forest_2/"
+dataset_file = "Complete_dataset_without_duplicates_with_categories.csv"
+train_file   = "TRAIN_Complete_dataset_without_duplicates_with_categories.csv"
+test_file    = "TEST_Complete_dataset_without_duplicates_with_categories.csv"
+modeldir     = "scikit_random_forest/"
 nestimators  = int(pow(2,10)) #Deepchem with 1024=2^10 results in 0.97/0.94
 fbits        = 11             #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
 radius       = 2              #Fingerprint radius. Deehcpem has 2

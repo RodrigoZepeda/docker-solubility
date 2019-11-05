@@ -49,3 +49,6 @@ DATOS DE Wang
 -----------------------------------
 
 -wang/ downloadrd from https://pubs.acs.org/doi/10.1021/ci800406y#si1
+
+TODO: CHECAR AqSolDB, a curated reference set of aqueous solubility and 2D descriptors for a diverse set of compounds
+https://www.nature.com/articles/s41597-019-0151-1#code-availability
