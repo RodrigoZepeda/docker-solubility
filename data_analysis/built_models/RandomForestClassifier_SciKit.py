@@ -26,9 +26,9 @@ cpus = multiprocessing.cpu_count()
 
 dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest_classifier/"
-nestimators = int(pow(2,10)) #Deepchem with 1024=2^10 results in 0.97/0.94
-fbits = 11 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
-radius = 2 #Fingerprint radius. Deehcpem has 2
+nestimators = int(pow(2,20)) #Deepchem with 1024=2^10 results in 0.97/0.94
+fbits = 15 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
+radius =3 #Fingerprint radius. Deehcpem has 2
 train_perc = 0.6 #percent of data in train set. Deepchem has 0.8
 logs_limit = log(0.3, 10)
 
@@ -85,6 +85,10 @@ print("Total check cases are ", 100*correct_check.Classification.sum()/len(datab
 #Run Sci-Kit learn
 from sklearn.ensemble import RandomForestClassifier
 
+sum_positive = train.Classification.sum()
+sum_negative = len(train) - sum_positive
+scale_pos_weight = sum_negative / sum_positive
+
 # Instantiate model with nestimators decision trees
 rf = RandomForestClassifier(n_estimators = nestimators,
                              criterion = "gini",
@@ -92,7 +96,8 @@ rf = RandomForestClassifier(n_estimators = nestimators,
                              bootstrap = True,
                              oob_score = False,
                              n_jobs = int(cpus/2),
-                             verbose = 1)
+                             verbose = 1,
+                             class_weight={0:1,1:scale_pos_weight})
 
 # Train the model on training data
 rf.fit(train.drop(["smiles", "logS","Classification"], axis=1), train["Classification"])
@@ -104,8 +109,8 @@ predictions_t = rf.predict(train.drop(["smiles", "logS","Classification"], axis 
 
 #Get r^2
 from sklearn.metrics import precision_score
-print('Train Sklearn accuracy:', round(precision_score(predictions_t, train["Classification"]) , 2))
-print('Pred Sklearn accuracy:', round(precision_score(predictions, test["Classification"]) , 2))
+print('Train Sklearn precision:', round(precision_score(predictions_t, train["Classification"]) , 2))
+print('Pred Sklearn precision:', round(precision_score(predictions, test["Classification"]) , 2))
 
 try:
     from notifyending import notify_ending

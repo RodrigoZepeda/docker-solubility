@@ -92,8 +92,9 @@ model = CatBoostClassifier(iterations = 1000,
 model.fit(cattrain, eval_set = cattest, plot = False)
 
 #Pecision metrics
-train_precision = model.eval_metrics(cattrain,"Precision")
-test_precision  = model.eval_metrics(cattest, "Precision")
+train_precision  = model.eval_metrics(cattrain,"Precision")
+test_precision   = model.eval_metrics(cattest, "Precision")
+valid_precision  = model.eval_metrics(catvalid, "Precision")
 
 model.save_model("Catboost_Sol")
 predictrain = model.predict(cattrain)
