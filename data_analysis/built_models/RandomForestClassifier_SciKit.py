@@ -13,7 +13,7 @@ import pandas as pd
 import numpy as np
 import multiprocessing
 from math import pow, log
-
+import pickle
 np.random.seed(1342341)
 
 """
@@ -26,8 +26,8 @@ cpus = multiprocessing.cpu_count()
 
 dataset_file= "Complete_dataset_without_duplicates.csv"
 modeldir = "random_forest_classifier/"
-nestimators = int(pow(2,20)) #Deepchem with 1024=2^10 results in 0.97/0.94
-fbits = 15 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
+nestimators = int(pow(2,18)) #Deepchem with 1024=2^10 results in 0.97/0.94
+fbits = 13 #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
 radius =3 #Fingerprint radius. Deehcpem has 2
 train_perc = 0.6 #percent of data in train set. Deepchem has 0.8
 logs_limit = log(0.3, 10)
@@ -105,12 +105,19 @@ rf.fit(train.drop(["smiles", "logS","Classification"], axis=1), train["Classific
 # Use the forest's predict method on the test data
 predictions   = rf.predict(test.drop(["smiles", "logS","Classification"], axis = 1))
 predictions_t = rf.predict(train.drop(["smiles", "logS","Classification"], axis = 1))
+predictions_v = rf.predict(validate.drop(["smiles", "logS","Classification"], axis = 1))
 
 
 #Get r^2
 from sklearn.metrics import precision_score
 print('Train Sklearn precision:', round(precision_score(predictions_t, train["Classification"]) , 2))
 print('Pred Sklearn precision:', round(precision_score(predictions, test["Classification"]) , 2))
+print('Validate Sklearn precision:', round(precision_score(predictions_v, validate["Classification"]) , 2))
+
+
+with open('random_forest', 'wb') as f:
+    pickle.dump(rf, f)
+
 
 try:
     from notifyending import notify_ending

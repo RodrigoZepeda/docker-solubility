@@ -22,7 +22,7 @@ from __future__ import division
 from __future__ import unicode_literals
 
 import os
-os.chdir("/home/rod/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/")
+#os.chdir("/home/rod/Dropbox/Quimica/Docker/docker-solubility/data_analysis/built_models/")
 
 import numpy as np
 np.random.seed(1342341)

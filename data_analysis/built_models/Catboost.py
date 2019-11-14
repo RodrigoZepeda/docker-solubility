@@ -34,7 +34,7 @@ train_file    = "TRAIN_Complete_dataset_without_duplicates_with_categories.csv"
 test_file     = "TEST_Complete_dataset_without_duplicates_with_categories.csv"
 validate_file = "VALIDATE_Complete_dataset_without_duplicates_with_categories.csv"
 modeldir      = "catboost/"
-fbits         = 11             #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
+fbits         = 10             #2^fbits Bits in fingerprint. Deepchem has 2048 = 2^11
 radius        = 2             #Fingerprint radius. Deehcpem has 2
  
 #Create directory if not exists
@@ -77,8 +77,8 @@ sum_positive = trainset['Category'].sum()
 sum_negative = len(trainset) - trainset['Category'].sum() 
 scale_pos_weight = sum_negative / sum_positive
 
-model = CatBoostClassifier(iterations = 1000, 
-                          # depth=10, 
+model = CatBoostClassifier(iterations =  1000000,
+                           depth=10, 
                            #l2_leaf_reg = 10,
                            #border_count=254,
                            verbose = True,
@@ -90,20 +90,43 @@ model = CatBoostClassifier(iterations = 1000,
 
 # Train the model on training data
 model.fit(cattrain, eval_set = cattest, plot = False)
+print(model.get_best_iteration())
 
 #Pecision metrics
-train_precision  = model.eval_metrics(cattrain,"Precision")
-test_precision   = model.eval_metrics(cattest, "Precision")
+train_precision = model.eval_metrics(cattrain,"Precision")
+print("train precision", train_precision.get("Precision")[model.get_best_iteration()])
+ptrain = train_precision.get("Precision")[model.get_best_iteration()]
+
+test_precision = model.eval_metrics(cattest,"Precision")
+print("test precision", test_precision.get("Precision")[model.get_best_iteration()])
+ptest = test_precision.get("Precision")[model.get_best_iteration()]
+
 valid_precision  = model.eval_metrics(catvalid, "Precision")
+print("valid precision", valid_precision.get("Precision")[model.get_best_iteration()])
+pvalid = valid_precision.get("Precision")[model.get_best_iteration()]
 
 model.save_model("Catboost_Sol")
+
+
+import pickle
+with open('catboost_backup.pickle', 'wb') as f:
+    pickle.dump(model, f)
+    
 predictrain = model.predict(cattrain)
 predictest  = model.predict(cattest)
+
+data = {'Catboost':['Train', 'Test', 'Validate'], 'Precision':[ptrain, ptest, pvalid]} 
+data = pd.DataFrame(data)
+data.to_csv("Precision_Catboost.csv")
 
 #LOad model
 """
 from_file = CatBoostClassifier()
 from_file.load_model("Catboost_Sol")
+
+
+with open('catboost_backup.pickle', 'rb') as f:
+    model = pickle.load(f)
 """
 
 try:

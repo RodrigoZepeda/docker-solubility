@@ -113,6 +113,8 @@ ggplot(mapping = aes(x = logS, y = ..density..)) +
                                 "Test" = "#ff3a22",
                                 "Validate" = "deepskyblue3")) +
   theme(legend.position = "bottom")
+ggsave("TTVLogS.pdf", width = 5, height = 5, bg = "transparent")
+
 ```
 
 ```{r}
